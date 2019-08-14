@@ -17,9 +17,9 @@ Below is a list of the main components of the library:
 It is the main and most sophisticated component of the library.
 DataGridEh allows to show and edit data in a tabular content with titles, footers, indicator column and other features.
 
-![DataGridEh](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png)
-
 ![DataGridEh design-time](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.DesignTime.png)
+
+![DataGridEh](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png)
 
 
 ### DataVertGridEh
