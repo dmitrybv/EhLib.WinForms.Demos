@@ -2,6 +2,7 @@
 Projects demonstrates the capabilities of the EhLib.WinForms library.
 
 Projects are designed to run in an integrated environment - Visual Studio.
+
 Projects are compiled and launched without installing additional components in Visual Studio.
 
 In the Demo projects, there is a link to the Nuget package EhLib.WinForms.Preview.
@@ -13,8 +14,8 @@ EhLib.WinForms library contains components and classes for framework - Windows.F
 Below is a list of the main components of the library:
 
 ### DataGridEh
-The main and most sophisticated component of the library
-It is a grid control to show and edit data in a tabular content
+It is the main and most sophisticated component of the library.
+DataGridEh allows to show and edit data in a tabular content with titles, footers, indicator column and other features.
 
 ![DataGridEh](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png)
 
