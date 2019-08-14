@@ -6,35 +6,35 @@ Projects are compiled and launched without installing additional components in V
 
 In the Demo projects, there is a link to the Nuget package EhLib.WinForms.Preview.
 
-##EhLib.WinForms
+## EhLib.WinForms
 
 EhLib.WinForms library contains components and classes for framework - Windows.Forms.
 
 Below is a list of the main components of the library:
 
-###DataGridEh
+### DataGridEh
 The main and most sophisticated component of the library
 It is a grid control to show and edit data in a tabular content
 
-###DataVertGridEh
+### DataVertGridEh
 A Grid control to displays data in a customizable grid in vertical orientation.
 
-###DataPropertyGridEh
+### DataPropertyGridEh
 Displays one row of DataSource item in vertial orientation. 
 
-###TextBoxEh
+### TextBoxEh
 Represents a control that can be used to display or edit unformatted text. 
 
-###MaskedTextBoxEh
+### MaskedTextBoxEh
 Enhanced TextBoxEh control that supports a declarative syntax for accepting or rejecting user input. 
 
-###NumericBoxEh
+### NumericBoxEh
 Represents a control that can be used to display or edit numeric values. 
 
-###ComboBoxEh
+### ComboBoxEh
 Represents a Windows combo box control. 
 
-###DateTimeBoxEh
+### DateTimeBoxEh
 Represents a Windows control that allows you to select a date and time and display them in the specified format. 
 
 
