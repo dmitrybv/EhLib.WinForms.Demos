@@ -7,6 +7,14 @@ Projects can be compiled and launched without installing additional components i
 
 In the Demo projects, there is a link to a Nuget package - EhLib.WinForms.Preview.
 
+## List of projects
+
+* MainDemo - the main project. Demonstrates the visual capabilities of the library when creating an application for working with tabular data.
+
+* DisplayLayoutStorableApp - the project demonstrates the ability to save/restore the visual settings (like window pos and size, grid columns width) in the configuration files.
+
+* ProcessList - implementation of the Windows Task Manager window using the DataGridEh component.
+
 ## EhLib.WinForms
 
 EhLib.WinForms library contains components and classes for framework - Windows.Forms.
