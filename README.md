@@ -19,6 +19,8 @@ DataGridEh allows to show and edit data in a tabular content with titles, footer
 
 ![DataGridEh](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png)
 
+![DataGridEh design-time](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.DesignTime.png)
+
 
 ### DataVertGridEh
 A Grid control to displays data in a customizable grid in vertical orientation.
