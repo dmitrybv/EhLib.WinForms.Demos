@@ -15,7 +15,7 @@ In the Demo projects, there is a link to a Nuget package - EhLib.WinForms.Previe
 
 * ProcessList - implementation of the Windows Task Manager window using the DataGridEh component.
 
-## EhLib.WinForms
+## EhLib.WinForms library 
 
 EhLib.WinForms library contains components and classes for framework - Windows.Forms.
 
