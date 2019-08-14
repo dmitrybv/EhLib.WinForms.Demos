@@ -16,7 +16,7 @@ Below is a list of the main components of the library:
 The main and most sophisticated component of the library
 It is a grid control to show and edit data in a tabular content
 
-http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png
+![DataGridEh](http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png)
 
 
 ### DataVertGridEh
