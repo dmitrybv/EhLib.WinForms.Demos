@@ -3,9 +3,9 @@ Projects demonstrates the capabilities of the EhLib.WinForms library.
 
 Projects are designed to run in an integrated environment - Visual Studio.
 
-Projects are compiled and launched without installing additional components in Visual Studio.
+Projects can be compiled and launched without installing additional components in Visual Studio.
 
-In the Demo projects, there is a link to the Nuget package EhLib.WinForms.Preview.
+In the Demo projects, there is a link to a Nuget package - EhLib.WinForms.Preview.
 
 ## EhLib.WinForms
 
