@@ -16,23 +16,32 @@ Below is a list of the main components of the library:
 The main and most sophisticated component of the library
 It is a grid control to show and edit data in a tabular content
 
+http://www.ehlib.com/IMAGES/EhLib.WinForms.DataGridEh.png
+
+
 ### DataVertGridEh
 A Grid control to displays data in a customizable grid in vertical orientation.
+
 
 ### DataPropertyGridEh
 Displays one row of DataSource item in vertial orientation. 
 
+
 ### TextBoxEh
 Represents a control that can be used to display or edit unformatted text. 
+
 
 ### MaskedTextBoxEh
 Enhanced TextBoxEh control that supports a declarative syntax for accepting or rejecting user input. 
 
+
 ### NumericBoxEh
 Represents a control that can be used to display or edit numeric values. 
 
+
 ### ComboBoxEh
 Represents a Windows combo box control. 
+
 
 ### DateTimeBoxEh
 Represents a Windows control that allows you to select a date and time and display them in the specified format. 
