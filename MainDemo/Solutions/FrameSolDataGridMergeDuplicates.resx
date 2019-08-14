@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ordersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>167, 17</value>
+  </metadata>
+  <metadata name="northwindDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="customersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>663, 17</value>
+  </metadata>
+  <metadata name="employeesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1030, 17</value>
+  </metadata>
+  <data name="richTextBoxEh1.Rtf" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fswiss\fprq2\fcharset204 Segoe UI;}{\f1\fmodern\fprq1\fcharset204 Consolas;}{\f2\fnil\fcharset204 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\widctlpar\sl252\slmult1\b\f0\fs18 DataGridEh Merge Duplicates\par
+\b0\par
+The Demo shows how to \par
+
+\pard\widctlpar\li708\sl252\slmult1 - Use DataGridColumn.MergeDuplicates property to merge duplicate values\par
+- Use DataGridEh.HorzLineParamsNeeded event to highlight group of rows.\par
+- Highlight sorted column\par
+- Use lookup Combobox columns\par
+ \par
+
+\pard\widctlpar\sl252\slmult1\par
+MainDemo\\Solutions\\FrameSolDataGridMergeDuplicates.cs file\par
+\par
+
+\pard\widctlpar\cf1\f1\fs19 namespace\cf2  MainDemo\par
+\{\par
+  \cf1 public\cf2  \cf1 partial\cf2  \cf1 class\cf2  \cf3 FrameSolDataGridMergeDuplicates\cf2  : BaseFrame\par
+  \{\par
+    DataGridColumn mergeDuplicatedCol;\par
+ \par
+    \cf1 public\cf2  \cf3 FrameSolDataGridMergeDuplicates\cf2 ()\par
+    \{\par
+      InitializeComponent();\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  FrameSolDataGridMergeDuplicates_Load(\cf1 object\cf2  sender, EventArgs e)\par
+    \{\par
+      ordersTableAdapter.Fill(northwindDataSet.Orders);\par
+      employeesTableAdapter.Fill(northwindDataSet.Employees);\par
+      customersTableAdapter.Fill(northwindDataSet.Customers);\par
+\par
+      dataGrid1.Title.SortMarking.SortMarkers.SetSortState(dataGrid1CustomerIDCol, ListSortDirection.Ascending);\par
+      dataGrid1.Title.SortMarking.ApplySortMakers();\par
+      UpdateMergeDuplicatedCol();\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  UpdateMergeDuplicatedCol()\par
+    \{\par
+      \cf1 if\cf2  (mergeDuplicatedCol != \cf1 null\cf2 )\par
+      \{\par
+        mergeDuplicatedCol.MergeDuplicates = \cf1 false\cf2 ;\par
+        mergeDuplicatedCol.VertAlign = VerticalAlignment.Top;\par
+        mergeDuplicatedCol.ResetBackColor();\par
+        mergeDuplicatedCol = \cf1 null\cf2 ;\par
+      \}\par
+\par
+      \cf1 if\cf2  (dataGrid1.Title.SortMarking.SortMarkers.Count &gt; 0)\par
+      \{\par
+        mergeDuplicatedCol = dataGrid1.Title.SortMarking.SortMarkers[0].Column;\par
+        mergeDuplicatedCol.MergeDuplicates = \cf1 true\cf2 ;\par
+        mergeDuplicatedCol.VertAlign = VerticalAlignment.Center;\par
+        mergeDuplicatedCol.BackColor = Color.Linen;\par
+      \}\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  DataGrid1_HorzLineParamsNeeded(\cf1 object\cf2  sender, DataGridHorzLineParamsNeededEventArgs e)\par
+    \{\par
+      \cf1 object\cf2  sortedVal;\par
+      \cf1 object\cf2  nextSortedVal;\par
+      DataGridRow nextRow;\par
+      \cf1 if\cf2  (e.Row == \cf1 null\cf2 ) \cf1 return\cf2 ;\par
+      DataGridColumn sortedCol;\par
+\par
+      \cf1 if\cf2  (dataGrid1.Title.SortMarking.SortMarkers.Count &gt; 0)\par
+      \{\par
+        sortedCol = dataGrid1.Title.SortMarking.SortMarkers[0].Column;\par
+\par
+        \cf1 if\cf2  (e.Row.VisibleIndex &lt; dataGrid1.VisibleRows.Count - 1)\par
+        \{\par
+          sortedVal = sortedCol.GetRowValue(e.Row);\par
+\par
+          nextRow = dataGrid1.VisibleRows[e.Row.VisibleIndex + 1];\par
+          nextSortedVal = sortedCol.GetRowValue(nextRow);\par
+\par
+          \cf1 if\cf2  (!EhLibUtils.DBValueEqual(sortedVal, nextSortedVal))\par
+          \{\par
+            e.Style = DashStyle.Solid;\par
+            e.Color = dataGrid1.LineOptions.DarkColor;\par
+          \}\par
+        \}\par
+        \cf1 else\cf2  \cf1 if\cf2  (e.Row.VisibleIndex == dataGrid1.VisibleRows.Count - 1)\par
+        \{\par
+          e.Style = DashStyle.Solid;\par
+          e.Color = dataGrid1.LineOptions.DarkColor;\par
+        \}\par
+      \}\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  DataGrid1_Title_InteractiveSortMarkingChanged(\cf1 object\cf2  sender, SortMarkingChangedEventArgs e)\par
+    \{\par
+      e.Sort(e);\par
+      e.Handled = \cf1 true\cf2 ;\par
+      \cf1 if\cf2  (dataGrid1.VisibleRows.Count &gt; 0)\par
+        dataGrid1.CurrentRowIndex = 0;\par
+      UpdateMergeDuplicatedCol();\par
+    \}\par
+  \}\par
+\}\par
+
+\pard\widctlpar\sl252\slmult1\cf0\f0\fs18\par
+
+\pard\f2\fs17\par
+}
+</value>
+  </data>
+  <metadata name="ordersTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>332, 17</value>
+  </metadata>
+  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>492, 17</value>
+  </metadata>
+  <metadata name="customersTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>849, 17</value>
+  </metadata>
+  <metadata name="employeesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>106</value>
+  </metadata>
+</root>

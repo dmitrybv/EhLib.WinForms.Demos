@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A10A3819-CA98-47BE-B16B-117E94F9E71F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MainDemo</RootNamespace>
+    <AssemblyName>MainDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>EhLibBrand16.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EhLib.WinForms, Version=0.98.73.0, Culture=neutral, PublicKeyToken=748c2e28ac7015df, processorArchitecture=MSIL">
+      <HintPath>..\packages\EhLib.WinForms.0.98.73-preview\lib\net40\EhLib.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EhLib.WinForms.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d379614f4f89b099, processorArchitecture=MSIL">
+      <HintPath>..\packages\EhLib.WinForms.0.98.73-preview\lib\net40\EhLib.WinForms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseFrame.Designer.cs">
+      <DependentUpon>BaseFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiolifeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BiolifeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cities10000DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cities10000DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PorpertiesGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PorpertiesGrid.Designer.cs">
+      <DependentUpon>Form_PorpertiesGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameCellDataIsLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameCellDataIsLink.designer.cs">
+      <DependentUpon>FrameCellDataIsLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameEditControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameEditControls.Designer.cs">
+      <DependentUpon>FrameEditControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramePolyCellColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FramePolyCellColumn.Designer.cs">
+      <DependentUpon>FramePolyCellColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameRowsAutoExpand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameRowsAutoExpand.Designer.cs">
+      <DependentUpon>FrameRowsAutoExpand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramePropertyGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FramePropertyGrid.designer.cs">
+      <DependentUpon>FramePropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDemoUtils.cs" />
+    <Compile Include="Solutions\FrameCrossedRadioMatrix.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameCrossedRadioMatrix.Designer.cs">
+      <DependentUpon>FrameCrossedRadioMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolBlankCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolBlankCell.Designer.cs">
+      <DependentUpon>FrameSolBlankCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridAutoDataLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridAutoDataLoad.designer.cs">
+      <DependentUpon>FrameSolDataGridAutoDataLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomDataCellPaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomDataCellPaint.Designer.cs">
+      <DependentUpon>FrameSolDataGridCustomDataCellPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomInicatorCellPaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomInicatorCellPaint.Designer.cs">
+      <DependentUpon>FrameSolDataGridCustomInicatorCellPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomDataCellFormat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomDataCellFormat.Designer.cs">
+      <DependentUpon>FrameSolDataGridCustomDataCellFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomInicatorTitleCellPaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomInicatorTitleCellPaint.Designer.cs">
+      <DependentUpon>FrameSolDataGridCustomInicatorTitleCellPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomTitleCellPaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridCustomTitleCellPaint.Designer.cs">
+      <DependentUpon>FrameSolDataGridCustomTitleCellPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridFooterCalculation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridFooterCalculation.Designer.cs">
+      <DependentUpon>FrameSolDataGridFooterCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridMergeDuplicates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridMergeDuplicates.Designer.cs">
+      <DependentUpon>FrameSolDataGridMergeDuplicates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridProgressBars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridProgressBars.Designer.cs">
+      <DependentUpon>FrameSolDataGridProgressBars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridScrollEvents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolDataGridScrollEvents.designer.cs">
+      <DependentUpon>FrameSolDataGridScrollEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolFolderExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolFolderExplorer.Designer.cs">
+      <DependentUpon>FrameSolFolderExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolSelectRows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolSelectRows.Designer.cs">
+      <DependentUpon>FrameSolSelectRows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solutions\FrameSolSimpleTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Solutions\FrameSolSimpleTreeView.Designer.cs">
+      <DependentUpon>FrameSolSimpleTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TmpFrameMainGridWithGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TmpFrameMainGridWithGridView.Designer.cs">
+      <DependentUpon>TmpFrameMainGridWithGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameMainGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameMainGrid.Designer.cs">
+      <DependentUpon>FrameMainGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameMasterDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameMasterDetail.Designer.cs">
+      <DependentUpon>FrameMasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameSearchBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrameSearchBox.Designer.cs">
+      <DependentUpon>FrameSearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NorthwindDataSet.cs">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VarticalMenuCollection.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PorpertiesGrid.resx">
+      <DependentUpon>Form_PorpertiesGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameCellDataIsLink.resx">
+      <DependentUpon>FrameCellDataIsLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameEditControls.resx">
+      <DependentUpon>FrameEditControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramePolyCellColumn.resx">
+      <DependentUpon>FramePolyCellColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameRowsAutoExpand.resx">
+      <DependentUpon>FrameRowsAutoExpand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramePropertyGrid.resx">
+      <DependentUpon>FramePropertyGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr.resx" />
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.ru.resx" />
+    <EmbeddedResource Include="Solutions\FrameCrossedRadioMatrix.resx">
+      <DependentUpon>FrameCrossedRadioMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolBlankCell.resx">
+      <DependentUpon>FrameSolBlankCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridAutoDataLoad.resx">
+      <DependentUpon>FrameSolDataGridAutoDataLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridCustomDataCellPaint.resx">
+      <DependentUpon>FrameSolDataGridCustomDataCellPaint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridCustomInicatorCellPaint.resx">
+      <DependentUpon>FrameSolDataGridCustomInicatorCellPaint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridCustomDataCellFormat.resx">
+      <DependentUpon>FrameSolDataGridCustomDataCellFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridCustomInicatorTitleCellPaint.resx">
+      <DependentUpon>FrameSolDataGridCustomInicatorTitleCellPaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridCustomTitleCellPaint.resx">
+      <DependentUpon>FrameSolDataGridCustomTitleCellPaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridFooterCalculation.resx">
+      <DependentUpon>FrameSolDataGridFooterCalculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridMergeDuplicates.resx">
+      <DependentUpon>FrameSolDataGridMergeDuplicates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridProgressBars.resx">
+      <DependentUpon>FrameSolDataGridProgressBars.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolDataGridScrollEvents.resx">
+      <DependentUpon>FrameSolDataGridScrollEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolFolderExplorer.resx">
+      <DependentUpon>FrameSolFolderExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolSelectRows.resx">
+      <DependentUpon>FrameSolSelectRows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solutions\FrameSolSimpleTreeView.resx">
+      <DependentUpon>FrameSolSimpleTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TmpFrameMainGridWithGridView.resx">
+      <DependentUpon>TmpFrameMainGridWithGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameMainGrid.resx">
+      <DependentUpon>FrameMainGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameMasterDetail.resx">
+      <DependentUpon>FrameMasterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameSearchBox.resx">
+      <DependentUpon>FrameSearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BiolifeDataSet.xsc">
+      <DependentUpon>BiolifeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BiolifeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BiolifeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BiolifeDataSet.xss">
+      <DependentUpon>BiolifeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cities10000DataSet.xsc">
+      <DependentUpon>cities10000DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cities10000DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cities10000DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cities10000DataSet.xss">
+      <DependentUpon>cities10000DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Doc\FrameSolDataGridCustomIndicatorTitleCellPaint.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Doc\FrameSolDataGridFooterCalculation.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Biolife.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="cities10000.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EhLibBrand16.ico" />
+    <Content Include="Northwind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\FolderOpen.png" />
+    <None Include="Resources\FolderClosed.png" />
+    <None Include="Resources\man-with-tai.png" />
+    <None Include="Resources\icons_user-16x16.png" />
+    <None Include="Resources\Calendar-16x16.png" />
+    <None Include="Resources\home-house-16x16.png" />
+    <None Include="Resources\themes.png" />
+    <None Include="Resources\DoubleArrowLeftRight-16x16.png" />
+    <None Include="Resources\Master.png" />
+    <None Include="Resources\Detail.png" />
+    <None Include="Resources\jellyfish-small.png" />
+    <None Include="Resources\EhLibBrand32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

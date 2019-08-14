@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="productsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 18</value>
+  </metadata>
+  <metadata name="northwindDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>14, 16</value>
+  </metadata>
+  <data name="richTextBoxEh1.Rtf" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fswiss\fprq2\fcharset204 Segoe UI;}{\f1\fmodern\fprq1\fcharset204 Consolas;}{\f2\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\sl252\slmult1\lang1033\b\f0\fs18 Using ProgressBarColumn in DataGridEh\par
+\b0\par
+In this Demo\par
+In column "ProgressBar 1", the following properties and events are configured.\par
+\pard\fi709\sl252\slmult1\par
+\f1 property DataPropertyName = "UnitPrice"\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 Specifies the name of the property from which the progress calculation indicators will be taken for display in the cell.\par
+\cf0\f0\fs18\par
+\pard\fi708\sl252\slmult1\f1 property MaxValue = 100\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 //Sets the value that will correspond to 100 percent of the progress.\par
+\pard\fi708\sl252\slmult1\cf0\f0\fs18\par
+\lang1049\f1 property MinValue = 0\par
+\pard\fi-1\li993\sl252\slmult1\cf1\lang1033\fs19 //Sets the value that will correspond to 0 percent of the progress.\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+In column "ProgressBar 2", the following properties and events are configured.\par
+\pard\fi709\sl252\slmult1\par
+\f1 BarFillColor = RGB(166,240, 193)\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 //lime color\par
+\cf0\f0\fs18\par
+\pard\fi708\sl252\slmult1\f1 property BarFrameColor = RGB(128, 64, 0)\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 //brown color\par
+\pard\fi708\sl252\slmult1\cf0\f0\fs18\par
+\f1 property Font = new Font("Microsoft Sans Serif", 7.5)\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 //Text font\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+\par
+\pard\fi-1\li709\sl252\slmult1\f1 event DataCellFormatParamsNeeded = DataGridProgressBarColumn2_DataCellFormatParamsNeeded\par
+\pard\fi-1\li993\sl252\slmult1\cf1\fs19 // Change font style to bold if the value is more then MaxValue / 3\par
+\pard\sl252\slmult1\par
+\par
+\cf0\f0\fs18 In column "ProgressBar 3", the following properties and events are configured:\par
+\pard\fi709\sl252\slmult1\par
+\pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 ProgressBarRenderer = \cf3 new\cf2  EhLib.SlopeGradientProgressBarRenderer()\cf1\par
+//\cf0\f2\fs22  \cf1\f1\fs19 Use nondefault Rendering class to paint progress bar\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+\par
+In column "ProgressBar 4", the following properties and events are configured:\par
+\pard\fi709\sl252\slmult1\par
+\pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 property ProgressBarRenderer = \cf3 new\cf2  EhLib.SlopeGradientProgressBarRenderer()\cf1\par
+//\cf0\f2\fs22  \cf1\f1\fs19 Use nondefault Rendering class to paint progress bar\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+\pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 event DataCellFormatParamsNeeded +=dataGridProgressBarColumn1_DataCellFormatParamsNeeded\par
+\cf1 // Shift the BarFillColor towards orange as the cell value changes towards the maximum value.\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+\pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 event DataCellDisplayValueNeeded += dataGridProgressBarColumn1_DataCellDisplayValueNeeded\par
+\cf1 // Change progress bar text if cell value more than 100 or less than 1.\par
+\pard\sl252\slmult1\cf0\f0\fs18\par
+\par
+}
+</value>
+  </data>
+  <data name="richTextBoxEh2.Rtf" xml:space="preserve">
+    <value>{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fmodern\fprq1\fcharset204 Consolas;}{\f1\fswiss\fprq2\fcharset204 Segoe UI;}{\f2\fnil\fcharset204 Microsoft Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;}
+\viewkind4\uc1\pard\cf1\lang1033\f0\fs19 using\cf2  System;\par
+\cf1 using\cf2  System.Collections.Generic;\par
+\cf1 using\cf2  System.ComponentModel;\par
+\cf1 using\cf2  System.Drawing;\par
+\cf1 using\cf2  System.Data;\par
+\cf1 using\cf2  System.Linq;\par
+\cf1 using\cf2  System.Text;\par
+\cf1 using\cf2  System.Windows.Forms;\par
+\cf1 using\cf2  EhLib;\par
+\par
+\cf1 namespace\cf2  MainDemo\par
+\{\par
+\par
+  \cf1 public\cf2  \cf1 partial\cf2  \cf1 class\cf2  \cf3 FrameSolDataGridProgressBars\cf2  : BaseFrame\par
+  \{\par
+    Font boldProgressFont = \cf1 new\cf2  Font(\cf4 "Microsoft Sans Serif"\cf2 , 7.5F, FontStyle.Bold, GraphicsUnit.Point, ((\cf1 byte\cf2 )(204)));\par
+\par
+    \cf1 public\cf2  FrameSolDataGridProgressBars()\par
+    \{\par
+      InitializeComponent();\par
+\par
+      productsBindingSource.Sort = \cf4 "UnitPrice"\cf2 ;\par
+      productsBindingSource.Filter = \cf4 "CategoryID in (1,2,3)"\cf2 ;\par
+\par
+      dataGridProgressBarColumn3.ProgressBarRenderer = \cf1 new\cf2  EhLib.SlopeGradientProgressBarRenderer();\par
+      dataGridProgressBarColumn4.ProgressBarRenderer = \cf1 new\cf2  EhLib.SlopeGradientProgressBarRenderer();\par
+\par
+      \cf1 this\cf2 .productsTableAdapter.Fill(\cf1 this\cf2 .northwindDataSet.Products);\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  dataGridProgressBarColumn1_DataCellFormatParamsNeeded(\cf1 object\cf2  sender, DataGridProgressBarDataCellFormatParamsNeededEventArgs e)\par
+    \{\par
+      \cf1 if\cf2  (e.Row == \cf1 null\cf2 ) \cf1 return\cf2 ;\par
+\par
+      \cf1 object\cf2  val = e.Column.GetRowValue(e.Row);\par
+      \cf1 if\cf2  (val \cf1 is\cf2  Decimal)\par
+      \{\par
+        \cf1 double\cf2  dValue = (\cf1 double\cf2 )(Decimal)val;\par
+\par
+        \cf1 if\cf2  (dValue &gt; 100 / 4)\par
+        \{\par
+          \cf1 double\cf2  quota = (\cf1 double\cf2 )(((Decimal)val - 100 / 4) / (100 / 4 * 3) * 255);\par
+          \cf1 if\cf2  (quota &gt; 255) quota = 255;\par
+          e.BarFillColor = EhLibUtils.ApproximateColor(e.BarFillColor, Color.FromArgb(241, 171, 50), quota);\par
+        \}\par
+\par
+        \cf1 if\cf2  (dValue &gt; dataGridProgressBarColumn1.MaxValue)\par
+        \{\par
+          e.Font = boldProgressFont;\par
+        \}\par
+      \}\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  dataGridProgressBarColumn1_DataCellDisplayValueNeeded(\cf1 object\cf2  sender, DataGridDataCellDisplayValueNeededEventArgs e)\par
+    \{\par
+      \cf1 if\cf2  (!EhLibUtils.DBValueEqual(e.Value, \cf1 null\cf2 ))\par
+      \{\par
+        \cf1 double\cf2  dValue = (\cf1 double\cf2 )(Decimal)e.Value;\par
+        \cf1 if\cf2  (dValue &gt; dataGridProgressBarColumn4.MaxValue)\par
+        \{\par
+          e.DisplayValue = \cf4 "&gt;100%"\cf2 ;\par
+          e.Handled = \cf1 true\cf2 ;\par
+        \}\par
+        \cf1 else\cf2  \cf1 if\cf2  (dValue &gt; 0 &amp;&amp; dValue &lt; dataGridProgressBarColumn4.MaxValue / 100 / 2)\par
+        \{\par
+          e.DisplayValue = \cf4 "&lt;1%"\cf2 ;\par
+          e.Handled = \cf1 true\cf2 ;\par
+        \}\par
+      \}\par
+    \}\par
+\par
+    \cf1 private\cf2  \cf1 void\cf2  DataGridProgressBarColumn2_DataCellFormatParamsNeeded(\cf1 object\cf2  sender, DataGridProgressBarDataCellFormatParamsNeededEventArgs e)\par
+    \{\par
+      \cf1 if\cf2  (e.Row == \cf1 null\cf2 ) \cf1 return\cf2 ;\par
+\par
+      \cf1 object\cf2  val = e.Column.GetRowValue(e.Row);\par
+      \cf1 if\cf2  (val \cf1 is\cf2  \cf1 decimal\cf2 )\par
+      \{\par
+        \cf1 double\cf2  dValue = (\cf1 double\cf2 )(\cf1 decimal\cf2 )val;\par
+\par
+        \cf1 if\cf2  (dValue &gt; dataGridProgressBarColumn1.MaxValue / 3)\par
+        \{\par
+          e.Font = boldProgressFont;\par
+        \lang1049\}\par
+      \}\par
+    \}\par
+  \}\par
+\}\par
+\pard\sl252\slmult1\cf0\lang1033\f1\fs18\par
+\pard\lang1049\f2\fs17\par
+}
+</value>
+  </data>
+  <metadata name="productsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>341, 19</value>
+  </metadata>
+  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>515, 17</value>
+  </metadata>
+</root>
