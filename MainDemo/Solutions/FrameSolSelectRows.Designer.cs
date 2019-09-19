@@ -173,7 +173,7 @@
       this.dataGridTextColumn1.Title.Text = "Selected Rows";
       this.dataGridTextColumn1.Title.ToolTipText = null;
       this.dataGridTextColumn1.Width = 235;
-      this.dataGridTextColumn1.DataCellPullValue += new System.EventHandler<EhLib.WinForms.DataGridDataCellPullValueEventArgs>(this.dataGridTextColumn1_DataCellPullValue);
+      this.dataGridTextColumn1.DataValuePull += new System.EventHandler<EhLib.WinForms.DataGridDataValuePullEventArgs>(this.dataGridTextColumn1_DataCellValuePull);
       // 
       // panel1
       // 

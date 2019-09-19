@@ -117,7 +117,7 @@ namespace MainDemo
       e.CellArgs.CellClientRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(e.CellArgs.CellRect, custAreaWidth, 0, -custAreaWidth, 0);
     }
 
-    private void dataGridTextColumn1_DataCellPaintCustomArea(object sender, DataGridDataCellPaintEventArgs e)
+    private void dataGridTextColumn1_DataCellCustomAreaPaint(object sender, DataGridDataCellPaintEventArgs e)
     {
       if (e.Row == null) return;
 
@@ -213,7 +213,7 @@ namespace MainDemo
       }
     }
 
-    private void dataGridTextColumn1_DataCellMouseLeave(object sender, DataGridDataCellLeaveEventArgs e)
+    private void dataGridTextColumn1_DataCellMouseLeave(object sender, DataGridDataCellMouseLeaveEventArgs e)
     {
       mouseIconIndex = -1;
       toolTip1.Hide(dataGrid1);

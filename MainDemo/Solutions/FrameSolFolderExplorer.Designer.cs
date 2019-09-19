@@ -29,7 +29,6 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
-      EhLib.WinForms.ExplorerStyleTreeNodeStateRenderer explorerStyleTreeNodeStateRenderer1 = new EhLib.WinForms.ExplorerStyleTreeNodeStateRenderer();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameSolFolderExplorer));
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
@@ -124,7 +123,6 @@
       // 
       // 
       // 
-      this.dataGridEh1.TreeViewArea.NodeStateRenderer = explorerStyleTreeNodeStateRenderer1;
       this.dataGridEh1.TreeViewArea.Visible = true;
       this.dataGridEh1.TreeViewArea.ExpandedStateSet += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeExpandedStateSetEventArgs>(this.dataGridEh1_TreeViewArea_ExpandedStateSet);
       this.dataGridEh1.TreeViewArea.NodeStateNeeded += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeStateNeededEventArgs>(this.dataGridEh1_TreeViewArea_NodeStateNeeded);

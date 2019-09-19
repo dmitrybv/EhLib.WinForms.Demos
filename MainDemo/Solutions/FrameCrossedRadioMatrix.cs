@@ -44,7 +44,7 @@ namespace MainDemo
       e.Handled = true;
     }
 
-    private void dataGridEh1_DataCellPullValue(object sender, DataGridDataCellPullValueEventArgs e)
+    private void dataGridEh1_DataCellValuePull(object sender, DataGridDataValuePullEventArgs e)
     {
       int colNum = int.Parse(e.Column.Title.Text);
       int rowNum = FindColRowDataByCol(colNum).RowNum;
@@ -63,7 +63,7 @@ namespace MainDemo
       return null;
     }
 
-    private void dataGridEh1_DataCellPushValue(object sender, DataGridDataCellPushValueEventArgs e)
+    private void dataGridEh1_DataCellValuePush(object sender, DataGridDataValuePushEventArgs e)
     {
       int colNum = int.Parse(e.Column.Title.Text);
       int newRowNum = e.Row.VisibleIndex + 1;

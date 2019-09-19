@@ -30,7 +30,7 @@
     {
       this.components = new System.ComponentModel.Container();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameMasterDetail));
-      EhLib.WinForms.DataGridFooterRow dataGridFooterRow1 = new EhLib.WinForms.DataGridFooterRow();
+      this.dataGridFooterRow1 = new EhLib.WinForms.DataGridFooterRow();
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
@@ -259,6 +259,9 @@
       // dataGrid1
       // 
       this.dataGrid1.AutoGenerateColumns = true;
+      // 
+      // 
+      // 
       this.dataGrid1.Background.GridOpacityOptions.CellsOpacity = 128;
       this.dataGrid1.Background.GridOpacityOptions.LinesOpacity = 128;
       this.dataGrid1.Background.Image = global::MainDemo.Properties.Resources.Master;
@@ -266,14 +269,13 @@
       this.dataGrid1.Background.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 10);
       this.dataGrid1.Background.ImageOptions.Scale = 0.8D;
       this.dataGrid1.Background.Visible = true;
-      this.dataGrid1.Cursor = System.Windows.Forms.Cursors.Default;
+      this.dataGrid1.ColumnOptions.CacheDisplayValues = false;
       this.dataGrid1.DataSource = this.ordersBindingSource;
       this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
       // 
       // 
       this.dataGrid1.EmptyDataInfo.Text = null;
-      this.dataGrid1.GridState = EhLib.WinForms.BaseGridState.Normal;
       this.dataGrid1.LineOptions.BrightColor = System.Drawing.Color.Gainsboro;
       this.dataGrid1.Location = new System.Drawing.Point(0, 0);
       this.dataGrid1.Name = "dataGrid1";
@@ -286,24 +288,29 @@
       // dataGrid2
       // 
       this.dataGrid2.AutoGenerateColumns = true;
+      // 
+      // 
+      // 
       this.dataGrid2.Background.GridOpacityOptions.CellsOpacity = 200;
       this.dataGrid2.Background.GridOpacityOptions.FocusCellOpacity = 220;
       this.dataGrid2.Background.GridOpacityOptions.LinesOpacity = 128;
       this.dataGrid2.Background.Image = global::MainDemo.Properties.Resources.Detail;
       this.dataGrid2.Background.ImageOptions.Opacity = 100;
-      this.dataGrid2.Background.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 10);
+      this.dataGrid2.Background.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 30);
       this.dataGrid2.Background.ImageOptions.Scale = 0.7D;
       this.dataGrid2.Background.Visible = true;
-      this.dataGrid2.Cursor = System.Windows.Forms.Cursors.Default;
+      this.dataGrid2.ColumnOptions.CacheDisplayValues = false;
       this.dataGrid2.DataSource = this.order_DetailsBindingSource;
       this.dataGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
       // 
       // 
       this.dataGrid2.EmptyDataInfo.Text = null;
+      // 
+      // dataGrid2.Footer
+      // 
       this.dataGrid2.Footer.Rows.AddRange(new EhLib.WinForms.DataGridFooterRow[] {
-            dataGridFooterRow1});
-      this.dataGrid2.GridState = EhLib.WinForms.BaseGridState.Normal;
+            this.dataGridFooterRow1});
       this.dataGrid2.LineOptions.BrightColor = System.Drawing.Color.Gainsboro;
       this.dataGrid2.Location = new System.Drawing.Point(0, 0);
       this.dataGrid2.Name = "dataGrid2";
@@ -326,12 +333,18 @@
       // 
       this.dataGridTextColumn1.DataPropertyName = "OrderID";
       this.dataGridTextColumn1.Name = "dataGridTextColumn1";
+      // 
+      // dataGridTextColumn1.Title
+      // 
       this.dataGridTextColumn1.Title.Text = "OrderID";
       // 
       // dataGridTextColumn2
       // 
       this.dataGridTextColumn2.DataPropertyName = "ProductID";
       this.dataGridTextColumn2.Name = "dataGridTextColumn2";
+      // 
+      // dataGridTextColumn2.Title
+      // 
       this.dataGridTextColumn2.Title.Text = "ProductID";
       // 
       // dataGridTextColumn3
@@ -339,18 +352,27 @@
       this.dataGridTextColumn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(204)))));
       this.dataGridTextColumn3.DataPropertyName = "UnitPrice";
       this.dataGridTextColumn3.Name = "dataGridTextColumn3";
+      // 
+      // dataGridTextColumn3.Title
+      // 
       this.dataGridTextColumn3.Title.Text = "UnitPrice";
       // 
       // dataGridTextColumn4
       // 
       this.dataGridTextColumn4.DataPropertyName = "Quantity";
       this.dataGridTextColumn4.Name = "dataGridTextColumn4";
+      // 
+      // dataGridTextColumn4.Title
+      // 
       this.dataGridTextColumn4.Title.Text = "Quantity";
       // 
       // dataGridTextColumn5
       // 
       this.dataGridTextColumn5.DataPropertyName = "Discount";
       this.dataGridTextColumn5.Name = "dataGridTextColumn5";
+      // 
+      // dataGridTextColumn5.Title
+      // 
       this.dataGridTextColumn5.Title.Text = "Discount";
       // 
       // FrameMasterDetail
@@ -411,5 +433,6 @@
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn3;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn4;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn5;
+    private EhLib.WinForms.DataGridFooterRow dataGridFooterRow1;
   }
 }

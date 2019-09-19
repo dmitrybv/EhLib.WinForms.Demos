@@ -56,7 +56,7 @@ namespace MainDemo
       }
     }
 
-    private void superTitleAddress_PaintCustomArea(object sender, EhLib.WinForms.SuperTitlePaintEventArgs e)
+    private void superTitleAddress_CustomAreaPaint(object sender, EhLib.WinForms.SuperTitlePaintEventArgs e)
     {
       Rectangle imageAreaRect = e.CellRect;
       imageAreaRect.Width = 16;
@@ -64,7 +64,7 @@ namespace MainDemo
       DrawPlusMinusSign(e.Graphics, imageAreaRect, false);
     }
 
-    private void colAddressFull_Title_CellPaintCustomArea(object sender, EhLib.WinForms.DataGridTitleCellPaintEventArgs e)
+    private void colAddressFull_Title_CellCustomAreaPaint(object sender, EhLib.WinForms.DataGridTitleCellPaintEventArgs e)
     {
       Rectangle imageAreaRect = e.CellRect;
       imageAreaRect.Width = 16;

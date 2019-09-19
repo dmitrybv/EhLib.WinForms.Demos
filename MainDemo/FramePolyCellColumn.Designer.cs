@@ -92,7 +92,6 @@
       this.dataGridTextColumn1.HorzAlign = System.Windows.Forms.HorizontalAlignment.Left;
       this.dataGridTextColumn1.Name = "dataGridTextColumn1";
       this.dataGridTextColumn1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-      this.dataGridTextColumn1.Tag = null;
       // 
       // dataGridTextColumn1.Title
       // 
@@ -103,13 +102,11 @@
       // textDataCell1
       // 
       this.textDataCell1.HeightOptions.AutoExpand = false;
-      this.textDataCell1.Tag = null;
       // 
       // checkBoxDataCell1
       // 
       this.checkBoxDataCell1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.checkBoxDataCell1.HeightOptions.AutoExpand = false;
-      this.checkBoxDataCell1.Tag = null;
       // 
       // comboBoxDataCell1
       // 
@@ -117,22 +114,15 @@
       this.comboBoxDataCell1.Items.AddRange(new object[] {
             "Yes",
             "No"});
-      this.comboBoxDataCell1.Tag = null;
-      // 
-      // imageDataCell1
-      // 
-      this.imageDataCell1.Tag = null;
       // 
       // progressBarDataCell1
       // 
       this.progressBarDataCell1.HeightOptions.AutoExpand = false;
-      this.progressBarDataCell1.Tag = null;
       // 
       // buttonDataCell1
       // 
       this.buttonDataCell1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.buttonDataCell1.HeightOptions.AutoExpand = false;
-      this.buttonDataCell1.Tag = null;
       this.buttonDataCell1.Text = null;
       // 
       // dataGridTextColumn3
@@ -144,16 +134,16 @@
       this.dataGridTextColumn3.HorzAlign = System.Windows.Forms.HorizontalAlignment.Left;
       this.dataGridTextColumn3.Name = "dataGridTextColumn3";
       this.dataGridTextColumn3.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-      this.dataGridTextColumn3.Tag = null;
       // 
       // dataGridTextColumn3.Title
       // 
       this.dataGridTextColumn3.Title.Text = "ValueType";
       this.dataGridTextColumn3.VertAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
-      this.dataGridTextColumn3.DataCellPullValue += new System.EventHandler<EhLib.WinForms.DataGridDataCellPullValueEventArgs>(this.dataGridTextColumn3_DataCellPullValue);
+      this.dataGridTextColumn3.DataValuePull += new System.EventHandler<EhLib.WinForms.DataGridDataValuePullEventArgs>(this.dataGridTextColumn3_DataCellValuePull);
       // 
       // dataGrid1
       // 
+      this.dataGrid1.ColumnOptions.CacheDisplayValues = false;
       this.dataGrid1.ColumnOptions.EditItemOptions.PaintBackgroundTime = EhLib.WinForms.DataGridCellItemPaintTime.Always;
       this.dataGrid1.DataSource = this.bsPolyCellColumnTable;
       this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -191,7 +181,6 @@
       this.dataGridDynaCellColumn1.ExtraCellManagers.Add(this.dateTimeDataCell1);
       this.dataGridDynaCellColumn1.ExtraCellManagers.Add(this.blankDataCell1);
       this.dataGridDynaCellColumn1.Name = "dataGridDynaCellColumn1";
-      this.dataGridDynaCellColumn1.Tag = null;
       // 
       // dataGridDynaCellColumn1.Title
       // 
@@ -200,19 +189,7 @@
       // 
       // maskedTextDataCell1
       // 
-      this.maskedTextDataCell1.Tag = null;
-      // 
-      // radioButtonDataCell1
-      // 
-      this.radioButtonDataCell1.Tag = null;
-      // 
-      // dateTimeDataCell1
-      // 
-      this.dateTimeDataCell1.Tag = null;
-      // 
-      // blankDataCell1
-      // 
-      this.blankDataCell1.Tag = null;
+      this.maskedTextDataCell1.Mask = "00:00";
       // 
       // dataGridTextColumn2
       // 
@@ -223,14 +200,13 @@
       this.dataGridTextColumn2.HorzAlign = System.Windows.Forms.HorizontalAlignment.Left;
       this.dataGridTextColumn2.Name = "dataGridTextColumn2";
       this.dataGridTextColumn2.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-      this.dataGridTextColumn2.Tag = null;
       // 
       // dataGridTextColumn2.Title
       // 
       this.dataGridTextColumn2.Title.Text = "Value as String";
       this.dataGridTextColumn2.VertAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
       this.dataGridTextColumn2.Width = 136;
-      this.dataGridTextColumn2.DataCellPushValue += new System.EventHandler<EhLib.WinForms.DataGridDataCellPushValueEventArgs>(this.dataGridTextColumn2_DataCellPushValue);
+      this.dataGridTextColumn2.DataValuePush += new System.EventHandler<EhLib.WinForms.DataGridDataValuePushEventArgs>(this.dataGridTextColumn2_DataCellValuePush);
       // 
       // dataGridTextColumn4
       // 
@@ -241,7 +217,6 @@
       this.dataGridTextColumn4.HorzAlign = System.Windows.Forms.HorizontalAlignment.Left;
       this.dataGridTextColumn4.Name = "dataGridTextColumn4";
       this.dataGridTextColumn4.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-      this.dataGridTextColumn4.Tag = null;
       // 
       // dataGridTextColumn4.Title
       // 

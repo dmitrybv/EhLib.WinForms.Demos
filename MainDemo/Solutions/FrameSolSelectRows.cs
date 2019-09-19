@@ -63,7 +63,7 @@ namespace MainDemo
         dataGridEh1.CurrentRow.Selected = !dataGridEh1.CurrentRow.Selected;
     }
 
-    private void dataGridTextColumn1_DataCellPullValue(object sender, DataGridDataCellPullValueEventArgs e)
+    private void dataGridTextColumn1_DataCellValuePull(object sender, DataGridDataValuePullEventArgs e)
     {
       string val = ((DataRowView)(e.Row.SourceItem))["Name"] as string;
       e.Value = val;

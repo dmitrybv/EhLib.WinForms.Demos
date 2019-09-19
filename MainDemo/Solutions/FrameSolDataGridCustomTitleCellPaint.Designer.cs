@@ -235,7 +235,7 @@
       this.colAddressFull.Title.ImageBox.Image = global::MainDemo.Properties.Resources.home_house_16x16;
       this.colAddressFull.Title.ImageBox.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
       this.colAddressFull.Title.Text = "Address";
-      this.colAddressFull.Title.CellPaintCustomArea += new System.EventHandler<EhLib.WinForms.DataGridTitleCellPaintEventArgs>(this.colAddressFull_Title_CellPaintCustomArea);
+      this.colAddressFull.Title.CellCustomAreaPaint += new System.EventHandler<EhLib.WinForms.DataGridTitleCellPaintEventArgs>(this.colAddressFull_Title_CellCustomAreaPaint);
       this.colAddressFull.Title.CellQueryCursor += new System.EventHandler<EhLib.WinForms.BaseGridCellQueryCursorEventArgs>(this.colAddressFull_Title_CellQueryCursor);
       this.colAddressFull.Title.CellClientRectNeeded += new System.EventHandler<EhLib.WinForms.DataGridTitleCellClientAreaNeededEventArgs>(this.colAddressFull_Title_CellClientRectNeeded);
       this.colAddressFull.Title.CellMouseDown += new System.EventHandler<EhLib.WinForms.DataGridTitleCellMouseEventArgs>(this.colAddressFull_Title_CellMouseDown);
@@ -259,7 +259,7 @@
       this.superTitleAddress.Subtitles.Add(this.colCity);
       this.superTitleAddress.Subtitles.Add(this.colAddress);
       this.superTitleAddress.Text = "Address";
-      this.superTitleAddress.PaintCustomArea += new System.EventHandler<EhLib.WinForms.SuperTitlePaintEventArgs>(this.superTitleAddress_PaintCustomArea);
+      this.superTitleAddress.CustomAreaPaint += new System.EventHandler<EhLib.WinForms.SuperTitlePaintEventArgs>(this.superTitleAddress_CustomAreaPaint);
       this.superTitleAddress.MouseDown += new System.EventHandler<EhLib.WinForms.DataGridSuperTitleCellMouseEventArgs>(this.superTitleAddress_MouseDown);
       this.superTitleAddress.MouseMove += new System.EventHandler<EhLib.WinForms.DataGridSuperTitleCellMouseEventArgs>(this.superTitleAddress_MouseMove);
       this.superTitleAddress.MouseLeave += new System.EventHandler<EhLib.WinForms.DataGridSuperTitleCellEventArgs>(this.superTitleAddress_MouseLeave);

@@ -176,10 +176,10 @@
       // 
       this.dataGridTextColumn1.Title.Text = "Name";
       this.dataGridTextColumn1.Width = 199;
-      this.dataGridTextColumn1.DataCellCustomAreaPaint += new System.EventHandler<EhLib.WinForms.DataGridDataCellPaintEventArgs>(this.dataGridTextColumn1_DataCellPaintCustomArea);
+      this.dataGridTextColumn1.DataCellCustomAreaPaint += new System.EventHandler<EhLib.WinForms.DataGridDataCellPaintEventArgs>(this.dataGridTextColumn1_DataCellCustomAreaPaint);
       this.dataGridTextColumn1.DataCellMouseDown += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseDown);
       this.dataGridTextColumn1.DataCellMouseMove += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseMove);
-      this.dataGridTextColumn1.DataCellMouseLeave += new System.EventHandler<EhLib.WinForms.DataGridDataCellLeaveEventArgs>(this.dataGridTextColumn1_DataCellMouseLeave);
+      this.dataGridTextColumn1.DataCellMouseLeave += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseLeaveEventArgs>(this.dataGridTextColumn1_DataCellMouseLeave);
       this.dataGridTextColumn1.DataCellMouseHover += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseHover);
       this.dataGridTextColumn1.DataCellClientAreaNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellClientAreaNeededEventArgs>(this.dataGridTextColumn1_DataCellClientAreaNeeded);
       // 

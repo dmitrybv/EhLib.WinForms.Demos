@@ -169,8 +169,8 @@
       // 
       this.dataGridEh1.Title.HorzAlign = System.Windows.Forms.HorizontalAlignment.Center;
       this.dataGridEh1.Title.Padding = new System.Windows.Forms.Padding(4);
-      this.dataGridEh1.DataCellPullValue += new System.EventHandler<EhLib.WinForms.DataGridDataCellPullValueEventArgs>(this.dataGridEh1_DataCellPullValue);
-      this.dataGridEh1.DataCellPushValue += new System.EventHandler<EhLib.WinForms.DataGridDataCellPushValueEventArgs>(this.dataGridEh1_DataCellPushValue);
+      this.dataGridEh1.DataValuePull += new System.EventHandler<EhLib.WinForms.DataGridDataValuePullEventArgs>(this.dataGridEh1_DataCellValuePull);
+      this.dataGridEh1.DataValuePush += new System.EventHandler<EhLib.WinForms.DataGridDataValuePushEventArgs>(this.dataGridEh1_DataCellValuePush);
       this.dataGridEh1.DataCellManagerNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellManagerNeededEventArgs>(this.dataGridEh1_DataCellManagerNeeded);
       this.dataGridEh1.DataCellFormatParamsNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellFormatParamsNeededEventArgs>(this.dataGridEh1_DataCellFormatParamsNeeded);
       // 

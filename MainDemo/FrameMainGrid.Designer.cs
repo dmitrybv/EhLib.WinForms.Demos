@@ -31,6 +31,7 @@
       this.components = new System.ComponentModel.Container();
       EhLib.WinForms.SumCalculator sumCalculator1 = new EhLib.WinForms.SumCalculator();
       this.dataGridFooterRow1 = new EhLib.WinForms.DataGridFooterRow();
+      this.dataGridColumnFooterItem6 = new EhLib.WinForms.DataGridColumnFooterItem();
       this.panel1 = new System.Windows.Forms.Panel();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
       this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
       this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
       this.employeesTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter();
       this.customersTableAdapter1 = new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
-      this.dataGridColumnFooterItem6 = new EhLib.WinForms.DataGridColumnFooterItem();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bsEmployees)).BeginInit();
@@ -81,7 +81,7 @@
       this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
       this.panel1.Location = new System.Drawing.Point(0, 0);
       this.panel1.Name = "panel1";
-      this.panel1.Size = new System.Drawing.Size(941, 36);
+      this.panel1.Size = new System.Drawing.Size(600, 36);
       this.panel1.TabIndex = 0;
       // 
       // pictureBox1
@@ -267,7 +267,7 @@
       this.dataGrid1.HorzScrollBar.Height = 24;
       this.dataGrid1.Location = new System.Drawing.Point(0, 36);
       this.dataGrid1.Name = "dataGrid1";
-      this.dataGrid1.Size = new System.Drawing.Size(941, 302);
+      this.dataGrid1.Size = new System.Drawing.Size(600, 472);
       this.dataGrid1.StaticColumns.AddRange(new EhLib.WinForms.PropertyAxisBar[] {
             this.colOrdedId,
             this.colEmpId,
@@ -365,7 +365,7 @@
       this.Controls.Add(this.dataGrid1);
       this.Controls.Add(this.panel1);
       this.Name = "FrameMainGrid";
-      this.Size = new System.Drawing.Size(941, 338);
+      this.Size = new System.Drawing.Size(600, 508);
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

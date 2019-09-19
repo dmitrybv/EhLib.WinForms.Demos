@@ -109,7 +109,7 @@ namespace MainDemo
         col.Frozen = DataGridColumnFrozenState.ToLeftSide;
     }
 
-    private void dataGridTextColumn3_DataCellPullValue(object sender, DataGridDataCellPullValueEventArgs e)
+    private void dataGridTextColumn3_DataCellValuePull(object sender, DataGridDataValuePullEventArgs e)
     {
       object val = dataGridDynaCellColumn1.GetRowValue(e.Row);
       if (val != null)
@@ -119,7 +119,7 @@ namespace MainDemo
       e.Handled = true;
     }
 
-    private void dataGridTextColumn2_DataCellPushValue(object sender, DataGridDataCellPushValueEventArgs e)
+    private void dataGridTextColumn2_DataCellValuePush(object sender, DataGridDataValuePushEventArgs e)
     {
       DataRowView row = (DataRowView)e.Row.SourceItem;
 

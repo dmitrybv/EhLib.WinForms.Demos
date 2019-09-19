@@ -33,7 +33,7 @@
       this.panel2 = new System.Windows.Forms.Panel();
       this.numericBoxEh1 = new EhLib.WinForms.NumericBoxEh();
       this.boundLabel1 = new EhLib.WinForms.BoundLabel();
-      this.inEditUpDownButton1 = new EhLib.WinForms.InEditUpDownButton();
+      this.inEditUpDownButton1 = new EhLib.WinForms.EditUpDownButton();
       this.bStartStopAutoUpdate = new System.Windows.Forms.Button();
       this.bsProcessList = new System.Windows.Forms.BindingSource(this.components);
       this.gridProcessList = new EhLib.WinForms.DataGridEh();
@@ -278,7 +278,7 @@
     private System.Windows.Forms.Button bStartStopAutoUpdate;
     private EhLib.WinForms.NumericBoxEh numericBoxEh1;
     private EhLib.WinForms.BoundLabel boundLabel1;
-    private EhLib.WinForms.InEditUpDownButton inEditUpDownButton1;
+    private EhLib.WinForms.EditUpDownButton inEditUpDownButton1;
     private EhLib.WinForms.DataGridEh gridProcessList;
     private EhLib.WinForms.DataGridTextColumn colDisplayName;
     private EhLib.WinForms.DataGridTextColumn colCPUUsage;
