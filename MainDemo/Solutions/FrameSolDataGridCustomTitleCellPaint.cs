@@ -74,12 +74,12 @@ namespace MainDemo
 
     private void colAddressFull_Title_CellClientRectNeeded(object sender, EhLib.WinForms.DataGridTitleCellClientAreaNeededEventArgs e)
     {
-      e.CellClientRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(e.CellClientRect, 16, 0, -16, 0);
+      e.CellClientRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(e.CellClientRect, 16, 0, -16, 0);
     }
 
     private void superTitleAddress_ClientRectNeeded(object sender, EhLib.WinForms.DataGridSuperTitleCellClientAreaNeededEventArgs e)
     {
-      e.CellClientRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(e.CellClientRect, 16, 0, -16, 0);
+      e.CellClientRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(e.CellClientRect, 16, 0, -16, 0);
     }
 
     private void superTitleAddress_MouseDown(object sender, EhLib.WinForms.DataGridTitleCellMouseEventArgs e)

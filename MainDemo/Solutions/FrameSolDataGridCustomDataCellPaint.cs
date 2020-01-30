@@ -114,7 +114,7 @@ namespace MainDemo
       if (e.Row == null) return;
       DataRowView rowView = (DataRowView)e.Row.SourceItem;
       int custAreaWidth = GetTransportIconsWidth(rowView);
-      e.CellArgs.CellClientRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(e.CellArgs.CellRect, custAreaWidth, 0, -custAreaWidth, 0);
+      e.CellArgs.CellClientRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(e.CellArgs.CellRect, custAreaWidth, 0, -custAreaWidth, 0);
     }
 
     private void dataGridTextColumn1_DataCellCustomAreaPaint(object sender, DataGridDataCellPaintEventArgs e)

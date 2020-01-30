@@ -1,6 +1,6 @@
 ﻿namespace MainDemo
 {
-  partial class FrameSolFolderExplorer
+  partial class FrameSolExternalTreeViewList
   {
     /// <summary> 
     /// Required designer variable.
@@ -29,28 +29,21 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameSolFolderExplorer));
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameSolExternalTreeViewList));
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
       this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-      this.dataGridTextColumn3 = new EhLib.WinForms.DataGridTextColumn();
-      this.dataGridTextColumn4 = new EhLib.WinForms.DataGridTextColumn();
-      this.panel2 = new System.Windows.Forms.Panel();
-      this.button1 = new System.Windows.Forms.Button();
-      this.textBoxEh1 = new EhLib.WinForms.TextBoxEh();
+      this.dataGridTextColumn1 = new EhLib.WinForms.DataGridTextColumn();
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.textBox1 = new System.Windows.Forms.TextBox();
-      this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
       this.panel1.SuspendLayout();
       this.tabControl1.SuspendLayout();
       this.tabPage1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-      this.panel2.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.textBoxEh1)).BeginInit();
       this.tabPage2.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -69,9 +62,9 @@
       this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.label1.Location = new System.Drawing.Point(6, 5);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(312, 24);
+      this.label1.Size = new System.Drawing.Size(307, 24);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Disk Folder Explorer (TreeView)";
+      this.label1.Text = "TreeView with External TreeList";
       // 
       // tabControl1
       // 
@@ -87,7 +80,6 @@
       // tabPage1
       // 
       this.tabPage1.Controls.Add(this.dataGridEh1);
-      this.tabPage1.Controls.Add(this.panel2);
       this.tabPage1.Location = new System.Drawing.Point(4, 22);
       this.tabPage1.Name = "tabPage1";
       this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -99,103 +91,41 @@
       // dataGridEh1
       // 
       this.dataGridEh1.AutoSizeColumnOptions.FitToClient = true;
-      this.dataGridEh1.ColumnOptions.AllowShowEditor = false;
       this.dataGridEh1.DataSource = this.bindingSource1;
       this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
       // 
       // 
+      this.dataGridEh1.EmptyDataInfo.Text = null;
+      // 
+      // dataGridEh1.IndicatorColumn
+      // 
       this.dataGridEh1.IndicatorColumn.Visible = false;
-      this.dataGridEh1.Location = new System.Drawing.Point(3, 47);
+      this.dataGridEh1.LineOptions.HorzLines = false;
+      this.dataGridEh1.Location = new System.Drawing.Point(3, 3);
       this.dataGridEh1.Name = "dataGridEh1";
-      this.dataGridEh1.ReadOnly = true;
-      this.dataGridEh1.RowOptions.HorzLine.Visible = false;
-      // 
-      // 
-      // 
-      this.dataGridEh1.SearchBox.Enabled = true;
-      this.dataGridEh1.Selection.RowHighlight = false;
-      this.dataGridEh1.Size = new System.Drawing.Size(697, 547);
+      this.dataGridEh1.Size = new System.Drawing.Size(697, 591);
       this.dataGridEh1.StaticColumns.AddRange(new EhLib.WinForms.PropertyAxisBar[] {
-            this.dataGridTextColumn3,
-            this.dataGridTextColumn4});
-      this.dataGridEh1.TabIndex = 4;
+            this.dataGridTextColumn1});
+      this.dataGridEh1.TabIndex = 7;
       // 
-      // 
+      // dataGridEh1.TreeViewArea
       // 
       this.dataGridEh1.TreeView.TreeViewAreaVisible = true;
       this.dataGridEh1.TreeView.ExpandedStateSet += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeExpandedStateSetEventArgs>(this.dataGridEh1_TreeViewArea_ExpandedStateSet);
       this.dataGridEh1.TreeView.NodeStateNeeded += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeStateNeededEventArgs>(this.dataGridEh1_TreeViewArea_NodeStateNeeded);
       // 
-      // dataGridTextColumn3
+      // dataGridTextColumn1
       // 
-      this.dataGridTextColumn3.DataPropertyName = "Name";
-      this.dataGridTextColumn3.FillWeight = 556F;
-      this.dataGridTextColumn3.FormatString = null;
-      this.dataGridTextColumn3.Name = "dataGridTextColumn3";
+      this.dataGridTextColumn1.DataPropertyName = "Name";
+      this.dataGridTextColumn1.FillWeight = 694F;
+      this.dataGridTextColumn1.FormatString = null;
+      this.dataGridTextColumn1.Name = "dataGridTextColumn1";
       // 
+      // dataGridTextColumn1.Title
       // 
-      // 
-      this.dataGridTextColumn3.Title.Text = "Path";
-      this.dataGridTextColumn3.Width = 556;
-      this.dataGridTextColumn3.DataCellCustomAreaPaint += new System.EventHandler<EhLib.WinForms.DataGridDataCellPaintEventArgs>(this.dataGridTextColumn3_DataCellCustomAreaPaint);
-      this.dataGridTextColumn3.DataCellClientAreaNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellClientAreaNeededEventArgs>(this.dataGridTextColumn3_DataCellClientAreaNeeded);
-      // 
-      // dataGridTextColumn4
-      // 
-      this.dataGridTextColumn4.DataPropertyName = "Size";
-      this.dataGridTextColumn4.FillWeight = 137F;
-      this.dataGridTextColumn4.FormatString = null;
-      this.dataGridTextColumn4.Name = "dataGridTextColumn4";
-      this.dataGridTextColumn4.Padding = new System.Windows.Forms.Padding(3, 2, 4, 2);
-      // 
-      // 
-      // 
-      this.dataGridTextColumn4.Title.Text = "Size";
-      this.dataGridTextColumn4.Width = 137;
-      this.dataGridTextColumn4.DataCellMouseClick += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn4_DataCellMouseClick);
-      this.dataGridTextColumn4.DataCellFormatParamsNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellFormatParamsNeededEventArgs>(this.dataGridTextColumn4_DataCellFormatParamsNeeded);
-      this.dataGridTextColumn4.DataCellToolTipInfoNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellToolTipInfoEventArgs>(this.dataGridTextColumn4_DataCellToolTipInfoNeeded);
-      // 
-      // panel2
-      // 
-      this.panel2.Controls.Add(this.button1);
-      this.panel2.Controls.Add(this.textBoxEh1);
-      this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-      this.panel2.Location = new System.Drawing.Point(3, 3);
-      this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(697, 44);
-      this.panel2.TabIndex = 5;
-      // 
-      // button1
-      // 
-      this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-      this.button1.Location = new System.Drawing.Point(582, 8);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(107, 28);
-      this.button1.TabIndex = 2;
-      this.button1.Text = "Load Data";
-      this.button1.UseVisualStyleBackColor = true;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
-      // 
-      // textBoxEh1
-      // 
-      this.textBoxEh1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-      this.textBoxEh1.BoundLabel = null;
-      // 
-      // 
-      // 
-      this.textBoxEh1.EditButton.DefaultAction = false;
-      this.textBoxEh1.EditButton.StyleKind = EhLib.WinForms.InEditButtonStyleKind.EndEllipsis;
-      this.textBoxEh1.EditButton.Visible = true;
-      this.textBoxEh1.EditButton.Click += new System.EventHandler<EhLib.WinForms.InEditControlClickEventArgs>(this.textBoxEh1_EditButton_Click);
-      this.textBoxEh1.Location = new System.Drawing.Point(16, 12);
-      this.textBoxEh1.Name = "textBoxEh1";
-      this.textBoxEh1.Size = new System.Drawing.Size(558, 20);
-      this.textBoxEh1.TabIndex = 1;
-      this.textBoxEh1.TabStop = false;
-      this.textBoxEh1.Text = "C:\\";
+      this.dataGridTextColumn1.Title.Text = "Name";
+      this.dataGridTextColumn1.Width = 694;
       // 
       // tabPage2
       // 
@@ -218,13 +148,13 @@
       this.textBox1.TabIndex = 0;
       this.textBox1.Text = resources.GetString("textBox1.Text");
       // 
-      // FrameSolFolderExplorer
+      // FrameSolExternalTreeViewList
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.Controls.Add(this.tabControl1);
       this.Controls.Add(this.panel1);
-      this.Name = "FrameSolFolderExplorer";
+      this.Name = "FrameSolExternalTreeViewList";
       this.Size = new System.Drawing.Size(711, 659);
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
@@ -232,9 +162,6 @@
       this.tabPage1.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-      this.panel2.ResumeLayout(false);
-      this.panel2.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.textBoxEh1)).EndInit();
       this.tabPage2.ResumeLayout(false);
       this.tabPage2.PerformLayout();
       this.ResumeLayout(false);
@@ -247,15 +174,10 @@
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.TabControl tabControl1;
     private System.Windows.Forms.TabPage tabPage1;
+    private EhLib.WinForms.DataGridEh dataGridEh1;
+    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private System.Windows.Forms.TabPage tabPage2;
     private System.Windows.Forms.TextBox textBox1;
     private System.Windows.Forms.BindingSource bindingSource1;
-    private EhLib.WinForms.DataGridEh dataGridEh1;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn3;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn4;
-    private System.Windows.Forms.Panel panel2;
-    private System.Windows.Forms.Button button1;
-    private EhLib.WinForms.TextBoxEh textBoxEh1;
-    private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
   }
 }

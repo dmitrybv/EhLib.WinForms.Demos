@@ -241,7 +241,7 @@ namespace ProcessList
     {
       e.Paint(e);
       Rectangle drawRect = e.ClientRect;
-      drawRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(drawRect, 2, 2, -4, -2);
+      drawRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(drawRect, 2, 2, -4, -2);
 
       HorizontalAlignment horzAlign;
       if ((e.State & EhLib.WinForms.BasePaintCellStates.RowHotTrack) != 0)
@@ -260,7 +260,7 @@ namespace ProcessList
     {
       e.Paint(e);
       Rectangle drawRect = e.ClientRect;
-      drawRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(drawRect, 2, 2, -4, -2);
+      drawRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(drawRect, 2, 2, -4, -2);
       string text = memUsageTotalPercent.ToString("0") + "%";
       HorizontalAlignment horzAlign;
       if ((e.State & EhLib.WinForms.BasePaintCellStates.RowHotTrack) != 0)

@@ -224,6 +224,15 @@ namespace MainDemo.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data Grouping.
+        /// </summary>
+        internal static string MainForm_Demos_DataGrouping {
+            get {
+                return ResourceManager.GetString("MainForm_Demos_DataGrouping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Different editors in one column.
         /// </summary>
         internal static string MainForm_Demos_DiferentEditor {

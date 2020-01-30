@@ -14,31 +14,30 @@ namespace MainDemo
   public partial class FrameSolSimpleTreeView : BaseFrame
   {
 
-    TreeListGeneric<SimpleTreeViewNode> baseTreeList = new TreeListGeneric<SimpleTreeViewNode>();
-    List<SimpleTreeViewNode> flatList = new List<SimpleTreeViewNode>();
+    List<AssemblyDataRow> baseTreeList = new List<AssemblyDataRow>();
 
     public FrameSolSimpleTreeView()
     {
       InitializeComponent();
 
-      dataGridEh1.TreeViewArea.NodeStateRenderer = new FlatTriangleTreeNodeStateRenderer();
+      dataGridEh1.TreeView.NodeStateRenderer = new FlatTriangleTreeNodeStateRenderer();
 
       LoadData();
-      bindingSource1.DataSource = flatList;
+      bindingSource1.DataSource = baseTreeList;
     }
 
     public void LoadData()
     {
       Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-      foreach(Assembly assembly in assemblies)
+      foreach (Assembly assembly in assemblies)
       {
-        SimpleTreeViewNode asseblyNode = new SimpleTreeViewNode()
+        AssemblyDataRow asseblyNode = new AssemblyDataRow()
         {
           Name = assembly.GetName().Name
         };
-
-        baseTreeList.AddNode(asseblyNode, null, TreeListNodeAttachMode.AddChild, false);
+        asseblyNode.Parent = asseblyNode; //ref it iteslf -> Root 
+        baseTreeList.Add(asseblyNode);
         //asseblyNode.Expanded = true;
 
         { //Level  2 namespaces
@@ -48,14 +47,15 @@ namespace MainDemo
 
           foreach (string namespaceName in namespaces)
           {
-            if (String.IsNullOrEmpty(namespaceName)) continue;
+            if (string.IsNullOrEmpty(namespaceName)) continue;
 
-            SimpleTreeViewNode nsNode = new SimpleTreeViewNode()
+            AssemblyDataRow nsNode = new AssemblyDataRow()
             {
-              Name = namespaceName
+              Name = namespaceName,
+              Parent = asseblyNode
             };
 
-            baseTreeList.AddNode(nsNode, asseblyNode, TreeListNodeAttachMode.AddChild, false);
+            baseTreeList.Add(nsNode);
             //nsNode.Expanded = true;
 
             { // Level 3 Types
@@ -63,12 +63,13 @@ namespace MainDemo
               {
                 if (type.Namespace == namespaceName)
                 {
-                  SimpleTreeViewNode typeNode = new SimpleTreeViewNode()
+                  AssemblyDataRow typeNode = new AssemblyDataRow()
                   {
-                    Name = type.Name
+                    Name = type.Name,
+                    Parent = nsNode
                   };
 
-                  baseTreeList.AddNode(typeNode, nsNode, TreeListNodeAttachMode.AddChild, false);
+                  baseTreeList.Add(typeNode);
                 }
               }
             }
@@ -76,38 +77,18 @@ namespace MainDemo
         }
       }
 
-      RebuildFlatList();
     }
 
-    private void RebuildFlatList()
+    public class AssemblyDataRow 
     {
-      long savedScrollPos = dataGridEh1.VertScrollBar.ScrollPos;
-      SimpleTreeViewNode curNode;
-      if (dataGridEh1.CurrentRow == null)
-        curNode = null;
-      else
-        curNode = dataGridEh1.CurrentRow.SourceItem as SimpleTreeViewNode;
-      flatList.Clear();
-      flatList.AddRange(baseTreeList.GetAsFlatList(true, true));
-      bindingSource1.ResetBindings(false);
-
-      for (int i = 0; i < bindingSource1.List.Count; i++)
+      public AssemblyDataRow()
       {
-        object item = bindingSource1.List[i];
-        if (item == curNode)
-        {
-          bindingSource1.Position = i;
-          break;
-        }
       }
-      dataGridEh1.VertScrollBar.ScrollPos = savedScrollPos;
-    }
 
-    public class SimpleTreeViewNode : BaseTreeNode
-    {
-
-      public SimpleTreeViewNode()
+      public AssemblyDataRow(string name, AssemblyDataRow parent)
       {
+        Name = name;
+        Parent = parent;
       }
 
       public string Name
@@ -116,24 +97,11 @@ namespace MainDemo
         set;
       }
 
-    }
-
-    private void dataGridEh1_TreeViewArea_NodeStateNeeded(object sender, DataGridTreeViewNodeStateNeededEventArgs e)
-    {
-      if (e.Row == null) return;
-      SimpleTreeViewNode node = (SimpleTreeViewNode)e.Row.SourceItem;
-      e.NodeLevel = node.Level;
-      e.HasChildren = node.HasChildren;
-      e.Expanded = node.Expanded;
-      e.ParentItem = node.Parent;
-    }
-
-    private void dataGridEh1_TreeViewArea_ExpandedStateSet(object sender, DataGridTreeViewNodeExpandedStateSetEventArgs e)
-    {
-      if (e.Row == null) return;
-      SimpleTreeViewNode node = (SimpleTreeViewNode)e.Row.SourceItem;
-      node.Expanded = e.Expanded;
-      RebuildFlatList();
+      public AssemblyDataRow Parent
+      {
+        get;
+        set;
+      }
     }
   }
 }

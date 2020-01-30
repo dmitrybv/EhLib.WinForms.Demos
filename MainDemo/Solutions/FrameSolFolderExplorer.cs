@@ -22,7 +22,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      dataGridEh1.TreeViewArea.NodeStateRenderer = new FlatTriangleTreeNodeStateRenderer();
+      dataGridEh1.TreeView.NodeStateRenderer = new FlatTriangleTreeNodeStateRenderer();
 
       bindingSource1.DataSource = flatList;
     }
@@ -35,7 +35,7 @@ namespace MainDemo
 
       foreach (string dirPath in directories)
       {
-        FileSystemFolterTreeNode dirNode = foltersTreeList.CreateNodeApart();
+        FileSystemFolterTreeNode dirNode = foltersTreeList.CreateNewNode();
         dirNode.Path = dirPath;
         dirNode.Name = new DirectoryInfo(dirPath).Name;
         foltersTreeList.AddNode(dirNode, foltersTreeList.Root, TreeListNodeAttachMode.AddChild, false);
@@ -64,7 +64,7 @@ namespace MainDemo
 
       foreach (string dirPath in directories)
       {
-        FileSystemFolterTreeNode dirNode = foltersTreeList.CreateNodeApart();
+        FileSystemFolterTreeNode dirNode = foltersTreeList.CreateNewNode();
         dirNode.Path = dirPath;
         dirNode.Name = new DirectoryInfo(dirPath).Name;
         foltersTreeList.AddNode(dirNode, node, TreeListNodeAttachMode.AddChild, false);
@@ -285,7 +285,7 @@ namespace MainDemo
     {
       if (e.Row == null) return;
       int custAreaWidth = 18;
-      e.CellArgs.CellClientRect = EhLib.WinForms.EhLibUtils.ChangeRectangle(e.CellArgs.CellRect, custAreaWidth, 0, -custAreaWidth, 0);
+      e.CellArgs.CellClientRect = EhLib.WinForms.EhLibUtils.CopyChangeRectangle(e.CellArgs.CellRect, custAreaWidth, 0, -custAreaWidth, 0);
     }
 
     private void dataGridTextColumn3_DataCellCustomAreaPaint(object sender, DataGridDataCellPaintEventArgs e)

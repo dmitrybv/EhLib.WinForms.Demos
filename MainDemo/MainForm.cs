@@ -46,6 +46,9 @@ namespace MainDemo
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_SearchBox, RefFrameClass = typeof(FrameSearchBox) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DiferentEditor, RefFrameClass = typeof(FramePolyCellColumn) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_CellDataIsLink, RefFrameClass = typeof(FrameCellDataIsLink) });
+      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DataGrouping, RefFrameClass = typeof(FrameDataGrouping) });
+      vertMenu.Add(new VarticalMenuItem() { MenuName = "Row Detail Panel", RefFrameClass = typeof(FrameRowDetailPanel) });
+      vertMenu.Add(new VarticalMenuItem() { MenuName = "Grid TreeView mode", RefFrameClass = typeof(FrameTreeView) });
 
       //vertMenu.Add(new VarticalMenuItem() { MenuName = "Main GridView (Tmp)", RefFrameClass = typeof(TmpFrameMainGridWithGridView) }); //Debug mode
       //vertMenu.Add(new VarticalMenuItem() { MenuName = "النص العربي", RefFrameClass = typeof(FrameSearchBox) });
@@ -129,6 +132,12 @@ namespace MainDemo
       {
         MenuName = "Simple TreeView",
         RefFrameClass = typeof(FrameSolSimpleTreeView)
+      });
+
+      vertMenuSolutions.Add(new VarticalMenuItem()
+      {
+        MenuName = "TreeView with External TreeList",
+        RefFrameClass = typeof(FrameSolExternalTreeViewList)
       });
 
       vertMenuSolutions.Add(new VarticalMenuItem()
@@ -472,6 +481,13 @@ namespace MainDemo
 
     private void MainForm_Load(object sender, EventArgs e)
     {
+      System.Reflection.Assembly ehLibAssemly = typeof(EhLib.WinForms.DataGridEh).Assembly;
+      Version ehLibVer = typeof(EhLib.WinForms.DataGridEh).Assembly.GetName().Version;
+      string ver = "Version " + ehLibVer.Major.ToString() + "." + ehLibVer.Minor.ToString();
+      string build = "Build " + ehLibVer.Major.ToString() + "." +
+                               ehLibVer.Minor.ToString() + "." +
+                               ehLibVer.Build.ToString();
+
       appUserSettings = LoadSettingsFile();
 
       if (appUserSettings.ContainsKey("MainFormSettings"))
@@ -487,6 +503,8 @@ namespace MainDemo
       string key = curFrame.SettingKey();
       if (!String.IsNullOrEmpty(key) && appUserSettings.ContainsKey(key))
         curFrame.LoadSettingsAsJSonStr(appUserSettings[key]);
+
+      Text = Text + ".  EhLib.WinForms " + ver + " " + build;
     }
 
     static internal Dictionary<string, string> LoadSettingsFile()

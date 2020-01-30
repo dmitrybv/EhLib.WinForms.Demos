@@ -34,17 +34,17 @@
       this.label1 = new System.Windows.Forms.Label();
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
-      this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-      this.dataGridTextColumn1 = new EhLib.WinForms.DataGridTextColumn();
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.textBox1 = new System.Windows.Forms.TextBox();
+      this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
+      this.dataGridTextColumn1 = new EhLib.WinForms.DataGridTextColumn();
       this.panel1.SuspendLayout();
       this.tabControl1.SuspendLayout();
       this.tabPage1.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
       this.tabPage2.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       this.SuspendLayout();
       // 
       // panel1
@@ -88,45 +88,6 @@
       this.tabPage1.Text = "Demo";
       this.tabPage1.UseVisualStyleBackColor = true;
       // 
-      // dataGridEh1
-      // 
-      this.dataGridEh1.AutoSizeColumnOptions.FitToClient = true;
-      this.dataGridEh1.DataSource = this.bindingSource1;
-      this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;
-      // 
-      // 
-      // 
-      this.dataGridEh1.EmptyDataInfo.Text = null;
-      // 
-      // 
-      // 
-      this.dataGridEh1.IndicatorColumn.Visible = false;
-      this.dataGridEh1.LineOptions.HorzLines = false;
-      this.dataGridEh1.Location = new System.Drawing.Point(3, 3);
-      this.dataGridEh1.Name = "dataGridEh1";
-      this.dataGridEh1.Size = new System.Drawing.Size(697, 591);
-      this.dataGridEh1.StaticColumns.AddRange(new EhLib.WinForms.PropertyAxisBar[] {
-            this.dataGridTextColumn1});
-      this.dataGridEh1.TabIndex = 7;
-      // 
-      // 
-      // 
-      this.dataGridEh1.TreeViewArea.Visible = true;
-      this.dataGridEh1.TreeViewArea.ExpandedStateSet += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeExpandedStateSetEventArgs>(this.dataGridEh1_TreeViewArea_ExpandedStateSet);
-      this.dataGridEh1.TreeViewArea.NodeStateNeeded += new System.EventHandler<EhLib.WinForms.DataGridTreeViewNodeStateNeededEventArgs>(this.dataGridEh1_TreeViewArea_NodeStateNeeded);
-      // 
-      // dataGridTextColumn1
-      // 
-      this.dataGridTextColumn1.DataPropertyName = "Name";
-      this.dataGridTextColumn1.FillWeight = 694F;
-      this.dataGridTextColumn1.FormatString = null;
-      this.dataGridTextColumn1.Name = "dataGridTextColumn1";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn1.Title.Text = "Name";
-      this.dataGridTextColumn1.Width = 694;
-      // 
       // tabPage2
       // 
       this.tabPage2.Controls.Add(this.textBox1);
@@ -148,6 +109,50 @@
       this.textBox1.TabIndex = 0;
       this.textBox1.Text = resources.GetString("textBox1.Text");
       // 
+      // dataGridEh1
+      // 
+      this.dataGridEh1.AutoSizeColumnOptions.FitToClient = true;
+      this.dataGridEh1.DataSource = this.bindingSource1;
+      this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;
+      // 
+      // 
+      // 
+      this.dataGridEh1.EmptyDataInfo.Text = null;
+      // 
+      // dataGridEh1.IndicatorColumn
+      // 
+      this.dataGridEh1.IndicatorColumn.Visible = false;
+      this.dataGridEh1.LineOptions.HorzLines = false;
+      this.dataGridEh1.Location = new System.Drawing.Point(3, 3);
+      this.dataGridEh1.Name = "dataGridEh1";
+      // 
+      // dataGridEh1.SearchBox
+      // 
+      this.dataGridEh1.SearchBox.Enabled = true;
+      this.dataGridEh1.Size = new System.Drawing.Size(697, 591);
+      this.dataGridEh1.StaticColumns.AddRange(new EhLib.WinForms.PropertyAxisBar[] {
+            this.dataGridTextColumn1});
+      this.dataGridEh1.TabIndex = 7;
+      // 
+      // dataGridEh1.TreeViewArea
+      // 
+      this.dataGridEh1.TreeView.RefParentRowPropertyName = "Parent";
+      this.dataGridEh1.TreeView.TreeListActive = true;
+      this.dataGridEh1.TreeView.TreeListFullBuildCheck = false;
+      this.dataGridEh1.TreeView.TreeViewAreaVisible = true;
+      // 
+      // dataGridTextColumn1
+      // 
+      this.dataGridTextColumn1.DataPropertyName = "Name";
+      this.dataGridTextColumn1.FillWeight = 694F;
+      this.dataGridTextColumn1.FormatString = null;
+      this.dataGridTextColumn1.Name = "dataGridTextColumn1";
+      // 
+      // dataGridTextColumn1.Title
+      // 
+      this.dataGridTextColumn1.Title.Text = "Name";
+      this.dataGridTextColumn1.Width = 694;
+      // 
       // FrameSolSimpleTreeView
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,10 +165,10 @@
       this.panel1.PerformLayout();
       this.tabControl1.ResumeLayout(false);
       this.tabPage1.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
       this.tabPage2.ResumeLayout(false);
       this.tabPage2.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).EndInit();
       this.ResumeLayout(false);
 
     }

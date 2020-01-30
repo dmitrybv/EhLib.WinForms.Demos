@@ -130,6 +130,10 @@
       this.colComboBoxEmpName.DataPropertyName = "EmployeeID";
       this.colComboBoxEmpName.DataSource = this.bsEmployees;
       this.colComboBoxEmpName.DisplayMember = "Name";
+      // 
+      // colComboBoxEmpName.EditButton
+      // 
+      this.colComboBoxEmpName.EditButton.StyleKind = EhLib.WinForms.InEditButtonStyleKind.AltDropDown;
       this.colComboBoxEmpName.FillWeight = 103F;
       this.colComboBoxEmpName.Name = "colComboBoxEmpName";
       // 
