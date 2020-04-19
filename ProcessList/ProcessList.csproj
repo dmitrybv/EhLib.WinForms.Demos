@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EhLib.WinForms, Version=1.2.23.0, Culture=neutral, PublicKeyToken=748c2e28ac7015df, processorArchitecture=MSIL">
-      <HintPath>..\packages\EhLib.WinForms.1.2.23-trial\lib\net40\EhLib.WinForms.dll</HintPath>
+    <Reference Include="EhLib.WinForms, Version=1.4.10.0, Culture=neutral, PublicKeyToken=748c2e28ac7015df, processorArchitecture=MSIL">
+      <HintPath>..\packages\EhLib.WinForms.1.4.10-trial\lib\net40\EhLib.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="EhLib.WinForms.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d379614f4f89b099, processorArchitecture=MSIL">
-      <HintPath>..\packages\EhLib.WinForms.1.2.23-trial\lib\net40\EhLib.WinForms.Design.dll</HintPath>
+      <HintPath>..\packages\EhLib.WinForms.1.4.10-trial\lib\net40\EhLib.WinForms.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

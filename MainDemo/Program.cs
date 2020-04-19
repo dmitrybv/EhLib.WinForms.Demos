@@ -14,8 +14,8 @@ namespace MainDemo
     [STAThread]
     static void Main()
     {
-      //EhLib.EhLibUtils.DebugDraw = true;
-      //EhLib.EhLibManager.DefaultEhLibManager.DropDownDebug = true;
+      //EhLib.WinForms.EhLibUtils.DebugPaint = true;
+      //EhLib.WinForms.EhLibManager.DefaultEhLibManager.DropDownDebug = true;
 
       AppDomain.CurrentDomain.UnhandledException +=
           new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);

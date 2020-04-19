@@ -120,7 +120,7 @@
       // 
       this.dataGridEh1.DataGrouping.GroupPanel.Visible = true;
       this.dataGridEh1.DataGrouping.Padding = new System.Windows.Forms.Padding(6, 4, 0, 10);
-      this.dataGridEh1.DataGrouping.GroupDescriprionsChanged += new System.EventHandler(this.dataGridEh1_DataGrouping_GroupDescriprionsChanged);
+      this.dataGridEh1.DataGrouping.GroupDescriptionsChanged += new System.EventHandler(this.dataGridEh1_DataGrouping_GroupDescriptionsChanged);
       this.dataGridEh1.DataMember = "";
       this.dataGridEh1.DataSource = this.ordersBindingSource;
       this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;

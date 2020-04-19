@@ -27,10 +27,10 @@ namespace MainDemo
       row1.DataGroupingNode.Expanded = true;
 
       dataGridEh1.CurrentRowIndex = 2;
-      dataGridEh1_DataGrouping_GroupDescriprionsChanged(null, null);
+      dataGridEh1_DataGrouping_GroupDescriptionsChanged(null, null);
     }
 
-    private void dataGridEh1_DataGrouping_GroupDescriprionsChanged(object sender, EventArgs e)
+    private void dataGridEh1_DataGrouping_GroupDescriptionsChanged(object sender, EventArgs e)
     {
       int cnt = dataGridEh1.DataGrouping.GroupDescriptions.Count;
       for (int i = 0; i < cnt; i++)

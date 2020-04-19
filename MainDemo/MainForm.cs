@@ -42,16 +42,15 @@ namespace MainDemo
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_RowsAutoExpent, RefFrameClass = typeof(FrameRowsAutoExpand) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_PropertyGrid, RefFrameClass = typeof(FramePropertyGrid) });
 
-      //vertMenu.Add(new VarticalMenuItem() { MenuName = "Edit Controls", RefFrameClass = typeof(FrameEditControls) });
+      //vertMenu.Add(new VerticalMenuItem() { MenuName = "Edit Controls", RefFrameClass = typeof(FrameEditControls) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_SearchBox, RefFrameClass = typeof(FrameSearchBox) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DiferentEditor, RefFrameClass = typeof(FramePolyCellColumn) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_CellDataIsLink, RefFrameClass = typeof(FrameCellDataIsLink) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DataGrouping, RefFrameClass = typeof(FrameDataGrouping) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = "Row Detail Panel", RefFrameClass = typeof(FrameRowDetailPanel) });
       vertMenu.Add(new VarticalMenuItem() { MenuName = "Grid TreeView mode", RefFrameClass = typeof(FrameTreeView) });
-
-      //vertMenu.Add(new VarticalMenuItem() { MenuName = "Main GridView (Tmp)", RefFrameClass = typeof(TmpFrameMainGridWithGridView) }); //Debug mode
-      //vertMenu.Add(new VarticalMenuItem() { MenuName = "النص العربي", RefFrameClass = typeof(FrameSearchBox) });
+      vertMenu.Add(new VarticalMenuItem() { MenuName = "Planner", RefFrameClass = typeof(FramePlanner) });
+      vertMenu.Add(new VarticalMenuItem() { MenuName = "Pivot Grid", RefFrameClass = typeof(FramePivotGrid) });
 
       bsVertMenuDemos.DataSource = vertMenu;
 
