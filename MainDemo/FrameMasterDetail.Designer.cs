@@ -35,8 +35,6 @@
       this.label1 = new System.Windows.Forms.Label();
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
       this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.ordersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
       this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -49,7 +47,6 @@
       this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-      this.order_DetailsTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.Order_DetailsTableAdapter();
       this.splitContainer1 = new System.Windows.Forms.SplitContainer();
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
       this.dataGrid2 = new EhLib.WinForms.DataGridEh();
@@ -101,22 +98,6 @@
       // 
       this.ordersBindingSource.DataMember = "Orders";
       this.ordersBindingSource.DataSource = this.northwindDataSet;
-      // 
-      // ordersTableAdapter
-      // 
-      this.ordersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // ordersBindingNavigator
       // 
@@ -200,6 +181,7 @@
       // 
       this.bindingNavigatorPositionItem.AccessibleName = "Position";
       this.bindingNavigatorPositionItem.AutoSize = false;
+      this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
       this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
       this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
       this.bindingNavigatorPositionItem.Text = "0";
@@ -233,10 +215,6 @@
       this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
       this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 23);
       // 
-      // order_DetailsTableAdapter
-      // 
-      this.order_DetailsTableAdapter.ClearBeforeFill = true;
-      // 
       // splitContainer1
       // 
       this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,7 +247,6 @@
       this.dataGrid1.Background.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 10);
       this.dataGrid1.Background.ImageOptions.Scale = 0.8D;
       this.dataGrid1.Background.Visible = true;
-      this.dataGrid1.ColumnOptions.CacheDisplayValues = false;
       this.dataGrid1.DataSource = this.ordersBindingSource;
       this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
@@ -299,7 +276,6 @@
       this.dataGrid2.Background.ImageOptions.Padding = new System.Windows.Forms.Padding(0, 0, 10, 30);
       this.dataGrid2.Background.ImageOptions.Scale = 0.7D;
       this.dataGrid2.Background.Visible = true;
-      this.dataGrid2.ColumnOptions.CacheDisplayValues = false;
       this.dataGrid2.DataSource = this.order_DetailsBindingSource;
       this.dataGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
@@ -409,8 +385,6 @@
     private System.Windows.Forms.Label label1;
     private NorthwindDataSet northwindDataSet;
     private System.Windows.Forms.BindingSource ordersBindingSource;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.BindingNavigator ordersBindingNavigator;
     private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
     private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -424,7 +398,6 @@
     private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
     private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
     private System.Windows.Forms.BindingSource order_DetailsBindingSource;
-    private NorthwindDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter;
     private System.Windows.Forms.SplitContainer splitContainer1;
     private EhLib.WinForms.DataGridEh dataGrid1;
     private EhLib.WinForms.DataGridEh dataGrid2;

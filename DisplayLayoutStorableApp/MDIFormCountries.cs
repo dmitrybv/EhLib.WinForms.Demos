@@ -46,7 +46,6 @@ namespace DisplayLayoutStorableApp
     private void MDIChildForm_Load(object sender, EventArgs e)
     {
       //// TODO: This line of code loads data into the 'dBTestDataSet.country' table. You can move, or remove it, as needed.
-      //this.countryTableAdapter.Fill(this.dBTestDataSet.country);
       dBTestDataSet.LoadDataFile();
 
       LoadSettings();

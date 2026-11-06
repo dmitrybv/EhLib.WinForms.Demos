@@ -29,13 +29,10 @@
     private void InitializeComponent()
     {
       this.components = new System.ComponentModel.Container();
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameSolDataGridCustomDataCellPaint));
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.countryTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.countryTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
@@ -51,12 +48,6 @@
       this.dataGridSuperTitle1 = new EhLib.WinForms.DataGridSuperTitle();
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.textBox1 = new System.Windows.Forms.TextBox();
-      this.dataGridTextColumn6 = new EhLib.WinForms.DataGridTextColumn();
-      this.dataGridTextColumn7 = new EhLib.WinForms.DataGridTextColumn();
-      this.dataGridTextColumn8 = new EhLib.WinForms.DataGridTextColumn();
-      this.dataGridTextColumn9 = new EhLib.WinForms.DataGridTextColumn();
-      this.dataGridTextColumn10 = new EhLib.WinForms.DataGridTextColumn();
-      this.imageList1 = new System.Windows.Forms.ImageList(this.components);
       this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.biolifeDataSet)).BeginInit();
@@ -96,17 +87,6 @@
       this.countryBindingSource.DataMember = "country";
       this.countryBindingSource.DataSource = this.biolifeDataSet;
       // 
-      // countryTableAdapter
-      // 
-      this.countryTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = this.countryTableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // tabControl1
       // 
       this.tabControl1.Controls.Add(this.tabPage1);
@@ -131,7 +111,6 @@
       // 
       // dataGrid1
       // 
-      this.dataGrid1.Cursor = System.Windows.Forms.Cursors.Default;
       this.dataGrid1.DataSource = this.countryBindingSource;
       this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
@@ -153,7 +132,7 @@
             this.dataGridCheckBoxColumn4});
       this.dataGrid1.TabIndex = 7;
       // 
-      // 
+      // dataGrid1.Title
       // 
       this.dataGrid1.Title.HorzAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
@@ -172,23 +151,23 @@
       this.dataGridTextColumn1.DataPropertyName = "Name";
       this.dataGridTextColumn1.Name = "dataGridTextColumn1";
       // 
-      // 
+      // dataGridTextColumn1.Title
       // 
       this.dataGridTextColumn1.Title.Text = "Name";
       this.dataGridTextColumn1.Width = 199;
+      this.dataGridTextColumn1.DataCellClientAreaNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellClientAreaNeededEventArgs>(this.dataGridTextColumn1_DataCellClientAreaNeeded);
       this.dataGridTextColumn1.DataCellCustomAreaPaint += new System.EventHandler<EhLib.WinForms.DataGridDataCellPaintEventArgs>(this.dataGridTextColumn1_DataCellCustomAreaPaint);
       this.dataGridTextColumn1.DataCellMouseDown += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseDown);
       this.dataGridTextColumn1.DataCellMouseMove += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseMove);
       this.dataGridTextColumn1.DataCellMouseLeave += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseLeaveEventArgs>(this.dataGridTextColumn1_DataCellMouseLeave);
       this.dataGridTextColumn1.DataCellMouseHover += new System.EventHandler<EhLib.WinForms.DataGridDataCellMouseEventArgs>(this.dataGridTextColumn1_DataCellMouseHover);
-      this.dataGridTextColumn1.DataCellClientAreaNeeded += new System.EventHandler<EhLib.WinForms.DataGridDataCellClientAreaNeededEventArgs>(this.dataGridTextColumn1_DataCellClientAreaNeeded);
       // 
       // dataGridTextColumn2
       // 
       this.dataGridTextColumn2.DataPropertyName = "Capital";
       this.dataGridTextColumn2.Name = "dataGridTextColumn2";
       // 
-      // 
+      // dataGridTextColumn2.Title
       // 
       this.dataGridTextColumn2.Title.Text = "Capital";
       this.dataGridTextColumn2.Width = 179;
@@ -198,7 +177,7 @@
       this.dataGridTextColumn3.DataPropertyName = "Continent";
       this.dataGridTextColumn3.Name = "dataGridTextColumn3";
       // 
-      // 
+      // dataGridTextColumn3.Title
       // 
       this.dataGridTextColumn3.Title.Text = "Continent";
       this.dataGridTextColumn3.Width = 119;
@@ -208,7 +187,7 @@
       this.dataGridTextColumn4.DataPropertyName = "Area";
       this.dataGridTextColumn4.Name = "dataGridTextColumn4";
       // 
-      // 
+      // dataGridTextColumn4.Title
       // 
       this.dataGridTextColumn4.Title.Text = "Area";
       // 
@@ -217,7 +196,7 @@
       this.dataGridTextColumn5.DataPropertyName = "Population";
       this.dataGridTextColumn5.Name = "dataGridTextColumn5";
       // 
-      // 
+      // dataGridTextColumn5.Title
       // 
       this.dataGridTextColumn5.Title.Text = "Population";
       // 
@@ -227,7 +206,7 @@
       this.dataGridCheckBoxColumn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.dataGridCheckBoxColumn1.Name = "dataGridCheckBoxColumn1";
       // 
-      // 
+      // dataGridCheckBoxColumn1.Title
       // 
       this.dataGridCheckBoxColumn1.Title.Text = "bus";
       this.dataGridCheckBoxColumn1.Width = 50;
@@ -238,7 +217,7 @@
       this.dataGridCheckBoxColumn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.dataGridCheckBoxColumn2.Name = "dataGridCheckBoxColumn2";
       // 
-      // 
+      // dataGridCheckBoxColumn2.Title
       // 
       this.dataGridCheckBoxColumn2.Title.Text = "car";
       this.dataGridCheckBoxColumn2.Width = 50;
@@ -249,7 +228,7 @@
       this.dataGridCheckBoxColumn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.dataGridCheckBoxColumn3.Name = "dataGridCheckBoxColumn3";
       // 
-      // 
+      // dataGridCheckBoxColumn3.Title
       // 
       this.dataGridCheckBoxColumn3.Title.Text = "chopper";
       this.dataGridCheckBoxColumn3.Width = 50;
@@ -260,7 +239,7 @@
       this.dataGridCheckBoxColumn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.dataGridCheckBoxColumn4.Name = "dataGridCheckBoxColumn4";
       // 
-      // 
+      // dataGridCheckBoxColumn4.Title
       // 
       this.dataGridCheckBoxColumn4.Title.Text = "rocket";
       this.dataGridCheckBoxColumn4.Width = 50;
@@ -298,66 +277,6 @@
       this.textBox1.Text = "Use \r\n  DataGridEh.DataCellQueryFillFormatParams event \r\nto change cell format li" +
     "ke BackColor, ForeColor, Font for every cell in the row.";
       // 
-      // dataGridTextColumn6
-      // 
-      this.dataGridTextColumn6.DataPropertyName = "Name";
-      this.dataGridTextColumn6.Name = "dataGridTextColumn6";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn6.Title.Text = "Name";
-      this.dataGridTextColumn6.Width = 203;
-      // 
-      // dataGridTextColumn7
-      // 
-      this.dataGridTextColumn7.DataPropertyName = "Capital";
-      this.dataGridTextColumn7.Name = "dataGridTextColumn7";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn7.Title.Text = "Capital";
-      this.dataGridTextColumn7.Width = 179;
-      // 
-      // dataGridTextColumn8
-      // 
-      this.dataGridTextColumn8.DataPropertyName = "Continent";
-      this.dataGridTextColumn8.Name = "dataGridTextColumn8";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn8.Title.Text = "Continent";
-      this.dataGridTextColumn8.Width = 119;
-      // 
-      // dataGridTextColumn9
-      // 
-      this.dataGridTextColumn9.DataPropertyName = "Area";
-      this.dataGridTextColumn9.Name = "dataGridTextColumn9";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn9.Title.Text = "Area";
-      // 
-      // dataGridTextColumn10
-      // 
-      this.dataGridTextColumn10.DataPropertyName = "Population";
-      this.dataGridTextColumn10.Name = "dataGridTextColumn10";
-      // 
-      // 
-      // 
-      this.dataGridTextColumn10.Title.Text = "Population";
-      // 
-      // imageList1
-      // 
-      this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-      this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-      this.imageList1.Images.SetKeyName(0, "bus-16x16.png");
-      this.imageList1.Images.SetKeyName(1, "car-16x16.png");
-      this.imageList1.Images.SetKeyName(2, "helicopter-16x16.png");
-      this.imageList1.Images.SetKeyName(3, "rocket-16x16.png");
-      this.imageList1.Images.SetKeyName(4, "bike-16x16.png");
-      this.imageList1.Images.SetKeyName(5, "balloon-16x16.png");
-      this.imageList1.Images.SetKeyName(6, "boat-16x16.png");
-      // 
       // FrameSolDataGridCustomDataCellPaint
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,15 +304,8 @@
     private System.Windows.Forms.Label label1;
     private BiolifeDataSet biolifeDataSet;
     private System.Windows.Forms.BindingSource countryBindingSource;
-    private BiolifeDataSetTableAdapters.countryTableAdapter countryTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.TabControl tabControl1;
     private System.Windows.Forms.TabPage tabPage1;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn6;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn7;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn8;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn9;
-    private EhLib.WinForms.DataGridTextColumn dataGridTextColumn10;
     private EhLib.WinForms.DataGridEh dataGrid1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn2;
@@ -402,7 +314,6 @@
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn5;
     private System.Windows.Forms.TabPage tabPage2;
     private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.ImageList imageList1;
     private EhLib.WinForms.DataGridCheckBoxColumn dataGridCheckBoxColumn1;
     private EhLib.WinForms.DataGridCheckBoxColumn dataGridCheckBoxColumn2;
     private EhLib.WinForms.DataGridCheckBoxColumn dataGridCheckBoxColumn3;

@@ -43,8 +43,6 @@
       this.dataGridTextColumn5 = new EhLib.WinForms.DataGridTextColumn();
       this.colWikiLink = new EhLib.WinForms.DataGridTextColumn();
       this.colUrl = new EhLib.WinForms.DataGridTextColumn();
-      this.countryTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.countryTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
@@ -176,17 +174,6 @@
       this.colUrl.Visible = false;
       this.colUrl.Width = 163;
       // 
-      // countryTableAdapter
-      // 
-      this.countryTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = this.countryTableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // FrameCellDataIsLink
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,8 +199,6 @@
     private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
     private System.Windows.Forms.BindingSource countryBindingSource;
     private BiolifeDataSet biolifeDataSet;
-    private BiolifeDataSetTableAdapters.countryTableAdapter countryTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn2;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn3;

@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<BiolifeDataSet xmlns="http://tempuri.org/BiolifeDataSet.xsd">
+  <PlannerResources>
+    <ID>1</ID>
+    <ResName>Roberto Nelson</ResName>
+    <Activity>Mining and treasure hunting</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>2</ID>
+    <ResName>Bruce Young</ResName>
+    <Activity>Compound interest and investments</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>3</ID>
+    <ResName>Kim Lambert</ResName>
+    <Activity>Theft, forgery and Facebook</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>4</ID>
+    <ResName>Leslie Johnson</ResName>
+    <Activity>Inheritance and conglomerates</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>5</ID>
+    <ResName>Phil Forest</ResName>
+    <Activity>Oil and gas</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>6</ID>
+    <ResName>K. J. Weston</ResName>
+    <Activity>Defense</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>7</ID>
+    <ResName>Terri Lee</ResName>
+    <Activity>Marauding</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>8</ID>
+    <ResName>Stewart Hall</ResName>
+    <Activity>Inheritance and defense</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>9</ID>
+    <ResName>Katherine Young</ResName>
+    <Activity>Real estate</Activity>
+  </PlannerResources>
+  <PlannerResources>
+    <ID>10</ID>
+    <ResName>Chris Papadopoulos</ResName>
+    <Activity>Inheritance</Activity>
+  </PlannerResources>
+</BiolifeDataSet>

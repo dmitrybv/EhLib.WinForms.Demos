@@ -72,8 +72,8 @@ namespace MainDemo
 
     private void FramePlanner_Load(object sender, EventArgs e)
     {
-      this.plannerResourcesTableAdapter.Fill(this.biolifeDataSet.PlannerResources);
-      this.plannerDataTableAdapter.Fill(this.biolifeDataSet.PlannerData);
+      this.biolifeDataSet.LoadPlannerResources();
+      this.biolifeDataSet.LoadPlannerData();
     }
 
     private void button2_Click(object sender, EventArgs e)

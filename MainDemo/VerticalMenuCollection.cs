@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MainDemo
 {
-  class VarticalMenuCollection : List<VarticalMenuItem>
+  class VerticalMenuCollection : List<VerticalMenuItem>
   {
 
   }
 
-  class VarticalMenuItem
+  class VerticalMenuItem
   {
     public string MenuName { get; set; }
     public Type RefFrameClass { get; set; }

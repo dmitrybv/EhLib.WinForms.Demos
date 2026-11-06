@@ -55,8 +55,6 @@
       this.splitContainer1 = new System.Windows.Forms.SplitContainer();
       this.richTextBoxEh1 = new EhLib.WinForms.RichTextBoxEh();
       this.richTextBoxEh2 = new EhLib.WinForms.RichTextBoxEh();
-      this.productsTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.ProductsTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.panel1.SuspendLayout();
       this.tabControl1.SuspendLayout();
       this.tabPage1.SuspendLayout();
@@ -365,22 +363,6 @@
       this.richTextBoxEh2.TabIndex = 2;
       this.richTextBoxEh2.WordWrap = false;
       // 
-      // productsTableAdapter
-      // 
-      this.productsTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = null;
-      this.tableAdapterManager.ProductsTableAdapter = this.productsTableAdapter;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // FrameSolDataGridProgressBars
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,8 +407,6 @@
     private EhLib.WinForms.DataGridTextColumn dataGrid1UnitsOnOrderColumn;
     private EhLib.WinForms.DataGridTextColumn dataGrid1ReorderLevelColumn;
     private EhLib.WinForms.DataGridCheckBoxColumn dataGrid1DiscontinuedColumn;
-    private NorthwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridProgressBarColumn dataGridProgressBarColumn1;
     private EhLib.WinForms.DataGridProgressBarColumn dataGridProgressBarColumn2;
     private EhLib.WinForms.DataGridProgressBarColumn dataGridProgressBarColumn3;

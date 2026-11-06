@@ -19,10 +19,10 @@ namespace MainDemo
 
       //colShipFee.Footers[0].ValueFunction = DataGridFooterValueFunction.Sum;
 
-      this.ordersTableAdapter.Fill(this.northwindDataSet.Orders);
+      this.northwindDataSet.LoadOrders();
 
-      new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter().Fill(this.northwindDataSet.Employees);
-      new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter().Fill(this.northwindDataSet.Customers);
+      this.northwindDataSet.LoadEmployees();
+      this.northwindDataSet.LoadCustomers();
 
     }
 

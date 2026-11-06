@@ -38,6 +38,7 @@ namespace ProcessList
       //colDisplayName.Title.SortMarker = SortOrder.Ascending;
       gridProcessList.Title.SortMarking.SortMarkers.SetSortState(colDisplayName, ListSortDirection.Ascending);
 
+      this.Text = this.Text + " (" + System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription + ")";
     }
 
     private void SortProcessList()

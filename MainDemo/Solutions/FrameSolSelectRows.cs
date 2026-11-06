@@ -20,7 +20,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
 
       gridSelectedRows.DataSource = selectedRows;
 

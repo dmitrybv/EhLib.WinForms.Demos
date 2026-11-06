@@ -16,7 +16,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
     }
 
     private void UpdateHorzScrollBar()
@@ -47,7 +47,7 @@ namespace MainDemo
     {
       this.Validate();
       this.countryBindingSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.biolifeDataSet);
+      this.biolifeDataSet.AcceptChanges();
     }
 
     private void label1_Click(object sender, EventArgs e)

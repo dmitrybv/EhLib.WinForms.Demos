@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MainForm_Caption" xml:space="preserve">
+    <value>EhLib - Основное комплексное демонстрационное приложение</value>
+  </data>
+  <data name="MainForm_MenuAbout" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="MainForm_MenuExit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="MainForm_MenuFile" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="MainForm_MenuLanguage" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="MainForm_StatusBarInfo" xml:space="preserve">
+    <value>Основное демонстрационное приложение. Показывает все основные особенности и функции библиотеки.</value>
+  </data>
   <data name="Edit_Copy" xml:space="preserve">
     <value>Копировать</value>
   </data>
@@ -132,8 +150,20 @@
   <data name="HelpAbout_ToolTip" xml:space="preserve">
     <value>О программе</value>
   </data>
-  <data name="MainForm_Caption" xml:space="preserve">
-    <value>EhLib - Основное комплексное демонстрационное приложение</value>
+  <data name="MainForm_Demos_Page" xml:space="preserve">
+    <value>Демонстрация</value>
+  </data>
+  <data name="MainForm_Solutions_Page" xml:space="preserve">
+    <value>Решения</value>
+  </data>
+  <data name="PrintPreview_ToolTip" xml:space="preserve">
+    <value>Предварительный просмотр</value>
+  </data>
+  <data name="RightToLeft_LeftToRightDirection_ToolTip" xml:space="preserve">
+    <value>Использовать/не использовать визуальные стили</value>
+  </data>
+  <data name="UseUnuseVisualStyles_ToolTip" xml:space="preserve">
+    <value>Направление Слева на право/Справа на лево</value>
   </data>
   <data name="MainForm_Demos_CellDataIsLink" xml:space="preserve">
     <value>Текст в ячейке как ссылка</value>
@@ -147,35 +177,11 @@
   <data name="MainForm_Demos_MasterDetail" xml:space="preserve">
     <value>Главный/Подчиненный</value>
   </data>
-  <data name="MainForm_Demos_Page" xml:space="preserve">
-    <value>Демонстрация</value>
-  </data>
   <data name="MainForm_Demos_RowsAutoExpent" xml:space="preserve">
     <value>Автоматическая высота строк</value>
   </data>
   <data name="MainForm_Demos_SearchBox" xml:space="preserve">
     <value>Строка поиска</value>
-  </data>
-  <data name="MainForm_Demos_VerticalGrid" xml:space="preserve">
-    <value>Вертикальный грид</value>
-  </data>
-  <data name="MainForm_MenuAbout" xml:space="preserve">
-    <value>О программе</value>
-  </data>
-  <data name="MainForm_MenuExit" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="MainForm_MenuFile" xml:space="preserve">
-    <value>Файл</value>
-  </data>
-  <data name="MainForm_MenuLanguage" xml:space="preserve">
-    <value>Язык</value>
-  </data>
-  <data name="MainForm_Solutions_Page" xml:space="preserve">
-    <value>Решения</value>
-  </data>
-  <data name="MainForm_StatusBarInfo" xml:space="preserve">
-    <value>Основное демонстрационное приложение. Показывает все основные особенности и функции библиотеки.</value>
   </data>
   <data name="MainGrid_Customer_Title" xml:space="preserve">
     <value>Заказчик</value>
@@ -207,13 +213,7 @@
   <data name="MainGrid_ShipperName_Title" xml:space="preserve">
     <value>Поставщик</value>
   </data>
-  <data name="PrintPreview_ToolTip" xml:space="preserve">
-    <value>Предварительный просмотр</value>
-  </data>
-  <data name="RightToLeft_LeftToRightDirection_ToolTip" xml:space="preserve">
-    <value>Использовать/не использовать визуальные стили</value>
-  </data>
-  <data name="UseUnuseVisualStyles_ToolTip" xml:space="preserve">
-    <value>Направление Слева на право/Справа на лево</value>
+  <data name="MainForm_Demos_VerticalGrid" xml:space="preserve">
+    <value>Вертикальный грид</value>
   </data>
 </root>

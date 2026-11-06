@@ -30,12 +30,9 @@
     {
       this.components = new System.ComponentModel.Container();
       this.panel1 = new System.Windows.Forms.Panel();
+      this.label1 = new System.Windows.Forms.Label();
       this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
-      this.label1 = new System.Windows.Forms.Label();
-      this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
-      this.order_DetailsTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.Order_DetailsTableAdapter();
       this.order_DetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
       this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -74,16 +71,6 @@
       this.panel1.Size = new System.Drawing.Size(861, 36);
       this.panel1.TabIndex = 1;
       // 
-      // ordersBindingSource
-      // 
-      this.ordersBindingSource.DataMember = "Orders";
-      this.ordersBindingSource.DataSource = this.northwindDataSet;
-      // 
-      // northwindDataSet
-      // 
-      this.northwindDataSet.DataSetName = "NorthwindDataSet";
-      this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-      // 
       // label1
       // 
       this.label1.AutoSize = true;
@@ -94,25 +81,15 @@
       this.label1.TabIndex = 0;
       this.label1.Text = "Row Detail Panel";
       // 
-      // ordersTableAdapter
+      // ordersBindingSource
       // 
-      this.ordersTableAdapter.ClearBeforeFill = true;
+      this.ordersBindingSource.DataMember = "Orders";
+      this.ordersBindingSource.DataSource = this.northwindDataSet;
       // 
-      // tableAdapterManager
+      // northwindDataSet
       // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
-      // order_DetailsTableAdapter
-      // 
-      this.order_DetailsTableAdapter.ClearBeforeFill = true;
+      this.northwindDataSet.DataSetName = "NorthwindDataSet";
+      this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
       // 
       // order_DetailsBindingSource
       // 
@@ -341,10 +318,7 @@
     private System.Windows.Forms.Label label1;
     private NorthwindDataSet northwindDataSet;
     private System.Windows.Forms.BindingSource ordersBindingSource;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.BindingSource order_DetailsBindingSource;
-    private NorthwindDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter;
     private EhLib.WinForms.DataGridEh dataGrid1;
     private System.Windows.Forms.TabControl tabControl1;
     private System.Windows.Forms.TabPage tabPage1;

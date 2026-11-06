@@ -16,7 +16,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      biolifeTableAdapter.Fill(biolifeDataSet.Biolife);
+      biolifeDataSet.LoadBiolife();
     }
   }
 }

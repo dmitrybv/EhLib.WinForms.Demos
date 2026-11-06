@@ -31,8 +31,6 @@
       this.components = new System.ComponentModel.Container();
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.biolifeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.biolifeTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.BiolifeTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.dataGridTextColumn1 = new EhLib.WinForms.DataGridTextColumn();
       this.dataGridTextColumn2 = new EhLib.WinForms.DataGridTextColumn();
       this.dataGridTextColumn3 = new EhLib.WinForms.DataGridTextColumn();
@@ -70,17 +68,6 @@
       // 
       this.biolifeBindingSource.DataMember = "Biolife";
       this.biolifeBindingSource.DataSource = this.biolifeDataSet;
-      // 
-      // biolifeTableAdapter
-      // 
-      this.biolifeTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = this.biolifeTableAdapter;
-      this.tableAdapterManager.countryTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // dataGridTextColumn1
       // 
@@ -302,8 +289,6 @@
     private System.Windows.Forms.Label label1;
     private BiolifeDataSet biolifeDataSet;
     private System.Windows.Forms.BindingSource biolifeBindingSource;
-    private BiolifeDataSetTableAdapters.BiolifeTableAdapter biolifeTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.SplitContainer splitContainer1;
     private EhLib.WinForms.DataGridEh dataGrid1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;

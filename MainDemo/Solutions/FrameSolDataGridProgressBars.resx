@@ -124,63 +124,92 @@
     <value>14, 16</value>
   </metadata>
   <data name="richTextBoxEh1.Rtf" xml:space="preserve">
-    <value>{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fswiss\fprq2\fcharset204 Segoe UI;}{\f1\fmodern\fprq1\fcharset204 Consolas;}{\f2\fswiss\fprq2\fcharset0 Calibri;}}
+    <value>{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fswiss\fprq2\fcharset204 Segoe UI;}{\f1\fmodern\fprq1\fcharset204 Consolas;}{\f2\fmodern\fprq1\fcharset0 Consolas;}{\f3\fswiss\fprq2\fcharset0 Calibri;}}
 {\colortbl ;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}
-\viewkind4\uc1\pard\sl252\slmult1\lang1033\b\f0\fs18 Using ProgressBarColumn in DataGridEh\par
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\sl252\slmult1\b\f0\fs18 Using ProgressBarColumn in DataGridEh\par
 \b0\par
 In this Demo\par
 In column "ProgressBar 1", the following properties and events are configured.\par
+
 \pard\fi709\sl252\slmult1\par
 \f1 property DataPropertyName = "UnitPrice"\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 Specifies the name of the property from which the progress calculation indicators will be taken for display in the cell.\par
 \cf0\f0\fs18\par
+
 \pard\fi708\sl252\slmult1\f1 property MaxValue = 100\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 //Sets the value that will correspond to 100 percent of the progress.\par
+
 \pard\fi708\sl252\slmult1\cf0\f0\fs18\par
-\lang1049\f1 property MinValue = 0\par
-\pard\fi-1\li993\sl252\slmult1\cf1\lang1033\fs19 //Sets the value that will correspond to 0 percent of the progress.\par
-\pard\sl252\slmult1\cf0\f0\fs18\par
+\f1 property MinValue = 0\par
+
+\pard\fi-1\li993\sl252\slmult1\cf1\f2\fs19\lang1033 //Sets the value that will correspond to 0 percent of the progress.\par
+
+\pard\sl252\slmult1\cf0\f0\fs18\lang1049\par
 In column "ProgressBar 2", the following properties and events are configured.\par
+
 \pard\fi709\sl252\slmult1\par
 \f1 BarFillColor = RGB(166,240, 193)\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 //lime color\par
 \cf0\f0\fs18\par
+
 \pard\fi708\sl252\slmult1\f1 property BarFrameColor = RGB(128, 64, 0)\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 //brown color\par
+
 \pard\fi708\sl252\slmult1\cf0\f0\fs18\par
 \f1 property Font = new Font("Microsoft Sans Serif", 7.5)\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 //Text font\par
+
 \pard\sl252\slmult1\cf0\f0\fs18\par
 \par
+
 \pard\fi-1\li709\sl252\slmult1\f1 event DataCellFormatParamsNeeded = DataGridProgressBarColumn2_DataCellFormatParamsNeeded\par
+
 \pard\fi-1\li993\sl252\slmult1\cf1\fs19 // Change font style to bold if the value is more then MaxValue / 3\par
+
 \pard\sl252\slmult1\par
 \par
 \cf0\f0\fs18 In column "ProgressBar 3", the following properties and events are configured:\par
+
 \pard\fi709\sl252\slmult1\par
+
 \pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 ProgressBarRenderer = \cf3 new\cf2  EhLib.SlopeGradientProgressBarRenderer()\cf1\par
-//\cf0\f2\fs22  \cf1\f1\fs19 Use nondefault Rendering class to paint progress bar\par
+//\cf0\f3\fs22\lang1033  \cf1\f1\fs19\lang1049 Use nondefault Rendering class to paint progress bar\par
+
 \pard\sl252\slmult1\cf0\f0\fs18\par
 \par
 In column "ProgressBar 4", the following properties and events are configured:\par
+
 \pard\fi709\sl252\slmult1\par
+
 \pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 property ProgressBarRenderer = \cf3 new\cf2  EhLib.SlopeGradientProgressBarRenderer()\cf1\par
-//\cf0\f2\fs22  \cf1\f1\fs19 Use nondefault Rendering class to paint progress bar\par
+//\cf0\f3\fs22\lang1033  \cf1\f1\fs19\lang1049 Use nondefault Rendering class to paint progress bar\par
+
 \pard\sl252\slmult1\cf0\f0\fs18\par
+
 \pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 event DataCellFormatParamsNeeded +=dataGridProgressBarColumn1_DataCellFormatParamsNeeded\par
 \cf1 // Shift the BarFillColor towards orange as the cell value changes towards the maximum value.\par
+
 \pard\sl252\slmult1\cf0\f0\fs18\par
+
 \pard\fi-1\li993\sl252\slmult1\cf2\f1\fs19 event DataCellDisplayValueNeeded += dataGridProgressBarColumn1_DataCellDisplayValueNeeded\par
 \cf1 // Change progress bar text if cell value more than 100 or less than 1.\par
+
 \pard\sl252\slmult1\cf0\f0\fs18\par
 \par
 }
 </value>
   </data>
   <data name="richTextBoxEh2.Rtf" xml:space="preserve">
-    <value>{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fmodern\fprq1\fcharset204 Consolas;}{\f1\fswiss\fprq2\fcharset204 Segoe UI;}{\f2\fnil\fcharset204 Microsoft Sans Serif;}}
+    <value>{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fmodern\fprq1\fcharset204 Consolas;}{\f1\fswiss\fprq2\fcharset204 Segoe UI;}{\f2\fnil\fcharset204 Microsoft Sans Serif;}}
 {\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red43\green145\blue175;\red163\green21\blue21;}
-\viewkind4\uc1\pard\cf1\lang1033\f0\fs19 using\cf2  System;\par
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\cf1\f0\fs19 using\cf2  System;\par
 \cf1 using\cf2  System.Collections.Generic;\par
 \cf1 using\cf2  System.ComponentModel;\par
 \cf1 using\cf2  System.Drawing;\par
@@ -207,7 +236,7 @@ In column "ProgressBar 4", the following properties and events are configured:\p
       dataGridProgressBarColumn3.ProgressBarRenderer = \cf1 new\cf2  EhLib.SlopeGradientProgressBarRenderer();\par
       dataGridProgressBarColumn4.ProgressBarRenderer = \cf1 new\cf2  EhLib.SlopeGradientProgressBarRenderer();\par
 \par
-      \cf1 this\cf2 .productsTableAdapter.Fill(\cf1 this\cf2 .northwindDataSet.Products);\par
+      \cf1 this\cf2 .northwindDataSet.LoadProducts();\par
     \}\par
 \par
     \cf1 private\cf2  \cf1 void\cf2  dataGridProgressBarColumn1_DataCellFormatParamsNeeded(\cf1 object\cf2  sender, DataGridProgressBarDataCellFormatParamsNeededEventArgs e)\par
@@ -263,20 +292,16 @@ In column "ProgressBar 4", the following properties and events are configured:\p
         \cf1 if\cf2  (dValue &gt; dataGridProgressBarColumn1.MaxValue / 3)\par
         \{\par
           e.Font = boldProgressFont;\par
-        \lang1049\}\par
+        \}\par
       \}\par
     \}\par
   \}\par
 \}\par
-\pard\sl252\slmult1\cf0\lang1033\f1\fs18\par
-\pard\lang1049\f2\fs17\par
+
+\pard\sl252\slmult1\cf0\f1\fs18\par
+
+\pard\f2\fs17\par
 }
 </value>
   </data>
-  <metadata name="productsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>341, 19</value>
-  </metadata>
-  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>515, 17</value>
-  </metadata>
 </root>

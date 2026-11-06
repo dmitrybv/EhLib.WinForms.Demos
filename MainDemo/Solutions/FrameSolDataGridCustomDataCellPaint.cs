@@ -13,7 +13,15 @@ namespace MainDemo
   public partial class FrameSolDataGridCustomDataCellPaint : BaseFrame
   {
 
-    int mouseIconIndex = -1;
+    private int mouseIconIndex = -1;
+
+    private readonly Image[] transportIcons =
+    {
+      Properties.Resources.bus_16x16,
+      Properties.Resources.car_16x16,
+      Properties.Resources.helicopter_16x16,
+      Properties.Resources.rocket_16x16
+    };
 
     public FrameSolDataGridCustomDataCellPaint()
     {
@@ -45,7 +53,7 @@ namespace MainDemo
       transport4.DefaultValue = false;
       this.biolifeDataSet.country.Columns.Add(transport4);
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
 
       this.biolifeDataSet.country.Rows[0][transport1] = true;
       this.biolifeDataSet.country.Rows[0][transport2] = true;
@@ -170,7 +178,7 @@ namespace MainDemo
 
     private void PaintTransportIcon(Graphics graphics, Rectangle iconRect, int iconPos)
     {
-      Image image = imageList1.Images[iconPos];
+      Image image = transportIcons[iconPos];
 
       Rectangle imageArea = new Rectangle(Point.Empty, image.Size);
       imageArea = EhLibUtils.RectCenter(imageArea, iconRect);

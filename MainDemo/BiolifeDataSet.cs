@@ -1,34 +1,32 @@
 ﻿namespace MainDemo
 {
 
-    partial class BiolifeDataSet
+  partial class BiolifeDataSet
+  {
+    public void LoadBiolife()
     {
-        MainDemo.BiolifeDataSetTableAdapters.BiolifeTableAdapter biolifeTableAdapter;
-        MainDemo.BiolifeDataSetTableAdapters.BiolifeTableAdapter BiolifeTableAdapter
-        {
-            get
-            {
-                if (biolifeTableAdapter == null)
-                    biolifeTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.BiolifeTableAdapter();
-                return biolifeTableAdapter;
-            }
-        }
-
-        public void ApplyUpdatesToTable(System.Data.DataTable dataTable)
-        {
-            if (dataTable == Biolife)
-            {
-                BiolifeTableAdapter.Update(Biolife);
-            }
-        }
-
-        public void FillTable(System.Data.DataTable dataTable)
-        {
-            if (dataTable == Biolife)
-            {
-                BiolifeTableAdapter.Fill(Biolife);
-            }
-        }
-
+      DataSetXmlHelper.LoadTable(Biolife, "Biolife.Biolife.xml");
     }
+
+    public void LoadCountry()
+    {
+      DataSetXmlHelper.LoadTable(country, "Biolife.country.xml");
+    }
+
+    public void LoadTestTree()
+    {
+      DataSetXmlHelper.LoadTable(TestTree, "Biolife.TestTree.xml");
+    }
+
+    public void LoadPlannerData()
+    {
+      DataSetXmlHelper.LoadTable(PlannerData, "Biolife.PlannerData.xml");
+    }
+
+    public void LoadPlannerResources()
+    {
+      DataSetXmlHelper.LoadTable(PlannerResources, "Biolife.PlannerResources.xml");
+    }
+
+  }
 }

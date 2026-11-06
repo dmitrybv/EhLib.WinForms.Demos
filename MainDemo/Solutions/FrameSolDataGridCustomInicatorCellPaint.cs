@@ -16,7 +16,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
     }
 
     private void dataGrid1_IndicatorColumn_CellMouseDown(object sender, DataGridIndicatorCellMouseEventArgs e)

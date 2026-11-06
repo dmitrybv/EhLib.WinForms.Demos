@@ -47,8 +47,6 @@
       this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
       this.categoriesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-      this.biolifeTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.BiolifeTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
       this.dataGridTextColumn1 = new EhLib.WinForms.DataGridTextColumn();
@@ -219,17 +217,6 @@
       this.categoriesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
       this.categoriesBindingNavigatorSaveItem.Text = "Save Data";
       // 
-      // biolifeTableAdapter
-      // 
-      this.biolifeTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = this.biolifeTableAdapter;
-      this.tableAdapterManager.countryTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // openFileDialog1
       // 
       this.openFileDialog1.FileName = "openFileDialog1";
@@ -352,8 +339,6 @@
     private EhLib.WinForms.DataGridEh dataGrid1;
     private System.Windows.Forms.BindingSource biolifeBindingSource;
     private BiolifeDataSet biolifeDataSet;
-    private BiolifeDataSetTableAdapters.BiolifeTableAdapter biolifeTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn2;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn3;

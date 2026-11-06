@@ -33,8 +33,6 @@
       this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.dBTestDataSet = new DisplayLayoutStorableApp.DBTestDataSet();
-      this.customersTableAdapter = new DisplayLayoutStorableApp.DBTestDataSetTableAdapters.CustomersTableAdapter();
-      this.tableAdapterManager = new DisplayLayoutStorableApp.DBTestDataSetTableAdapters.TableAdapterManager();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dBTestDataSet)).BeginInit();
@@ -68,18 +66,6 @@
       this.dBTestDataSet.DataSetName = "DBTestDataSet";
       this.dBTestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
       // 
-      // customersTableAdapter
-      // 
-      this.customersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.countryTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = DisplayLayoutStorableApp.DBTestDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // MDIChildFormCustomers
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +90,5 @@
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private DBTestDataSet dBTestDataSet;
     private System.Windows.Forms.BindingSource customersBindingSource;
-    private DBTestDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-    private DBTestDataSetTableAdapters.TableAdapterManager tableAdapterManager;
   }
 }

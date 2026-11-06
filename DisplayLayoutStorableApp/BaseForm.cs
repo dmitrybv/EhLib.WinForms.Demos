@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Web.Script.Serialization;
 
 namespace DisplayLayoutStorableApp
 {
@@ -30,9 +29,8 @@ namespace DisplayLayoutStorableApp
 
     protected string GetSettingsAsJSonStr()
     {
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
       Dictionary<string, object> fs = GetStorableSettings();
-      string json = serializer.Serialize(fs);
+      string json = StorableSettingsJsonHelper.Serialize(fs);
       return json;
     }
 
@@ -89,10 +87,8 @@ namespace DisplayLayoutStorableApp
 
     protected virtual void LoadSettingsAsJSonStr(string settings)
     {
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
       SettingsDictionaryGroup sdg = new SettingsDictionaryGroup();
-      sdg.Dic = serializer.Deserialize<Dictionary<string, object>>(settings);
-      //fs.InitForm(this);
+      sdg.Dic = StorableSettingsJsonHelper.Deserialize(settings);
       ReadStorableSettings(sdg);
     }
 

@@ -16,8 +16,8 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      ordersTableAdapter.Fill(northwindDataSet.Orders);
-      order_DetailsTableAdapter.Fill(northwindDataSet.Order_Details);
+      northwindDataSet.LoadOrders();
+      northwindDataSet.LoadOrderDetails();
 
       dataGridTextColumn3.BackColor = Color.FromArgb(100, Color.Red);
       dataGridTextColumn3.BackColor = Color.FromArgb(127, Color.FromArgb(0x00FFC35C));
@@ -28,7 +28,7 @@ namespace MainDemo
     {
       this.Validate();
       this.ordersBindingSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.northwindDataSet);
+      this.northwindDataSet.AcceptChanges();
 
     }
   }

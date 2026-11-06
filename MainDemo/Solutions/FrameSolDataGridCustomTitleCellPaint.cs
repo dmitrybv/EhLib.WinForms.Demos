@@ -17,7 +17,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
+      this.northwindDataSet.LoadCustomers();
     }
 
     private void DrawPlusMinusSign(Graphics graphics, Rectangle rect, bool isPlus)

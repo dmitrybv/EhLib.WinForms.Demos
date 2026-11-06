@@ -19,7 +19,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.order_DetailsTableAdapter.Fill(this.northwindDataSet.Order_Details);
+      this.northwindDataSet.LoadOrderDetails();
       richTextBox1.LoadFile("Doc\\FrameSolDataGridFooterCalculation.rtf");
     }
 

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DisplayLayoutStorableApp/DisplayLayoutStorableApp.csproj" Id="e6a5978c-b0a6-4d00-b9fc-bd774b2e1505" />
+  <Project Path="MainDemo/MainDemo.csproj" Id="23aa8f11-25e7-4888-a82b-cdf9a761b1fd" />
+  <Project Path="ProcessList/ProcessList.csproj" Id="c67c9b13-a4f1-4193-bf92-4a992ef3b48c" />
+</Solution>

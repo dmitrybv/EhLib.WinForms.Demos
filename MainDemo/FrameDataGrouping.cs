@@ -18,7 +18,7 @@ namespace MainDemo
 
     private void FrameDataGrouping_Load(object sender, EventArgs e)
     {
-      this.ordersTableAdapter.Fill(this.northwindDataSet.Orders);
+      this.northwindDataSet.LoadOrders();
 
       var row0 = dataGridEh1.VisibleRows[0] as DataGridGroupingRow;
       row0.DataGroupingNode.Expanded = true;
@@ -27,10 +27,10 @@ namespace MainDemo
       row1.DataGroupingNode.Expanded = true;
 
       dataGridEh1.CurrentRowIndex = 2;
-      dataGridEh1_DataGrouping_GroupDescriptionsChanged(null, null);
+      dataGridEh1_DataGrouping_GroupDescriprionsChanged(null, null);
     }
 
-    private void dataGridEh1_DataGrouping_GroupDescriptionsChanged(object sender, EventArgs e)
+    private void dataGridEh1_DataGrouping_GroupDescriprionsChanged(object sender, EventArgs e)
     {
       int cnt = dataGridEh1.DataGrouping.GroupDescriptions.Count;
       for (int i = 0; i < cnt; i++)

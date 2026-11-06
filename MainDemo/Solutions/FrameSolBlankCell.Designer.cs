@@ -42,8 +42,6 @@
       this.dataGridEh1RegionColumn = new EhLib.WinForms.DataGridTextColumn();
       this.dataGridEh1CityColumn = new EhLib.WinForms.DataGridTextColumn();
       this.dataGridEh1AddressColumn = new EhLib.WinForms.DataGridTextColumn();
-      this.employeesTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
       this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -98,7 +96,7 @@
       this.dataGridEh1EmployeeIDColumn.DataPropertyName = "EmployeeID";
       this.dataGridEh1EmployeeIDColumn.Name = "dataGridEh1EmployeeIDColumn";
       // 
-      // 
+      // dataGridEh1EmployeeIDColumn.Title
       // 
       this.dataGridEh1EmployeeIDColumn.Title.Text = "EmployeeID";
       this.dataGridEh1EmployeeIDColumn.Title.ToolTipText = null;
@@ -108,7 +106,7 @@
       this.dataGridEh1LastNameColumn.DataPropertyName = "LastName";
       this.dataGridEh1LastNameColumn.Name = "dataGridEh1LastNameColumn";
       // 
-      // 
+      // dataGridEh1LastNameColumn.Title
       // 
       this.dataGridEh1LastNameColumn.Title.Text = "LastName";
       this.dataGridEh1LastNameColumn.Title.ToolTipText = null;
@@ -118,7 +116,7 @@
       this.dataGridEh1FirstNameColumn.DataPropertyName = "FirstName";
       this.dataGridEh1FirstNameColumn.Name = "dataGridEh1FirstNameColumn";
       // 
-      // 
+      // dataGridEh1FirstNameColumn.Title
       // 
       this.dataGridEh1FirstNameColumn.Title.Text = "FirstName";
       this.dataGridEh1FirstNameColumn.Title.ToolTipText = null;
@@ -128,7 +126,7 @@
       this.dataGridEh1PostalCodeColumn.DataPropertyName = "PostalCode";
       this.dataGridEh1PostalCodeColumn.Name = "dataGridEh1PostalCodeColumn";
       // 
-      // 
+      // dataGridEh1PostalCodeColumn.Title
       // 
       this.dataGridEh1PostalCodeColumn.Title.Text = "PostalCode";
       this.dataGridEh1PostalCodeColumn.Title.ToolTipText = null;
@@ -138,7 +136,7 @@
       this.dataGridEh1CountryColumn.DataPropertyName = "Country";
       this.dataGridEh1CountryColumn.Name = "dataGridEh1CountryColumn";
       // 
-      // 
+      // dataGridEh1CountryColumn.Title
       // 
       this.dataGridEh1CountryColumn.Title.Text = "Country";
       this.dataGridEh1CountryColumn.Title.ToolTipText = null;
@@ -148,7 +146,7 @@
       this.dataGridEh1RegionColumn.DataPropertyName = "Region";
       this.dataGridEh1RegionColumn.Name = "dataGridEh1RegionColumn";
       // 
-      // 
+      // dataGridEh1RegionColumn.Title
       // 
       this.dataGridEh1RegionColumn.Title.Text = "Region";
       this.dataGridEh1RegionColumn.Title.ToolTipText = null;
@@ -159,7 +157,7 @@
       this.dataGridEh1CityColumn.DataPropertyName = "City";
       this.dataGridEh1CityColumn.Name = "dataGridEh1CityColumn";
       // 
-      // 
+      // dataGridEh1CityColumn.Title
       // 
       this.dataGridEh1CityColumn.Title.Text = "City";
       this.dataGridEh1CityColumn.Title.ToolTipText = null;
@@ -169,26 +167,10 @@
       this.dataGridEh1AddressColumn.DataPropertyName = "Address";
       this.dataGridEh1AddressColumn.Name = "dataGridEh1AddressColumn";
       // 
-      // 
+      // dataGridEh1AddressColumn.Title
       // 
       this.dataGridEh1AddressColumn.Title.Text = "Address";
       this.dataGridEh1AddressColumn.Title.ToolTipText = null;
-      // 
-      // employeesTableAdapter
-      // 
-      this.employeesTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = this.employeesTableAdapter;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = null;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // panel1
       // 
@@ -276,8 +258,6 @@
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private System.Windows.Forms.BindingSource employeesBindingSource;
     private NorthwindDataSet northwindDataSet;
-    private NorthwindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridTextColumn dataGridEh1EmployeeIDColumn;
     private EhLib.WinForms.DataGridTextColumn dataGridEh1LastNameColumn;
     private EhLib.WinForms.DataGridTextColumn dataGridEh1FirstNameColumn;

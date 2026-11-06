@@ -33,8 +33,6 @@
       this.label1 = new System.Windows.Forms.Label();
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.countryTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.countryTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
@@ -88,17 +86,6 @@
       // 
       this.countryBindingSource.DataMember = "country";
       this.countryBindingSource.DataSource = this.biolifeDataSet;
-      // 
-      // countryTableAdapter
-      // 
-      this.countryTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = this.countryTableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // tabControl1
       // 
@@ -289,8 +276,6 @@
     private System.Windows.Forms.Label label1;
     private BiolifeDataSet biolifeDataSet;
     private System.Windows.Forms.BindingSource countryBindingSource;
-    private BiolifeDataSetTableAdapters.countryTableAdapter countryTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.TabControl tabControl1;
     private System.Windows.Forms.TabPage tabPage1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn6;

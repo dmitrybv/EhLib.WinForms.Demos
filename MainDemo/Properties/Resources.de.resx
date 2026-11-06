@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MainForm_Caption" xml:space="preserve">
+    <value>EhLib Hauptkomplex Demo</value>
+  </data>
+  <data name="MainForm_MenuAbout" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="MainForm_MenuExit" xml:space="preserve">
+    <value>Ausgang</value>
+  </data>
+  <data name="MainForm_MenuFile" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="MainForm_MenuLanguage" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="MainForm_StatusBarInfo" xml:space="preserve">
+    <value>EhLib Haupt-Demo. Zeigt alle wichtigen Funktionen und Funktionen der Bibliothek an</value>
+  </data>
   <data name="Edit_Copy" xml:space="preserve">
     <value>Kopieren</value>
   </data>
@@ -132,8 +150,20 @@
   <data name="HelpAbout_ToolTip" xml:space="preserve">
     <value>Über</value>
   </data>
-  <data name="MainForm_Caption" xml:space="preserve">
-    <value>EhLib Hauptkomplex Demo</value>
+  <data name="MainForm_Demos_Page" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="MainForm_Solutions_Page" xml:space="preserve">
+    <value>Lösungen</value>
+  </data>
+  <data name="PrintPreview_ToolTip" xml:space="preserve">
+    <value>Druckvorschau</value>
+  </data>
+  <data name="RightToLeft_LeftToRightDirection_ToolTip" xml:space="preserve">
+    <value>Visuelle Stile verwenden / nicht verwenden</value>
+  </data>
+  <data name="UseUnuseVisualStyles_ToolTip" xml:space="preserve">
+    <value>Von rechts nach links / Von links nach rechts</value>
   </data>
   <data name="MainForm_Demos_CellDataIsLink" xml:space="preserve">
     <value>Zelldaten ist Link</value>
@@ -147,35 +177,11 @@
   <data name="MainForm_Demos_MasterDetail" xml:space="preserve">
     <value>Meister / Detail</value>
   </data>
-  <data name="MainForm_Demos_Page" xml:space="preserve">
-    <value>Demo</value>
-  </data>
   <data name="MainForm_Demos_RowsAutoExpent" xml:space="preserve">
     <value>Zeilen auto erweitern</value>
   </data>
   <data name="MainForm_Demos_SearchBox" xml:space="preserve">
     <value>Suchbox</value>
-  </data>
-  <data name="MainForm_Demos_VerticalGrid" xml:space="preserve">
-    <value>Vertikales Gitter</value>
-  </data>
-  <data name="MainForm_MenuAbout" xml:space="preserve">
-    <value>Über</value>
-  </data>
-  <data name="MainForm_MenuExit" xml:space="preserve">
-    <value>Ausgang</value>
-  </data>
-  <data name="MainForm_MenuFile" xml:space="preserve">
-    <value>Datei</value>
-  </data>
-  <data name="MainForm_MenuLanguage" xml:space="preserve">
-    <value>Sprache</value>
-  </data>
-  <data name="MainForm_Solutions_Page" xml:space="preserve">
-    <value>Lösungen</value>
-  </data>
-  <data name="MainForm_StatusBarInfo" xml:space="preserve">
-    <value>EhLib Haupt-Demo. Zeigt alle wichtigen Funktionen und Funktionen der Bibliothek an</value>
   </data>
   <data name="MainGrid_Customer_Title" xml:space="preserve">
     <value>Kunde</value>
@@ -210,13 +216,7 @@
   <data name="MainGrid_ShipperName_Title" xml:space="preserve">
     <value>Absender Name</value>
   </data>
-  <data name="PrintPreview_ToolTip" xml:space="preserve">
-    <value>Druckvorschau</value>
-  </data>
-  <data name="RightToLeft_LeftToRightDirection_ToolTip" xml:space="preserve">
-    <value>Visuelle Stile verwenden / nicht verwenden</value>
-  </data>
-  <data name="UseUnuseVisualStyles_ToolTip" xml:space="preserve">
-    <value>Von rechts nach links / Von links nach rechts</value>
+  <data name="MainForm_Demos_VerticalGrid" xml:space="preserve">
+    <value>Vertikales Gitter</value>
   </data>
 </root>

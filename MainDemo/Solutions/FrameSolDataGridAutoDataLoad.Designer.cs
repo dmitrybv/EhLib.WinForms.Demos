@@ -44,8 +44,6 @@
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.label1 = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.citiesTop100TableAdapter = new MainDemo.cities10000DataSetTableAdapters.CitiesTop100TableAdapter();
-      this.tableAdapterManager = new MainDemo.cities10000DataSetTableAdapters.TableAdapterManager();
       this.citiesTop100BindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
       this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -59,7 +57,6 @@
       this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
       this.citiesTop100BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-      this.cities1000SmallTableAdapter = new MainDemo.cities10000DataSetTableAdapters.Cities1000SmallTableAdapter();
       ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.citiesBSource)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.cities10000DataSet)).BeginInit();
@@ -93,9 +90,8 @@
       // 
       // 
       this.dataGrid1.EmptyDataInfo.Text = null;
-      this.dataGrid1.GridState = EhLib.WinForms.BaseGridState.Normal;
       // 
-      // 
+      // dataGrid1.HorzScrollBar
       // 
       this.dataGrid1.HorzScrollBar.ExtraBar.Visible = true;
       this.dataGrid1.Location = new System.Drawing.Point(3, 3);
@@ -103,7 +99,7 @@
       this.dataGrid1.Size = new System.Drawing.Size(761, 562);
       this.dataGrid1.TabIndex = 7;
       // 
-      // 
+      // dataGrid1.VertScrollBar
       // 
       this.dataGrid1.VertScrollBar.ScrollPosChanged += new System.EventHandler<System.EventArgs>(this.dataGrid1_VertScrollBar_ScrollPosChanged);
       // 
@@ -121,18 +117,27 @@
       // 
       this.dataGridTextColumn10.DataPropertyName = "Population";
       this.dataGridTextColumn10.Name = "dataGridTextColumn10";
+      // 
+      // dataGridTextColumn10.Title
+      // 
       this.dataGridTextColumn10.Title.Text = "Population";
       // 
       // dataGridTextColumn9
       // 
       this.dataGridTextColumn9.DataPropertyName = "Area";
       this.dataGridTextColumn9.Name = "dataGridTextColumn9";
+      // 
+      // dataGridTextColumn9.Title
+      // 
       this.dataGridTextColumn9.Title.Text = "Area";
       // 
       // dataGridTextColumn8
       // 
       this.dataGridTextColumn8.DataPropertyName = "Continent";
       this.dataGridTextColumn8.Name = "dataGridTextColumn8";
+      // 
+      // dataGridTextColumn8.Title
+      // 
       this.dataGridTextColumn8.Title.Text = "Continent";
       this.dataGridTextColumn8.Width = 119;
       // 
@@ -140,6 +145,9 @@
       // 
       this.dataGridTextColumn7.DataPropertyName = "Capital";
       this.dataGridTextColumn7.Name = "dataGridTextColumn7";
+      // 
+      // dataGridTextColumn7.Title
+      // 
       this.dataGridTextColumn7.Title.Text = "Capital";
       this.dataGridTextColumn7.Width = 179;
       // 
@@ -147,6 +155,9 @@
       // 
       this.dataGridTextColumn6.DataPropertyName = "Name";
       this.dataGridTextColumn6.Name = "dataGridTextColumn6";
+      // 
+      // dataGridTextColumn6.Title
+      // 
       this.dataGridTextColumn6.Title.Text = "Name";
       this.dataGridTextColumn6.Width = 203;
       // 
@@ -202,17 +213,6 @@
       this.panel1.Name = "panel1";
       this.panel1.Size = new System.Drawing.Size(775, 36);
       this.panel1.TabIndex = 8;
-      // 
-      // citiesTop100TableAdapter
-      // 
-      this.citiesTop100TableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.Cities1000SmallTableAdapter = null;
-      this.tableAdapterManager.CitiesTop100TableAdapter = this.citiesTop100TableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.cities10000DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // citiesTop100BindingNavigator
       // 
@@ -296,6 +296,7 @@
       // 
       this.bindingNavigatorPositionItem.AccessibleName = "Position";
       this.bindingNavigatorPositionItem.AutoSize = false;
+      this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
       this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
       this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
       this.bindingNavigatorPositionItem.Text = "0";
@@ -339,10 +340,6 @@
       this.citiesTop100BindingNavigatorSaveItem.Text = "Save Data";
       this.citiesTop100BindingNavigatorSaveItem.Click += new System.EventHandler(this.citiesTop100BindingNavigatorSaveItem_Click);
       // 
-      // cities1000SmallTableAdapter
-      // 
-      this.cities1000SmallTableAdapter.ClearBeforeFill = true;
-      // 
       // FrameSolDataGridAutoDataLoad
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -384,8 +381,6 @@
     private System.Windows.Forms.Panel panel1;
     private cities10000DataSet cities10000DataSet;
     private System.Windows.Forms.BindingSource citiesBSource;
-    private cities10000DataSetTableAdapters.CitiesTop100TableAdapter citiesTop100TableAdapter;
-    private cities10000DataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private System.Windows.Forms.BindingNavigator citiesTop100BindingNavigator;
     private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
     private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -399,6 +394,5 @@
     private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
     private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
     private System.Windows.Forms.ToolStripButton citiesTop100BindingNavigatorSaveItem;
-    private cities10000DataSetTableAdapters.Cities1000SmallTableAdapter cities1000SmallTableAdapter;
   }
 }

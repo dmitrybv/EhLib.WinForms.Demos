@@ -28,9 +28,17 @@
     /// </summary>
     private void InitializeComponent()
     {
+      this.components = new System.ComponentModel.Container();
       this.panel1 = new System.Windows.Forms.Panel();
       this.label1 = new System.Windows.Forms.Label();
       this.panel2 = new System.Windows.Forms.Panel();
+      this.bOptions = new System.Windows.Forms.Button();
+      this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+      this.miAutoWordWrap = new System.Windows.Forms.ToolStripMenuItem();
+      this.miTotalsBeforeData = new System.Windows.Forms.ToolStripMenuItem();
+      this.miTotalAtParentLevel = new System.Windows.Forms.ToolStripMenuItem();
+      this.miHeightAutoExpand = new System.Windows.Forms.ToolStripMenuItem();
+      this.miMultiValInRows = new System.Windows.Forms.ToolStripMenuItem();
       this.button1 = new System.Windows.Forms.Button();
       this.splitContainer1 = new System.Windows.Forms.SplitContainer();
       this.pivotGridToolBoxEh1 = new EhLib.WinForms.PivotGridToolBoxEh();
@@ -41,9 +49,9 @@
       this.pivotGridEh1 = new EhLib.WinForms.PivotGridEh();
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.dataGridSourceTable = new EhLib.WinForms.DataGridEh();
-      this.ordersTableAdapter1 = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
       this.panel1.SuspendLayout();
       this.panel2.SuspendLayout();
+      this.contextMenuStrip1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
       this.splitContainer1.Panel1.SuspendLayout();
       this.splitContainer1.Panel2.SuspendLayout();
@@ -78,12 +86,70 @@
       // 
       // panel2
       // 
+      this.panel2.Controls.Add(this.bOptions);
       this.panel2.Controls.Add(this.button1);
       this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
       this.panel2.Location = new System.Drawing.Point(0, 36);
       this.panel2.Name = "panel2";
       this.panel2.Size = new System.Drawing.Size(676, 56);
       this.panel2.TabIndex = 2;
+      // 
+      // bOptions
+      // 
+      this.bOptions.ContextMenuStrip = this.contextMenuStrip1;
+      this.bOptions.Location = new System.Drawing.Point(235, 8);
+      this.bOptions.Name = "bOptions";
+      this.bOptions.Size = new System.Drawing.Size(164, 38);
+      this.bOptions.TabIndex = 1;
+      this.bOptions.Text = "Options";
+      this.bOptions.UseVisualStyleBackColor = true;
+      this.bOptions.Click += new System.EventHandler(this.bOptions_Click);
+      // 
+      // contextMenuStrip1
+      // 
+      this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miAutoWordWrap,
+            this.miTotalsBeforeData,
+            this.miTotalAtParentLevel,
+            this.miHeightAutoExpand,
+            this.miMultiValInRows});
+      this.contextMenuStrip1.Name = "contextMenuStrip1";
+      this.contextMenuStrip1.Size = new System.Drawing.Size(175, 114);
+      // 
+      // miAutoWordWrap
+      // 
+      this.miAutoWordWrap.Name = "miAutoWordWrap";
+      this.miAutoWordWrap.Size = new System.Drawing.Size(174, 22);
+      this.miAutoWordWrap.Text = "AutoWordWrap";
+      this.miAutoWordWrap.Click += new System.EventHandler(this.miAutoWordWrap_Click);
+      // 
+      // miTotalsBeforeData
+      // 
+      this.miTotalsBeforeData.Name = "miTotalsBeforeData";
+      this.miTotalsBeforeData.Size = new System.Drawing.Size(174, 22);
+      this.miTotalsBeforeData.Text = "TotalsBeforeData";
+      this.miTotalsBeforeData.Click += new System.EventHandler(this.miTotalsBeforeData_Click);
+      // 
+      // miTotalAtParentLevel
+      // 
+      this.miTotalAtParentLevel.Name = "miTotalAtParentLevel";
+      this.miTotalAtParentLevel.Size = new System.Drawing.Size(174, 22);
+      this.miTotalAtParentLevel.Text = "TotalAtParentLevel";
+      this.miTotalAtParentLevel.Click += new System.EventHandler(this.miTotalAtParentLevel_Click);
+      // 
+      // miHeightAutoExpand
+      // 
+      this.miHeightAutoExpand.Name = "miHeightAutoExpand";
+      this.miHeightAutoExpand.Size = new System.Drawing.Size(174, 22);
+      this.miHeightAutoExpand.Text = "HeightAutoExpand";
+      this.miHeightAutoExpand.Click += new System.EventHandler(this.miHeightAutoExpand_Click);
+      // 
+      // miMultiValInRows
+      // 
+      this.miMultiValInRows.Name = "miMultiValInRows";
+      this.miMultiValInRows.Size = new System.Drawing.Size(174, 22);
+      this.miMultiValInRows.Text = "MultiValInRows";
+      this.miMultiValInRows.Click += new System.EventHandler(this.miMultiValInRows_Click);
       // 
       // button1
       // 
@@ -190,10 +256,6 @@
       this.dataGridSourceTable.Size = new System.Drawing.Size(427, 354);
       this.dataGridSourceTable.TabIndex = 1;
       // 
-      // ordersTableAdapter1
-      // 
-      this.ordersTableAdapter1.ClearBeforeFill = true;
-      // 
       // FramePivotGrid
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +269,7 @@
       this.panel1.ResumeLayout(false);
       this.panel1.PerformLayout();
       this.panel2.ResumeLayout(false);
+      this.contextMenuStrip1.ResumeLayout(false);
       this.splitContainer1.Panel1.ResumeLayout(false);
       this.splitContainer1.Panel2.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -237,6 +300,12 @@
     private EhLib.WinForms.DataGridEh dataGridSourceTable;
     private EhLib.WinForms.PivotDataSourceEh pivotDataSourceEh1;
     private NorthwindDataSet northwindDataSet1;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
+    private System.Windows.Forms.Button bOptions;
+    private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+    private System.Windows.Forms.ToolStripMenuItem miAutoWordWrap;
+    private System.Windows.Forms.ToolStripMenuItem miTotalsBeforeData;
+    private System.Windows.Forms.ToolStripMenuItem miTotalAtParentLevel;
+    private System.Windows.Forms.ToolStripMenuItem miHeightAutoExpand;
+    private System.Windows.Forms.ToolStripMenuItem miMultiValInRows;
   }
 }

@@ -16,8 +16,8 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      ordersTableAdapter.Fill(northwindDataSet.Orders);
-      order_DetailsTableAdapter.Fill(northwindDataSet.Order_Details);
+      northwindDataSet.LoadOrders();
+      northwindDataSet.LoadOrderDetails();
     }
   }
 }

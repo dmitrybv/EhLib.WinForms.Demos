@@ -33,13 +33,11 @@
       this.label1 = new System.Windows.Forms.Label();
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
       this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.customersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.dataGrid1 = new EhLib.WinForms.DataGridEh();
       this.panel2 = new System.Windows.Forms.Panel();
-      this.bFilterOnTyping = new System.Windows.Forms.Button();
-      this.bPersistentShow = new System.Windows.Forms.Button();
       this.bFilterEnabled = new System.Windows.Forms.Button();
+      this.bPersistentShow = new System.Windows.Forms.Button();
+      this.bFilterOnTyping = new System.Windows.Forms.Button();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
@@ -76,30 +74,11 @@
       this.customersBindingSource.DataMember = "Customers";
       this.customersBindingSource.DataSource = this.northwindDataSet;
       // 
-      // customersTableAdapter
-      // 
-      this.customersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = null;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // dataGrid1
       // 
       this.dataGrid1.AutoGenerateColumns = true;
-      this.dataGrid1.BackColor = System.Drawing.SystemColors.Window;
-      this.dataGrid1.Cursor = System.Windows.Forms.Cursors.Default;
       this.dataGrid1.DataSource = this.customersBindingSource;
       this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGrid1.DrawStyle = null;
       this.dataGrid1.Location = new System.Drawing.Point(0, 80);
       this.dataGrid1.Name = "dataGrid1";
       // 
@@ -107,8 +86,6 @@
       // 
       this.dataGrid1.SearchBox.Enabled = true;
       this.dataGrid1.SearchBox.FilterOnTyping = true;
-      this.dataGrid1.SearchBox.HighlightSearchingText = false;
-      this.dataGrid1.SearchBox.Visible = true;
       this.dataGrid1.Size = new System.Drawing.Size(676, 398);
       this.dataGrid1.TabIndex = 3;
       this.dataGrid1.Text = "dataGrid1";
@@ -124,15 +101,15 @@
       this.panel2.Size = new System.Drawing.Size(676, 44);
       this.panel2.TabIndex = 4;
       // 
-      // bFilterOnTyping
+      // bFilterEnabled
       // 
-      this.bFilterOnTyping.Location = new System.Drawing.Point(12, 10);
-      this.bFilterOnTyping.Name = "bFilterOnTyping";
-      this.bFilterOnTyping.Size = new System.Drawing.Size(159, 23);
-      this.bFilterOnTyping.TabIndex = 0;
-      this.bFilterOnTyping.Text = "FilterOnTyping (Yes)";
-      this.bFilterOnTyping.UseVisualStyleBackColor = true;
-      this.bFilterOnTyping.Click += new System.EventHandler(this.bFilterOnTyping_Click);
+      this.bFilterEnabled.Location = new System.Drawing.Point(342, 10);
+      this.bFilterEnabled.Name = "bFilterEnabled";
+      this.bFilterEnabled.Size = new System.Drawing.Size(159, 23);
+      this.bFilterEnabled.TabIndex = 2;
+      this.bFilterEnabled.Text = "Filter Enabled (Yes)";
+      this.bFilterEnabled.UseVisualStyleBackColor = true;
+      this.bFilterEnabled.Click += new System.EventHandler(this.bFilterEnabled_Click);
       // 
       // bPersistentShow
       // 
@@ -144,15 +121,15 @@
       this.bPersistentShow.UseVisualStyleBackColor = true;
       this.bPersistentShow.Click += new System.EventHandler(this.bPersistentShow_Click);
       // 
-      // bFilterEnabled
+      // bFilterOnTyping
       // 
-      this.bFilterEnabled.Location = new System.Drawing.Point(342, 10);
-      this.bFilterEnabled.Name = "bFilterEnabled";
-      this.bFilterEnabled.Size = new System.Drawing.Size(159, 23);
-      this.bFilterEnabled.TabIndex = 2;
-      this.bFilterEnabled.Text = "Filter Enabled (Yes)";
-      this.bFilterEnabled.UseVisualStyleBackColor = true;
-      this.bFilterEnabled.Click += new System.EventHandler(this.bFilterEnabled_Click);
+      this.bFilterOnTyping.Location = new System.Drawing.Point(12, 10);
+      this.bFilterOnTyping.Name = "bFilterOnTyping";
+      this.bFilterOnTyping.Size = new System.Drawing.Size(159, 23);
+      this.bFilterOnTyping.TabIndex = 0;
+      this.bFilterOnTyping.Text = "FilterOnTyping (Yes)";
+      this.bFilterOnTyping.UseVisualStyleBackColor = true;
+      this.bFilterOnTyping.Click += new System.EventHandler(this.bFilterOnTyping_Click);
       // 
       // FrameSearchBox
       // 
@@ -179,8 +156,6 @@
     private System.Windows.Forms.Label label1;
     private NorthwindDataSet northwindDataSet;
     private System.Windows.Forms.BindingSource customersBindingSource;
-    private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridEh dataGrid1;
     private System.Windows.Forms.Panel panel2;
     private System.Windows.Forms.Button bFilterOnTyping;

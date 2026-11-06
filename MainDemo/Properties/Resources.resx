@@ -262,4 +262,16 @@
   <data name="MainForm_Demos_DataGrouping" xml:space="preserve">
     <value>Data Grouping</value>
   </data>
+  <data name="bus_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bus-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helicopter_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helicopter-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocket_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocket-16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

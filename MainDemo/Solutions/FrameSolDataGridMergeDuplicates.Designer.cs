@@ -56,10 +56,6 @@
       this.dataGrid1ShipPostalCodeCol = new EhLib.WinForms.DataGridTextColumn();
       this.dataGrid1ShipCountryCol = new EhLib.WinForms.DataGridTextColumn();
       this.tabPage2 = new System.Windows.Forms.TabPage();
-      this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
-      this.customersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
-      this.employeesTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter();
       this.richTextBoxEh1 = new EhLib.WinForms.RichTextBoxEh();
       this.panel1.SuspendLayout();
       this.tabControl1.SuspendLayout();
@@ -365,30 +361,6 @@
       this.tabPage2.Text = "Description";
       this.tabPage2.UseVisualStyleBackColor = true;
       // 
-      // ordersTableAdapter
-      // 
-      this.ordersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-      this.tableAdapterManager.EmployeesTableAdapter = this.employeesTableAdapter;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
-      // customersTableAdapter
-      // 
-      this.customersTableAdapter.ClearBeforeFill = true;
-      // 
-      // employeesTableAdapter
-      // 
-      this.employeesTableAdapter.ClearBeforeFill = true;
-      // 
       // richTextBoxEh1
       // 
       this.richTextBoxEh1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -449,10 +421,6 @@
     private EhLib.WinForms.DataGridComboBoxColumn CustomerNameComboCol;
     private System.Windows.Forms.BindingSource customersBindingSource;
     private EhLib.WinForms.DataGridComboBoxColumn EmployeeNameComboCol;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-    private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-    private NorthwindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
     private System.Windows.Forms.BindingSource employeesBindingSource;
     private EhLib.WinForms.RichTextBoxEh richTextBoxEh1;
   }

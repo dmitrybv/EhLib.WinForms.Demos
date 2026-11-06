@@ -20,11 +20,12 @@ namespace MainDemo
 
     private void FramePivotGrid_Load(object sender, EventArgs e)
     {
-      ordersTableAdapter1.Fill(northwindDataSet1.Orders);
+      northwindDataSet1.LoadOrders();
 
       RebuildPivotFields();
       RebuildDefaultStruct();
       LoadSourceData();
+      UpdateCaptions();
     }
 
     private void RebuildPivotFields()
@@ -59,6 +60,15 @@ namespace MainDemo
       tabControl1.SelectedTab = tabPage1;
     }
 
+    private void UpdateCaptions()
+    {
+      miAutoWordWrap.Text = "AutoWordWrap = " + pivotGridEh1.ColumnAxisOptions.AutoWordWrap.ToString();
+      miTotalsBeforeData.Text = "TotalsBeforeData = " + pivotGridEh1.ColumnAxisOptions.TotalsBeforeData.ToString();
+      miTotalAtParentLevel.Text = "TotalAtParentLevel = " + pivotGridEh1.ColumnAxisOptions.TotalAtParentLevel.ToString();
+      miHeightAutoExpand.Text = "HeightAutoExpand = " + pivotGridEh1.ColumnAxisOptions.HeightAutoExpand.ToString();
+      miMultiValInRows.Text = "MultiValInRows = " + pivotGridEh1.GridOptions.MultiValuesInRowsAxis.ToString();
+    }
+
     private void button1_Click(object sender, EventArgs e)
     {
       if (pivotDataSourceEh1.ColumnFields.Count == 0 &&
@@ -86,6 +96,50 @@ namespace MainDemo
         }
       }
       tabControl1.SelectedTab = tabPage1;
+    }
+
+    private void bOptions_Click(object sender, EventArgs e)
+    {
+      contextMenuStrip1.Show(bOptions, new Point(0, bOptions.Height));
+    }
+
+    private void miAutoWordWrap_Click(object sender, EventArgs e)
+    {
+      pivotGridEh1.RowAxisOptions.AutoWordWrap = !pivotGridEh1.RowAxisOptions.AutoWordWrap;
+      pivotGridEh1.ColumnAxisOptions.AutoWordWrap = !pivotGridEh1.ColumnAxisOptions.AutoWordWrap;
+      UpdateCaptions();
+      button1_Click(null, null);
+    }
+
+    private void miTotalsBeforeData_Click(object sender, EventArgs e)
+    {
+      pivotGridEh1.RowAxisOptions.TotalsBeforeData = !pivotGridEh1.RowAxisOptions.TotalsBeforeData;
+      pivotGridEh1.ColumnAxisOptions.TotalsBeforeData = !pivotGridEh1.ColumnAxisOptions.TotalsBeforeData;
+      UpdateCaptions();
+      button1_Click(null, null);
+    }
+
+    private void miTotalAtParentLevel_Click(object sender, EventArgs e)
+    {
+      pivotGridEh1.RowAxisOptions.TotalAtParentLevel = !pivotGridEh1.RowAxisOptions.TotalAtParentLevel;
+      pivotGridEh1.ColumnAxisOptions.TotalAtParentLevel = !pivotGridEh1.ColumnAxisOptions.TotalAtParentLevel;
+      UpdateCaptions();
+      button1_Click(null, null);
+    }
+
+    private void miHeightAutoExpand_Click(object sender, EventArgs e)
+    {
+      pivotGridEh1.RowAxisOptions.HeightAutoExpand = !pivotGridEh1.RowAxisOptions.HeightAutoExpand;
+      pivotGridEh1.ColumnAxisOptions.HeightAutoExpand = !pivotGridEh1.ColumnAxisOptions.HeightAutoExpand;
+      UpdateCaptions();
+      button1_Click(null, null);
+    }
+
+    private void miMultiValInRows_Click(object sender, EventArgs e)
+    {
+      pivotGridEh1.GridOptions.MultiValuesInRowsAxis = !pivotGridEh1.GridOptions.MultiValuesInRowsAxis;
+      UpdateCaptions();
+      button1_Click(null, null);
     }
   }
 }

@@ -16,7 +16,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.employeesTableAdapter.Fill(this.northwindDataSet.Employees);
+      this.northwindDataSet.LoadEmployees();
     }
 
     private void dataGridEh1RegionColumn_DataCellManagerNeeded(object sender, DataGridDataCellManagerNeededEventArgs e)

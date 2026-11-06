@@ -23,9 +23,9 @@ namespace MainDemo
 
     private void FrameSolDataGridMergeDuplicates_Load(object sender, EventArgs e)
     {
-      ordersTableAdapter.Fill(northwindDataSet.Orders);
-      employeesTableAdapter.Fill(northwindDataSet.Employees);
-      customersTableAdapter.Fill(northwindDataSet.Customers);
+      northwindDataSet.LoadOrders();
+      northwindDataSet.LoadEmployees();
+      northwindDataSet.LoadCustomers();
 
       //ordersBindingSource.Sort = "CustomerID";
       dataGrid1.Title.SortMarking.SortMarkers.SetSortState(dataGrid1CustomerIDCol, ListSortDirection.Ascending);

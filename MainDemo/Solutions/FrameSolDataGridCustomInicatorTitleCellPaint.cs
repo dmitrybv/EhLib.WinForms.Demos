@@ -26,7 +26,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
       richTextBox1.LoadFile("Doc\\FrameSolDataGridCustomIndicatorTitleCellPaint.rtf");
     }
 

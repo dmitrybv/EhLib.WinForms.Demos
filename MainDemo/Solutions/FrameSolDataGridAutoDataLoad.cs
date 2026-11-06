@@ -11,7 +11,8 @@ namespace MainDemo
   public partial class FrameSolDataGridAutoDataLoad : BaseFrame
   {
 
-    int lastMaxId = 0; 
+    // Number of cities already loaded: the start position of the next portion
+    int loadedCount = 0;
 
     public FrameSolDataGridAutoDataLoad()
     {
@@ -23,19 +24,15 @@ namespace MainDemo
     {
       this.Validate();
       this.citiesBSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.cities10000DataSet);
-
+      this.cities10000DataSet.AcceptChanges();
     }
 
     private void fillToolStripButton_Click(object sender, EventArgs e)
     {
       try
       {
-        citiesTop100TableAdapter.Fill(cities10000DataSet.CitiesTop100, new Nullable<int>(lastMaxId));
-
-        object lastMaxIdObj = cities10000DataSet.CitiesTop100.Compute("Max(geonameid)", "");
-        if (!EhLib.WinForms.EhLibUtils.DBValueEqual(lastMaxIdObj,null))
-          lastMaxId = (int)lastMaxIdObj;
+        cities10000DataSet.LoadCitiesTop100(loadedCount, 100);
+        loadedCount += cities10000DataSet.CitiesTop100.Rows.Count;
         cities10000DataSet.Cities1000Small.Merge(cities10000DataSet.CitiesTop100);
       }
       catch (System.Exception ex)

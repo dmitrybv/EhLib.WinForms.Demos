@@ -35,8 +35,6 @@
       this.label1 = new System.Windows.Forms.Label();
       this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
-      this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.dataGridGroupDescription1 = new EhLib.WinForms.DataGridGroupDescription();
       this.dataGridEh1ShipCountryColumn = new EhLib.WinForms.DataGridTextColumn();
@@ -89,22 +87,6 @@
       this.northwindDataSet.DataSetName = "NorthwindDataSet";
       this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
       // 
-      // ordersTableAdapter
-      // 
-      this.ordersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // dataGridEh1
       // 
       // 
@@ -120,7 +102,7 @@
       // 
       this.dataGridEh1.DataGrouping.GroupPanel.Visible = true;
       this.dataGridEh1.DataGrouping.Padding = new System.Windows.Forms.Padding(6, 4, 0, 10);
-      this.dataGridEh1.DataGrouping.GroupDescriptionsChanged += new System.EventHandler(this.dataGridEh1_DataGrouping_GroupDescriptionsChanged);
+      this.dataGridEh1.DataGrouping.GroupDescriptionsChanged += new System.EventHandler(this.dataGridEh1_DataGrouping_GroupDescriprionsChanged);
       this.dataGridEh1.DataMember = "";
       this.dataGridEh1.DataSource = this.ordersBindingSource;
       this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -318,8 +300,6 @@
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private System.Windows.Forms.BindingSource ordersBindingSource;
     private NorthwindDataSet northwindDataSet;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridGroupDescription dataGridGroupDescription1;
     private EhLib.WinForms.DataGridTextColumn dataGridEh1ShipCountryColumn;
     private EhLib.WinForms.DataGridGroupDescription dataGridGroupDescription2;

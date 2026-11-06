@@ -21,7 +21,7 @@ namespace MainDemo
 
     private void FrameTreeView_Load(object sender, EventArgs e)
     {
-      testTreeTableAdapter.Fill(biolifeDataSet.TestTree);
+      biolifeDataSet.LoadTestTree();
     }
 
     private void checkBox1_Click(object sender, EventArgs e)
@@ -33,8 +33,7 @@ namespace MainDemo
     {
       this.Validate();
       this.testTreeBindingSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.biolifeDataSet);
-
+      this.biolifeDataSet.AcceptChanges();
     }
 
     private void dataGridEh1_TreeView_NewNodeInit(object sender, EhLib.WinForms.DataGridTreeViewNewNodeInitEventArgs e)

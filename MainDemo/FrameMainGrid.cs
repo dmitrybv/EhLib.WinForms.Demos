@@ -36,10 +36,10 @@ namespace MainDemo
       colShipperId.Title.Text = Properties.Resources.MainGrid_ShipperId_Title;
       colShipName.Title.Text = Properties.Resources.MainGrid_ShipperName_Title;
 
-      this.ordersTableAdapter.Fill(this.northwindDataSet.Orders);
+      this.northwindDataSet.LoadOrders();
 
-      new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter().Fill(this.northwindDataSet.Employees);
-      new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter().Fill(this.northwindDataSet.Customers);
+      this.northwindDataSet.LoadEmployees();
+      this.northwindDataSet.LoadCustomers();
 
     }
 

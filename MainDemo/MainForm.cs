@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Xml;
@@ -20,8 +19,8 @@ namespace MainDemo
   {
     static internal Dictionary<string, string> appUserSettings = new Dictionary<string, string>();
 
-    VarticalMenuCollection vertMenu;
-    VarticalMenuCollection vertMenuSolutions;
+    VerticalMenuCollection vertMenu;
+    VerticalMenuCollection vertMenuSolutions;
     BaseFrame curFrame = null;
     string LanguageId;
     EhLib.WinForms.DataGridPrintService gridPrintService = new EhLib.WinForms.DataGridPrintService();
@@ -35,22 +34,22 @@ namespace MainDemo
     {
       gridVertMenuDemos.Title.Visible = false;
 
-      vertMenu = new VarticalMenuCollection();
+      vertMenu = new VerticalMenuCollection();
 
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_MainGrid, RefFrameClass = typeof(FrameMainGrid) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_MasterDetail, RefFrameClass = typeof(FrameMasterDetail) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_RowsAutoExpent, RefFrameClass = typeof(FrameRowsAutoExpand) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_PropertyGrid, RefFrameClass = typeof(FramePropertyGrid) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_MainGrid, RefFrameClass = typeof(FrameMainGrid) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_MasterDetail, RefFrameClass = typeof(FrameMasterDetail) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_RowsAutoExpent, RefFrameClass = typeof(FrameRowsAutoExpand) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_PropertyGrid, RefFrameClass = typeof(FramePropertyGrid) });
 
       //vertMenu.Add(new VerticalMenuItem() { MenuName = "Edit Controls", RefFrameClass = typeof(FrameEditControls) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_SearchBox, RefFrameClass = typeof(FrameSearchBox) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DiferentEditor, RefFrameClass = typeof(FramePolyCellColumn) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_CellDataIsLink, RefFrameClass = typeof(FrameCellDataIsLink) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DataGrouping, RefFrameClass = typeof(FrameDataGrouping) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = "Row Detail Panel", RefFrameClass = typeof(FrameRowDetailPanel) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = "Grid TreeView mode", RefFrameClass = typeof(FrameTreeView) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = "Planner", RefFrameClass = typeof(FramePlanner) });
-      vertMenu.Add(new VarticalMenuItem() { MenuName = "Pivot Grid", RefFrameClass = typeof(FramePivotGrid) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_SearchBox, RefFrameClass = typeof(FrameSearchBox) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DiferentEditor, RefFrameClass = typeof(FramePolyCellColumn) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_CellDataIsLink, RefFrameClass = typeof(FrameCellDataIsLink) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = Properties.Resources.MainForm_Demos_DataGrouping, RefFrameClass = typeof(FrameDataGrouping) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = "Row Detail Panel", RefFrameClass = typeof(FrameRowDetailPanel) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = "Grid TreeView mode", RefFrameClass = typeof(FrameTreeView) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = "Planner", RefFrameClass = typeof(FramePlanner) });
+      vertMenu.Add(new VerticalMenuItem() { MenuName = "Pivot Grid", RefFrameClass = typeof(FramePivotGrid) });
 
       bsVertMenuDemos.DataSource = vertMenu;
 
@@ -60,98 +59,98 @@ namespace MainDemo
     {
       gridVertMenuSolutions.Title.Visible = false;
 
-      vertMenuSolutions = new VarticalMenuCollection();
+      vertMenuSolutions = new VerticalMenuCollection();
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Custom DataCell Format",
         RefFrameClass = typeof(FrameSolDataGridCustomDataCellFormat)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Custom Inicator Cell Paint",
         RefFrameClass = typeof(FrameSolDataGridCustomIndicatorCellPaint)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Custom DataCell Paint",
         RefFrameClass = typeof(FrameSolDataGridCustomDataCellPaint)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem() {
+      vertMenuSolutions.Add(new VerticalMenuItem() {
         MenuName = "DataGridEh Scroll Events",
         RefFrameClass = typeof(FrameSolDataGridScrollEvents)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Autoload in parts",
         RefFrameClass = typeof(FrameSolDataGridAutoDataLoad)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Title Cell Custom Paint and Mouse Click",
         RefFrameClass = typeof(FrameSolDataGridCustomTitleCellPaint)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Indicator Title Cell Custom Paint and Mouse Click",
         RefFrameClass = typeof(FrameSolDataGridCustomIndicatorTitleCellPaint)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh Footer Calculation",
         RefFrameClass = typeof(FrameSolDataGridFooterCalculation)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Checked Grid",
         RefFrameClass = typeof(FrameSolSelectRows)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Blank cells in the column",
         RefFrameClass = typeof(FrameSolBlankCell)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Crossed RadioMatrix",
         RefFrameClass = typeof(FrameCrossedRadioMatrix)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Simple TreeView",
         RefFrameClass = typeof(FrameSolSimpleTreeView)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "TreeView with External TreeList",
         RefFrameClass = typeof(FrameSolExternalTreeViewList)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Disk Folders Explorer (TreeView)",
         RefFrameClass = typeof(FrameSolFolderExplorer)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "Progress bars",
         RefFrameClass = typeof(FrameSolDataGridProgressBars)
       });
 
-      vertMenuSolutions.Add(new VarticalMenuItem()
+      vertMenuSolutions.Add(new VerticalMenuItem()
       {
         MenuName = "DataGridEh: Merge Duplicates",
         RefFrameClass = typeof(FrameSolDataGridMergeDuplicates)
@@ -170,7 +169,7 @@ namespace MainDemo
         bSource = bsVertMenuSolutions;
 
       BaseFrame uc;
-      VarticalMenuItem vim = (bSource.Current as VarticalMenuItem);
+      VerticalMenuItem vim = (bSource.Current as VerticalMenuItem);
 
       uc = (BaseFrame)vim.RefFrame;
       if (uc == null)
@@ -362,9 +361,7 @@ namespace MainDemo
     {
       if (String.IsNullOrEmpty(settings)) return;
 
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
-      Dictionary<string, object> fs = serializer.Deserialize<Dictionary<string, object>>(settings);
-      //fs.InitForm(this);
+      Dictionary<string, object> fs = StorableSettingsJsonHelper.Deserialize(settings);
       ReadStorableSettings(fs);
     }
 
@@ -450,10 +447,8 @@ namespace MainDemo
 
     protected string GetSettingsAsJSonStr()
     {
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
-      //FormSettingsKeeper fs = GetFormSettingsKeeper();
       Dictionary<string, object> fs = GetStorableSettings();
-      string json = serializer.Serialize(fs);
+      string json = StorableSettingsJsonHelper.Serialize(fs);
       return json;
     }
 
@@ -504,6 +499,7 @@ namespace MainDemo
         curFrame.LoadSettingsAsJSonStr(appUserSettings[key]);
 
       Text = Text + ".  EhLib.WinForms " + ver + " " + build;
+      Text = Text + " (" + System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription + ")";
     }
 
     static internal Dictionary<string, string> LoadSettingsFile()
@@ -514,7 +510,7 @@ namespace MainDemo
 
       if (File.Exists(filePath))
       {
-        dynamic xmlStr = File.ReadAllText(filePath);
+        string xmlStr = File.ReadAllText(filePath);
         if (string.IsNullOrEmpty(xmlStr) == false)
         {
           XmlDocument doc = new XmlDocument();

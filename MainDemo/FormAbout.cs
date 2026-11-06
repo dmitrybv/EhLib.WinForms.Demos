@@ -81,8 +81,10 @@ namespace MainDemo
       if (text.Contains("@"))
         linkText = "mailto:" + text;
       else
-        linkText = "http://" + text;
-      System.Diagnostics.Process.Start(linkText);
+        linkText = "https://" + text;
+      System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo(linkText);
+      startInfo.UseShellExecute = true;
+      System.Diagnostics.Process.Start(startInfo);
     }
 
     void textBox1_Leave(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      customersTableAdapter.Fill(northwindDataSet.Customers);
+      northwindDataSet.LoadCustomers();
 
     }
 
@@ -24,8 +24,7 @@ namespace MainDemo
     {
       this.Validate();
       this.customersBindingSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.northwindDataSet);
-
+      this.northwindDataSet.AcceptChanges();
     }
 
     private void bFilterOnTyping_Click(object sender, EventArgs e)

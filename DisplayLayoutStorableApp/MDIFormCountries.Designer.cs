@@ -33,8 +33,6 @@
       this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.dBTestDataSet = new DisplayLayoutStorableApp.DBTestDataSet();
-      this.countryTableAdapter = new DisplayLayoutStorableApp.DBTestDataSetTableAdapters.countryTableAdapter();
-      this.tableAdapterManager = new DisplayLayoutStorableApp.DBTestDataSetTableAdapters.TableAdapterManager();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.countryBindingSource)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.dBTestDataSet)).BeginInit();
@@ -68,18 +66,6 @@
       this.dBTestDataSet.DataSetName = "DBTestDataSet";
       this.dBTestDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
       // 
-      // countryTableAdapter
-      // 
-      this.countryTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.countryTableAdapter = this.countryTableAdapter;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = DisplayLayoutStorableApp.DBTestDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // MDIChildFormCountries
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,7 +90,5 @@
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private DBTestDataSet dBTestDataSet;
     private System.Windows.Forms.BindingSource countryBindingSource;
-    private DBTestDataSetTableAdapters.countryTableAdapter countryTableAdapter;
-    private DBTestDataSetTableAdapters.TableAdapterManager tableAdapterManager;
   }
 }

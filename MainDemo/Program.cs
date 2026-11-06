@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 namespace MainDemo
 {
-  static class Program
+  internal static class Program
   {
     /// <summary>
-    /// The main entry point for the application.
+    ///  The main entry point for the application.
     /// </summary>
     [STAThread]
     static void Main()
     {
-      //EhLib.WinForms.EhLibUtils.DebugPaint = true;
-      //EhLib.WinForms.EhLibManager.DefaultEhLibManager.DropDownDebug = true;
-
       AppDomain.CurrentDomain.UnhandledException +=
           new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
 
+#if NETFRAMEWORK
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
+#else
+      // To customize application configuration such as set high DPI settings or default font,
+      // see https://aka.ms/applicationconfiguration.
+      ApplicationConfiguration.Initialize();
+#endif
+
       Application.Run(new MainForm());
     }
 
@@ -45,6 +43,5 @@ namespace MainDemo
         }
       }
     }
-
   }
 }

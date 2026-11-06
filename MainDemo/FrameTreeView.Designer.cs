@@ -36,8 +36,6 @@
       this.checkBox1 = new System.Windows.Forms.CheckBox();
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.testTreeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.testTreeTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.TestTreeTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.testTreeBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
       this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
       this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -115,18 +113,6 @@
       // 
       this.testTreeBindingSource.DataMember = "TestTree";
       this.testTreeBindingSource.DataSource = this.biolifeDataSet;
-      // 
-      // testTreeTableAdapter
-      // 
-      this.testTreeTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = null;
-      this.tableAdapterManager.TestTreeTableAdapter = this.testTreeTableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // testTreeBindingNavigator
       // 
@@ -356,8 +342,6 @@
     private System.Windows.Forms.CheckBox checkBox1;
         private BiolifeDataSet biolifeDataSet;
         private System.Windows.Forms.BindingSource testTreeBindingSource;
-        private BiolifeDataSetTableAdapters.TestTreeTableAdapter testTreeTableAdapter;
-        private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator testTreeBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

@@ -6,7 +6,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Web.Script.Serialization;
 
 namespace MainDemo
 {
@@ -21,9 +20,7 @@ namespace MainDemo
     {
       if (String.IsNullOrEmpty(settings)) return;
 
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
-      Dictionary<string, object> fs = serializer.Deserialize<Dictionary<string, object>>(settings);
-      //fs.InitForm(this);
+      Dictionary<string, object> fs = StorableSettingsJsonHelper.Deserialize(settings);
       ReadStorableSettings(fs);
     }
 
@@ -51,10 +48,8 @@ namespace MainDemo
 
     public string GetSettingsAsJSonStr()
     {
-      JavaScriptSerializer serializer = new JavaScriptSerializer();
-      //FormSettingsKeeper fs = GetFormSettingsKeeper();
       Dictionary<string, object> fs = GetStorableSettings();
-      string json = serializer.Serialize(fs);
+      string json = StorableSettingsJsonHelper.Serialize(fs);
       return json;
     }
 

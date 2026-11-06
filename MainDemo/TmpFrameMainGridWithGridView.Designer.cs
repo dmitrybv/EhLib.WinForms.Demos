@@ -34,10 +34,7 @@
       this.northwindDataSet = new MainDemo.NorthwindDataSet();
       this.bsEmployees = new System.Windows.Forms.BindingSource(this.components);
       this.bsMain = new System.Windows.Forms.BindingSource(this.components);
-      this.ordersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.OrdersTableAdapter();
-      this.employeesTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.EmployeesTableAdapter();
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
-      this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.ColumnComboBox = new System.Windows.Forms.DataGridViewComboBoxColumn();
       this.orderIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +50,7 @@
       this.shipRegionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.shipPostalCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.shipCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.orderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.bsEmployees)).BeginInit();
@@ -95,14 +93,6 @@
       this.bsMain.DataMember = "Orders";
       this.bsMain.DataSource = this.northwindDataSet;
       // 
-      // ordersTableAdapter
-      // 
-      this.ordersTableAdapter.ClearBeforeFill = true;
-      // 
-      // employeesTableAdapter
-      // 
-      this.employeesTableAdapter.ClearBeforeFill = true;
-      // 
       // dataGridView1
       // 
       this.dataGridView1.AutoGenerateColumns = false;
@@ -132,12 +122,6 @@
       this.dataGridView1.TabIndex = 2;
       this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
       this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
-      // 
-      // orderIDDataGridViewTextBoxColumn
-      // 
-      this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "Order ID";
-      this.orderIDDataGridViewTextBoxColumn.HeaderText = "Order ID";
-      this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
       // 
       // ColumnComboBox
       // 
@@ -234,6 +218,12 @@
       this.shipCountryDataGridViewTextBoxColumn.HeaderText = "ShipCountry";
       this.shipCountryDataGridViewTextBoxColumn.Name = "shipCountryDataGridViewTextBoxColumn";
       // 
+      // orderIDDataGridViewTextBoxColumn
+      // 
+      this.orderIDDataGridViewTextBoxColumn.DataPropertyName = "Order ID";
+      this.orderIDDataGridViewTextBoxColumn.HeaderText = "Order ID";
+      this.orderIDDataGridViewTextBoxColumn.Name = "orderIDDataGridViewTextBoxColumn";
+      // 
       // TmpFrameMainGridWithGridView
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,9 +248,7 @@
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.BindingSource bsMain;
     private NorthwindDataSet northwindDataSet;
-    private NorthwindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
     private System.Windows.Forms.BindingSource bsEmployees;
-    private NorthwindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
     private System.Windows.Forms.DataGridView dataGridView1;
     private System.Windows.Forms.DataGridViewTextBoxColumn orderIDDataGridViewTextBoxColumn;
     private System.Windows.Forms.DataGridViewComboBoxColumn ColumnComboBox;

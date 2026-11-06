@@ -61,9 +61,6 @@
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.resIDCol = new EhLib.WinForms.DataGridTextColumn();
       this.resNameCol = new EhLib.WinForms.DataGridTextColumn();
-      this.plannerResourcesTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.PlannerResourcesTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
-      this.plannerDataTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.PlannerDataTableAdapter();
       this.panel1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
       this.splitContainer1.Panel1.SuspendLayout();
@@ -394,24 +391,6 @@
       this.resNameCol.Title.Text = "ResName";
       this.resNameCol.Width = 189;
       // 
-      // plannerResourcesTableAdapter
-      // 
-      this.plannerResourcesTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = null;
-      this.tableAdapterManager.PlannerDataTableAdapter = null;
-      this.tableAdapterManager.PlannerResourcesTableAdapter = this.plannerResourcesTableAdapter;
-      this.tableAdapterManager.TestTreeTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
-      // plannerDataTableAdapter
-      // 
-      this.plannerDataTableAdapter.ClearBeforeFill = true;
-      // 
       // FramePlanner
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,8 +459,5 @@
     private EhLib.WinForms.PlannerHorzYearViewEh plannerHorzYearViewEh1;
     private System.Windows.Forms.BindingSource plannerResourcesBindingSource;
     private BiolifeDataSet biolifeDataSet;
-    private BiolifeDataSetTableAdapters.PlannerResourcesTableAdapter plannerResourcesTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-    private BiolifeDataSetTableAdapters.PlannerDataTableAdapter plannerDataTableAdapter;
   }
 }

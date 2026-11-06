@@ -23,6 +23,8 @@ namespace DisplayLayoutStorableApp
     {
       InitializeComponent();
 
+      this.Text = this.Text + " (" + System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription + ")";
+
       foreach (var control in Controls)
       {
         if (control is MdiClient)

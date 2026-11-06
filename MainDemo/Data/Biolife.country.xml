@@ -1,0 +1,165 @@
+<?xml version="1.0" standalone="yes"?>
+<BiolifeDataSet xmlns="http://tempuri.org/BiolifeDataSet.xsd">
+  <country>
+    <Name>Argentina</Name>
+    <Capital>Buenos Aires</Capital>
+    <Continent>South America</Continent>
+    <Area>2777815</Area>
+    <Population>32300003</Population>
+    <WikiLinkText>wikipedia.org/wiki/Argentina</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Argentina</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Bolivia</Name>
+    <Capital>La Paz</Capital>
+    <Continent>South America</Continent>
+    <Area>1098575</Area>
+    <Population>7300000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Bolivia</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Bolivia</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Brazil</Name>
+    <Capital>Brasilia</Capital>
+    <Continent>South America</Continent>
+    <Area>8511196</Area>
+    <Population>150400000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Brazil</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Brazil</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Canada</Name>
+    <Capital>Ottawa</Capital>
+    <Continent>North America</Continent>
+    <Area>9976147</Area>
+    <Population>26500000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Canada</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Canada</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Chile</Name>
+    <Capital>Santiago</Capital>
+    <Continent>South America</Continent>
+    <Area>756943</Area>
+    <Population>13200000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Chile</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Chile</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Colombia</Name>
+    <Capital>Bagota</Capital>
+    <Continent>South America</Continent>
+    <Area>1138907</Area>
+    <Population>33000000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Colombia</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Colombia</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Cuba</Name>
+    <Capital>Havana</Capital>
+    <Continent>North America</Continent>
+    <Area>114524</Area>
+    <Population>10600000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Cuba</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Cuba</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Ecuador</Name>
+    <Capital>Quito</Capital>
+    <Continent>South America</Continent>
+    <Area>455502</Area>
+    <Population>10600000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Ecuador</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Ecuador</WikiLinkURL>
+  </country>
+  <country>
+    <Name>El Salvador</Name>
+    <Capital>San Salvador</Capital>
+    <Continent>North America</Continent>
+    <Area>20865</Area>
+    <Population>5300000</Population>
+    <WikiLinkText>wikipedia.org/wiki/El_Salvador</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/El_Salvador</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Guyana</Name>
+    <Capital>Georgetown</Capital>
+    <Continent>South America</Continent>
+    <Area>214969</Area>
+    <Population>800000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Guyana</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Guyana</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Jamaica</Name>
+    <Capital>Kingston</Capital>
+    <Continent>North America</Continent>
+    <Area>11424</Area>
+    <Population>2500000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Jamaica</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Jamaica</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Mexico</Name>
+    <Capital>Mexico City</Capital>
+    <Continent>North America</Continent>
+    <Area>1967180</Area>
+    <Population>88600000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Mexico</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Mexico</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Nicaragua</Name>
+    <Capital>Managua</Capital>
+    <Continent>North America</Continent>
+    <Area>139000</Area>
+    <Population>3900000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Nicaragua</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Nicaragua</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Paraguay</Name>
+    <Capital>Asuncion</Capital>
+    <Continent>South America</Continent>
+    <Area>406576</Area>
+    <Population>4660000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Paraguay</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Paraguay</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Peru</Name>
+    <Capital>Lima</Capital>
+    <Continent>South America</Continent>
+    <Area>1285215</Area>
+    <Population>21600000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Peru</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Peru</WikiLinkURL>
+  </country>
+  <country>
+    <Name>United States of America</Name>
+    <Capital>Washington</Capital>
+    <Continent>North America</Continent>
+    <Area>9363130</Area>
+    <Population>249200000</Population>
+    <WikiLinkText>wikipedia.org/wiki/United_States</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/United_States</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Uruguay</Name>
+    <Capital>Montevideo</Capital>
+    <Continent>South America</Continent>
+    <Area>176140</Area>
+    <Population>3002000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Uruguay</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Uruguay</WikiLinkURL>
+  </country>
+  <country>
+    <Name>Venezuela</Name>
+    <Capital>Caracas</Capital>
+    <Continent>South America</Continent>
+    <Area>912047</Area>
+    <Population>19700000</Population>
+    <WikiLinkText>wikipedia.org/wiki/Venezuela</WikiLinkText>
+    <WikiLinkURL>https://en.wikipedia.org/wiki/Venezuela</WikiLinkURL>
+  </country>
+</BiolifeDataSet>

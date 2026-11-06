@@ -19,13 +19,12 @@ namespace MainDemo
     {
       this.Validate();
       this.biolifeBindingSource.EndEdit();
-      this.tableAdapterManager.UpdateAll(this.biolifeDataSet);
-
+      this.biolifeDataSet.AcceptChanges();
     }
 
     private void FrameVertGrid_Load(object sender, EventArgs e)
     {
-      biolifeTableAdapter.Fill(biolifeDataSet.Biolife);
+      biolifeDataSet.LoadBiolife();
     }
 
     private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)

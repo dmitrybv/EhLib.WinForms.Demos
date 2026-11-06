@@ -26,7 +26,7 @@ namespace MainDemo
       dataGridProgressBarColumn3.ProgressBarRenderer = new EhLib.WinForms.SlopeGradientProgressBarRenderer();
       dataGridProgressBarColumn4.ProgressBarRenderer = new EhLib.WinForms.SlopeGradientProgressBarRenderer();
 
-      this.productsTableAdapter.Fill(this.northwindDataSet.Products);
+      this.northwindDataSet.LoadProducts();
     }
 
     private void dataGridProgressBarColumn1_DataCellFormatParamsNeeded(object sender, DataGridProgressBarDataCellFormatParamsNeededEventArgs e)

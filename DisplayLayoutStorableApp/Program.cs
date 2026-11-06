@@ -18,11 +18,16 @@ namespace DisplayLayoutStorableApp
     [STAThread]
     static void Main()
     {
-      Application.EnableVisualStyles();
-      Application.SetCompatibleTextRenderingDefault(false);
-
       appUserSettings = LoadSettings();
 
+#if NETFRAMEWORK
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+#else
+      // To customize application configuration such as set high DPI settings or default font,
+      // see https://aka.ms/applicationconfiguration.
+      ApplicationConfiguration.Initialize();
+#endif
       Application.Run(new MainForm());
 
       SaveSettings(appUserSettings);
@@ -36,7 +41,7 @@ namespace DisplayLayoutStorableApp
 
       if (File.Exists(filePath))
       {
-        dynamic xmlStr = File.ReadAllText(filePath);
+        string xmlStr = File.ReadAllText(filePath);
         if (string.IsNullOrEmpty(xmlStr) == false)
         {
           XmlDocument doc = new XmlDocument();

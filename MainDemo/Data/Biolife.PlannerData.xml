@@ -1,0 +1,180 @@
+<?xml version="1.0" standalone="yes"?>
+<BiolifeDataSet xmlns="http://tempuri.org/BiolifeDataSet.xsd">
+  <PlannerData>
+    <ID>2</ID>
+    <StartTime>2015-01-14T00:30:00</StartTime>
+    <EndTime>2015-01-14T12:15:00</EndTime>
+    <Title>Long event</Title>
+    <Body>Detail info</Body>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>4</ID>
+    <StartTime>2015-01-14T01:30:00</StartTime>
+    <EndTime>2015-01-14T05:45:00</EndTime>
+    <Title>Busy time</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>2</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>5</ID>
+    <StartTime>2015-01-14T10:30:00</StartTime>
+    <EndTime>2015-01-14T15:30:00</EndTime>
+    <Title>Travel to office</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>3</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>6</ID>
+    <StartTime>2014-12-29T00:30:00</StartTime>
+    <EndTime>2014-12-29T02:00:00</EndTime>
+    <Title>Lunch time 1234</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>7</ID>
+    <StartTime>2015-01-25T22:00:00</StartTime>
+    <EndTime>2015-02-07T08:00:00</EndTime>
+    <Title>Long event 8d</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>2</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>8</ID>
+    <StartTime>2015-01-13T14:00:00</StartTime>
+    <EndTime>2015-01-15T14:00:00</EndTime>
+    <Title>Long event 3d</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>2</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>9</ID>
+    <StartTime>2015-01-14T00:30:00</StartTime>
+    <EndTime>2015-01-14T08:30:00</EndTime>
+    <Title>Event for Resource 1</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>1</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>10</ID>
+    <StartTime>2015-01-14T00:00:00</StartTime>
+    <EndTime>2015-01-20T16:00:00</EndTime>
+    <Title>New Item 7d</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>11</ID>
+    <StartTime>2015-01-05T03:00:00</StartTime>
+    <EndTime>2015-01-15T12:00:00</EndTime>
+    <Title>New Item 1111</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>2</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>12</ID>
+    <StartTime>2015-01-16T00:00:00</StartTime>
+    <EndTime>2015-01-18T17:00:00</EndTime>
+    <Title>New Item</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>3</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>13</ID>
+    <StartTime>2015-01-14T00:30:00</StartTime>
+    <EndTime>2015-01-14T14:00:00</EndTime>
+    <Title>New Item RES2</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>2</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>3</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>14</ID>
+    <StartTime>2015-01-14T00:30:00</StartTime>
+    <EndTime>2015-01-14T09:30:00</EndTime>
+    <Title>New Item res3</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>3</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>3</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>15</ID>
+    <StartTime>2015-01-14T02:00:00</StartTime>
+    <EndTime>2015-01-14T17:30:00</EndTime>
+    <Title>New Item</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>3</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>16</ID>
+    <StartTime>2015-01-14T04:30:00</StartTime>
+    <EndTime>2015-01-14T10:00:00</EndTime>
+    <Title>New Item. Read Only</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>true</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>17</ID>
+    <StartTime>2015-01-14T19:00:00</StartTime>
+    <EndTime>2015-01-14T23:30:00</EndTime>
+    <Title>New Item</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+  <PlannerData>
+    <ID>18</ID>
+    <StartTime>2015-01-14T06:30:00</StartTime>
+    <EndTime>2015-01-14T09:30:00</EndTime>
+    <Title>New Item</Title>
+    <AllDay>false</AllDay>
+    <ResourceID>0</ResourceID>
+    <InPlanner>true</InPlanner>
+    <Category>1</Category>
+    <ReadOnly>false</ReadOnly>
+  </PlannerData>
+</BiolifeDataSet>

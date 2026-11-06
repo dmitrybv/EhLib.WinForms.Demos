@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <EhLibPackageId>EhLib.WinForms.Trial</EhLibPackageId>
+  </PropertyGroup>
+</Project>

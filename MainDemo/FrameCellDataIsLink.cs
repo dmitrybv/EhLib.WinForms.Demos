@@ -18,7 +18,7 @@ namespace MainDemo
     {
       InitializeComponent();
 
-      this.countryTableAdapter.Fill(this.biolifeDataSet.country);
+      this.biolifeDataSet.LoadCountry();
 
     }
 
@@ -30,7 +30,9 @@ namespace MainDemo
     private void dataGridTextColumn6_CellContentClick(object sender, DataGridDataCellEventArgs e)
     {
       string url = colUrl.GetRowDisplayText(e.Row);
-      System.Diagnostics.Process.Start(url);
+      System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo(url);
+      startInfo.UseShellExecute = true;
+      System.Diagnostics.Process.Start(startInfo);
     }
 
   }

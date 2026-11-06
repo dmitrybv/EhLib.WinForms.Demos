@@ -32,8 +32,6 @@
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrameSolSelectRows));
       this.biolifeDataSet = new MainDemo.BiolifeDataSet();
       this.countryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.countryTableAdapter = new MainDemo.BiolifeDataSetTableAdapters.countryTableAdapter();
-      this.tableAdapterManager = new MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager();
       this.checkBox1 = new System.Windows.Forms.CheckBox();
       this.dataGridEh1 = new EhLib.WinForms.DataGridEh();
       this.dataGridEh1NameColumn = new EhLib.WinForms.DataGridTextColumn();
@@ -65,17 +63,6 @@
       // 
       this.countryBindingSource.DataMember = "country";
       this.countryBindingSource.DataSource = this.biolifeDataSet;
-      // 
-      // countryTableAdapter
-      // 
-      this.countryTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.BiolifeTableAdapter = null;
-      this.tableAdapterManager.countryTableAdapter = this.countryTableAdapter;
-      this.tableAdapterManager.UpdateOrder = MainDemo.BiolifeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
       // 
       // checkBox1
       // 
@@ -266,8 +253,6 @@
 
     private BiolifeDataSet biolifeDataSet;
     private System.Windows.Forms.BindingSource countryBindingSource;
-    private BiolifeDataSetTableAdapters.countryTableAdapter countryTableAdapter;
-    private BiolifeDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private EhLib.WinForms.DataGridTextColumn dataGridEh1NameColumn;
     private System.Windows.Forms.CheckBox checkBox1;

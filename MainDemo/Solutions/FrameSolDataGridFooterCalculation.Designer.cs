@@ -59,8 +59,6 @@
       this.richTextBox1 = new System.Windows.Forms.RichTextBox();
       this.label1 = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.order_DetailsTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.Order_DetailsTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       this.tabPage1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridEh1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.order_DetailsBindingSource)).BeginInit();
@@ -125,7 +123,7 @@
       this.dataGridEh1.DataSource = this.order_DetailsBindingSource;
       this.dataGridEh1.Dock = System.Windows.Forms.DockStyle.Fill;
       // 
-      // 
+      // dataGridEh1.Footer
       // 
       this.dataGridEh1.Footer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
       this.dataGridEh1.Footer.Rows.AddRange(new EhLib.WinForms.DataGridFooterRow[] {
@@ -133,7 +131,7 @@
             this.dataGridFooterRow8});
       this.dataGridEh1.Footer.RowStepCalculation += new System.EventHandler<EhLib.WinForms.DataGridFooterCalculationEventArgs>(this.dataGridEh1_Footer_RowStepCalculation);
       // 
-      // 
+      // dataGridEh1.HorzScrollBar
       // 
       this.dataGridEh1.HorzScrollBar.ExtraBar.Visible = true;
       this.dataGridEh1.Location = new System.Drawing.Point(3, 3);
@@ -147,7 +145,7 @@
             this.dataGridTextColumn5});
       this.dataGridEh1.TabIndex = 0;
       // 
-      // 
+      // dataGridEh1.Title
       // 
       this.dataGridEh1.Title.Filter.Active = true;
       this.dataGridEh1.SelectionChanged += new System.EventHandler<EhLib.WinForms.DataGridSelectionChangeOperationEventArgs>(this.dataGridEh1_SelectionChanged);
@@ -173,7 +171,7 @@
       this.dataGridTextColumn1.Footer.BoundItems.Add(this.dataGridColumnFooterItem2);
       this.dataGridTextColumn1.Name = "dataGridTextColumn1";
       // 
-      // 
+      // dataGridTextColumn1.Title
       // 
       this.dataGridTextColumn1.Title.Text = "OrderID";
       // 
@@ -187,7 +185,7 @@
       this.dataGridTextColumn2.Footer.BoundItems.Add(this.dataGridColumnFooterItem4);
       this.dataGridTextColumn2.Name = "dataGridTextColumn2";
       // 
-      // 
+      // dataGridTextColumn2.Title
       // 
       this.dataGridTextColumn2.Title.Text = "ProductID";
       // 
@@ -205,7 +203,7 @@
       this.columnUnitPrice.Footer.FinalizeCalculation += new System.EventHandler<EhLib.WinForms.DataGridFooterCalculationEventArgs>(this.columnUnitPrice_Footer_FinalizeCalculation);
       this.columnUnitPrice.Name = "columnUnitPrice";
       // 
-      // 
+      // columnUnitPrice.Title
       // 
       this.columnUnitPrice.Title.Text = "UnitPrice";
       // 
@@ -220,7 +218,7 @@
       this.columnQuantity.Footer.CellPaint += new System.EventHandler<EhLib.WinForms.DataGridFooterCellPaintEventArgs>(this.columnQuantity_Footer_CellPaint);
       this.columnQuantity.Name = "columnQuantity";
       // 
-      // 
+      // columnQuantity.Title
       // 
       this.columnQuantity.Title.Text = "Quantity";
       this.columnQuantity.Width = 60;
@@ -237,7 +235,7 @@
       this.dataGridTextColumn5.Footer.CellFormatValue += new System.EventHandler<EhLib.WinForms.DataGridFooterCellFormatValueEventArgs>(this.dataGridTextColumn5_Footer_CellFormatValue);
       this.dataGridTextColumn5.Name = "dataGridTextColumn5";
       // 
-      // 
+      // dataGridTextColumn5.Title
       // 
       this.dataGridTextColumn5.Title.Text = "Discount";
       this.dataGridTextColumn5.Width = 188;
@@ -292,22 +290,6 @@
       this.panel1.Size = new System.Drawing.Size(830, 36);
       this.panel1.TabIndex = 8;
       // 
-      // order_DetailsTableAdapter
-      // 
-      this.order_DetailsTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = null;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = this.order_DetailsTableAdapter;
-      this.tableAdapterManager.OrdersTableAdapter = null;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // FrameSolDataGridFooterCalculation
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,8 +317,6 @@
     private System.Windows.Forms.Panel panel1;
     private NorthwindDataSet northwindDataSet;
     private System.Windows.Forms.BindingSource order_DetailsBindingSource;
-    private NorthwindDataSetTableAdapters.Order_DetailsTableAdapter order_DetailsTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridEh dataGridEh1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn2;

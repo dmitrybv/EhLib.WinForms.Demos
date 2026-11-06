@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MainDemo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("EhLib Team")]
 [assembly: AssemblyProduct("MainDemo")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright (c) 2017-2026 Dmitriy V. Bolshakov")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -60,7 +60,6 @@
       this.tsbBiDi = new System.Windows.Forms.ToolStripButton();
       this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
       this.tsbUseVisualStyles = new System.Windows.Forms.ToolStripButton();
-      this.imageList1 = new System.Windows.Forms.ImageList(this.components);
       this.statusStrip1 = new System.Windows.Forms.StatusStrip();
       this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
       ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -116,7 +115,7 @@
       // 
       this.gridVertMenuDemos.EmptyDataInfo.Text = null;
       // 
-      // 
+      // gridVertMenuDemos.IndicatorColumn
       // 
       this.gridVertMenuDemos.IndicatorColumn.Visible = false;
       this.gridVertMenuDemos.Name = "gridVertMenuDemos";
@@ -141,7 +140,7 @@
       this.vertGridMenuNameCol.Name = "vertGridMenuNameCol";
       this.vertGridMenuNameCol.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
       // 
-      // 
+      // vertGridMenuNameCol.Title
       // 
       this.vertGridMenuNameCol.Title.Text = "Demo section";
       this.vertGridMenuNameCol.VertAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
@@ -166,7 +165,7 @@
       // 
       this.gridVertMenuSolutions.EmptyDataInfo.Text = null;
       // 
-      // 
+      // gridVertMenuSolutions.IndicatorColumn
       // 
       this.gridVertMenuSolutions.IndicatorColumn.Visible = false;
       this.gridVertMenuSolutions.Name = "gridVertMenuSolutions";
@@ -191,7 +190,7 @@
       this.dataGridTextColumn1.Name = "dataGridTextColumn1";
       this.dataGridTextColumn1.Padding = new System.Windows.Forms.Padding(10, 2, 0, 2);
       // 
-      // 
+      // dataGridTextColumn1.Title
       // 
       this.dataGridTextColumn1.Title.Text = "Demo section";
       this.dataGridTextColumn1.VertAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
@@ -337,17 +336,6 @@
       this.tsbUseVisualStyles.Name = "tsbUseVisualStyles";
       this.tsbUseVisualStyles.Click += new System.EventHandler(this.toolStripButton1_Click);
       // 
-      // imageList1
-      // 
-      this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-      this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-      this.imageList1.Images.SetKeyName(0, "exit.png");
-      this.imageList1.Images.SetKeyName(1, "Preview.png");
-      this.imageList1.Images.SetKeyName(2, "clipboard_copy_lined_16.png");
-      this.imageList1.Images.SetKeyName(3, "clipboard_paste_lined_16.png");
-      this.imageList1.Images.SetKeyName(4, "clipboard_select_all_16.bmp");
-      this.imageList1.Images.SetKeyName(5, "gtk-about-1.png");
-      // 
       // statusStrip1
       // 
       resources.ApplyResources(this.statusStrip1, "statusStrip1");
@@ -415,7 +403,6 @@
     private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
     private System.Windows.Forms.ToolStripButton tsbAbout;
     private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-    private System.Windows.Forms.ImageList imageList1;
     private System.Windows.Forms.SplitContainer splitContainer1;
     private System.Windows.Forms.BindingSource bsVertMenuDemos;
     private System.Windows.Forms.StatusStrip statusStrip1;

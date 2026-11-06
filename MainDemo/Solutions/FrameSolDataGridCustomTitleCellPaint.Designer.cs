@@ -57,8 +57,6 @@
       this.tabPage2 = new System.Windows.Forms.TabPage();
       this.label1 = new System.Windows.Forms.Label();
       this.panel1 = new System.Windows.Forms.Panel();
-      this.customersTableAdapter = new MainDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
-      this.tableAdapterManager = new MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager();
       ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
@@ -378,22 +376,6 @@
       this.panel1.Size = new System.Drawing.Size(979, 36);
       this.panel1.TabIndex = 8;
       // 
-      // customersTableAdapter
-      // 
-      this.customersTableAdapter.ClearBeforeFill = true;
-      // 
-      // tableAdapterManager
-      // 
-      this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-      this.tableAdapterManager.CategoriesTableAdapter = null;
-      this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
-      this.tableAdapterManager.EmployeesTableAdapter = null;
-      this.tableAdapterManager.Order_DetailsTableAdapter = null;
-      this.tableAdapterManager.OrdersTableAdapter = null;
-      this.tableAdapterManager.ProductsTableAdapter = null;
-      this.tableAdapterManager.ShippersTableAdapter = null;
-      this.tableAdapterManager.UpdateOrder = MainDemo.NorthwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-      // 
       // FrameSolDataGridCustomTitleCellPaint
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,8 +412,6 @@
     private System.Windows.Forms.Panel panel1;
     private System.Windows.Forms.BindingSource customersBindingSource;
     private NorthwindDataSet northwindDataSet;
-    private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-    private NorthwindDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn1;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn2;
     private EhLib.WinForms.DataGridTextColumn dataGridTextColumn3;
