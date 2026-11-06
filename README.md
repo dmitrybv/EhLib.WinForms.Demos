@@ -75,3 +75,10 @@ Represents a Windows control that allows you to select a date and time and displ
 
 * City data in MainDemo (`MainDemo/Data/cities10000.Cities1000Small.xml`) is a subset of the [GeoNames](https://www.geonames.org) data, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
+## License
+
+The source code of the demo projects is licensed under the MIT License, see [LICENSE](LICENSE).
+
+The EhLib.WinForms library is not covered by this license. It is distributed under its own license, see https://www.ehlib.com.
+
+The demo data is not covered by this license either, see [Demo data](#demo-data).
